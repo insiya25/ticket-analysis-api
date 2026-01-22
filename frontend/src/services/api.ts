@@ -1,4 +1,5 @@
-const API_BASE_URL = 'https://ticket-analysis-api.vercel.app/';
+const API_BASE_URL = 'https://ticket-analysis-api.vercel.app';
+
 
 export type CategoryData = {
     'Issue Category': string;

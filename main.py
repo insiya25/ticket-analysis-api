@@ -7,19 +7,11 @@ import os
 
 app = FastAPI(title="Ticket Analysis API", version="1.0.0")
 
-@app.options("/{path:path}")
-async def options_handler(path: str, request: Request):
-    response = Response()
-    response.headers["Access-Control-Allow-Origin"] = "https://ticket-analysis-frontend.vercel.app"
-    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "*"
-    response.headers["Access-Control-Allow-Credentials"] = "true"
-    return response
 
 # Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ticket-analysis-frontend.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://ticket-analysis-api.vercel.app/';
 
 export type CategoryData = {
     'Issue Category': string;

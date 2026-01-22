@@ -52,7 +52,7 @@ TICKETS/
 
 1. **Navigate to project root**:
    ```bash
-   cd c:\Users\Faiz Khan\Documents\INSIYA\TICKETS
+   cd c:\Users\Insiya Rizvi\Documents\INSIYA\TICKETS
    ```
 
 2. **Install Python dependencies**:

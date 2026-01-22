@@ -10,7 +10,7 @@ app = FastAPI(title="Ticket Analysis API", version="1.0.0")
 # Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://ticket-analysis-frontend.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

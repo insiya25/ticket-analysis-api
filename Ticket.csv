@@ -1,0 +1,968 @@
+No,Client,Subject,Raised By,Raised Date,Resolved date,Ticket No,CCF No,Status,Days
+1,CIMB - Equity Research,Unable to login CP and install EquiWord and EquiExcel on UAT,June Yap,1/19/2026 9:20:02 AM,1/19/2026 9:20:02 AM,68,,,1
+2,CIMB - Equity Research,Client can't reset password to Portal - invalid username,June Yap,1/19/2026 7:49:49 AM,1/19/2026 7:49:49 AM,67,,,1
+3,Spark Avendus, Not able to upload RBL Bank model to Equitec,Gopinath S,1/19/2026 7:33:54 AM,1/19/2026 7:33:54 AM,118,,,1
+4,Kotak Securities,Reinstate client contact,Mini Pillai,1/19/2026 1:40:23 AM,1/19/2026 1:40:23 AM,566,,,1
+5,Kotak Securities,Reistate the 11 users ,Prashant Nar,1/16/2026 4:25:57 AM,1/16/2026 4:25:57 AM,565,,,1
+6,Nuvama Institutional Equities,"While submitting sector note, authentication failed issue is flashing and I’m unable to submit the note",Omkar Bankar,1/14/2026 11:57:50 AM,1/14/2026 11:57:50 AM,788,,,1
+7,Nuvama Institutional Equities,Issue with Bloomberg Daily Utility – Market Price Updates,Kishore Jakkani,1/14/2026 7:29:02 AM,1/16/2026 7:29:02 AM,789,,,4
+8,Kotak Securities,Refreshing the word report and it is not working,Mini Pillai,1/14/2026 3:36:35 AM,1/14/2026 3:36:35 AM,564,,,1
+9,Incred,The P/E forward chart is not generating in the Company Flash report after selecting the Public option.,Mazaharul Hassan Saiyed,1/13/2026 10:38:32 AM,1/16/2026 10:38:32 AM,308,199.00,Deployed at client uat on 13 Jan. Client approval pending,4
+10,Emkay-O365,Issues while merging TCS report in the morning report,Deepak Pansari,1/13/2026 9:46:08 AM,1/13/2026 9:46:08 AM,65,,,1
+11,Kotak Securities,"Light color box (KIMS report) behind company name is missing in the updated version, pls fix the issue.",Mohan Sahu,1/13/2026 4:39:30 AM,1/13/2026 4:39:30 AM,563,318.00,,1
+12,Kotak Securities,Please reinstate below email ID ,Mini Pillai,1/12/2026 9:09:18 AM,1/12/2026 9:09:18 AM,562,,,5
+13,SICO Bank,The 52 week low point was missing in the line chart of the weekly report.,Fatema AlDoseri,1/9/2026 7:21:43 AM,1/9/2026 7:21:43 AM,1155,,,7
+14,CIMB - Equity Research,Code for Price performance was wrong.,June Yap,1/9/2026 2:56:20 AM,1/12/2026 2:56:20 AM,66,42.00,,6
+15,Nuvama Institutional Equities,Word - Exception issue.,Omkar Bankar,1/7/2026 3:46:59 AM,1/7/2026 3:46:59 AM,787,221.00,,4
+16,Incred,"On left side of all strategy report (both in template as well as portal), EIP India appearing instead of InCred India",Mazaharul Hassan Saiyed,1/7/2026 2:52:02 AM,1/9/2026 2:52:02 AM,314,200.00,Deployment done at client on 9 jan. waiting for client uat approval,8
+17,JM Financial,Changes in Disclaimer,Dinesh  kodere,1/6/2026 11:43:59 AM,1/7/2026 11:43:59 AM,520,189.00,,1
+18,Emkay Global, Addition & deletion name from equitec Software,Nilesh Devlekar,1/6/2026 8:41:46 AM,1/6/2026 8:41:46 AM,320,,,1
+19,Elara Capital,Quarterly preview TP is coming wrong,Gurunath Parab,1/5/2026 12:40:43 PM,1/5/2026 12:40:43 PM,72,34.00,,10
+20,AMInvestment Bank Berhad - O365,Date style is not showing correctly in the sector report,Aimi Nasuha,1/5/2026 8:32:42 AM,1/6/2026 8:32:42 AM,43,,,10
+21,SICO Bank,Daily mail heatmap showing Bahrain market closed,Nishit Lakhotia,1/5/2026 4:40:06 AM,1/5/2026 4:40:06 AM,1154,,,1
+22,Nuvama Institutional Equities,Issue related to the uploader.,Omkar Bankar,1/2/2026 7:30:07 AM,1/2/2026 7:30:07 AM,785,,,1
+23,JM- O365,License renewal(2 Jan2026 to 31st march 27),Monal  Dcunha,1/2/2026 1:09:08 AM,1/5/2026 1:09:08 AM,2,2.00,,1
+24,ICICI Securities,Unable to install the Equitec Plugins.,Ankit Khotari,12/31/2025 2:57:01 AM,12/31/2025 2:57:01 AM,64,,,1
+25,Nuvama Institutional Equities,Unable to upload the uploader.,Omkar Bankar,12/31/2025 2:52:41 AM,12/31/2025 2:52:41 AM,784,,,1
+26,Emkay-O365,Price chart is not populated for Lenskart.,Meenal  Bhagwat,12/29/2025 11:54:48 AM,12/30/2025 11:54:48 AM,63,,,6
+27,Oman Investment Bank,Unable to receive any mail.,Mazin Al Farsi,12/29/2025 3:23:04 AM,12/29/2025 3:23:04 AM,4,,,5
+28,Incred,Unable to submit strategy note through workflow. ,Mazaharul Hassan Saiyed,12/29/2025 3:19:08 AM,12/29/2025 3:19:08 AM,312,,,1
+29,ICICI Securities,Equitec DB server space is fully utilized,Ankit Khotari,12/29/2025 2:29:41 AM,12/29/2025 2:29:41 AM,63,,,1
+30,JM Financial,Market data failure,Dinesh  kodere,12/26/2025 4:18:06 AM,12/26/2025 4:18:06 AM,519,,,1
+31,Incred,PAM System Serial Number Required,Selvan Mohan,12/24/2025 9:37:43 AM,12/24/2025 9:37:43 AM,311,,,19
+32,Nuvama Institutional Equities,CAVA Implementation – Open VA Point Related to .NET & OpenJDK,Omkar Bankar,12/24/2025 9:35:30 AM,12/24/2025 9:35:30 AM,783,,,7
+33,Kotak Securities,Digital Signature Implementation ,Anish Mathew,12/24/2025 9:20:52 AM,12/24/2025 9:20:52 AM,560,,,12
+34,Phillip Capital,License renewal(31stdec 25 to 31st march 26),Ganesh Deorukhkar,12/24/2025 7:12:30 AM,12/26/2025 7:12:30 AM,67,37.00,,3
+35,Arqaam Capital ,"Upside percentage is showing incorrect for Taaleem and Rameda on the research portal,",Arqaam Support Desk,12/24/2025 3:03:51 AM,12/24/2025 3:03:51 AM,738,,,8
+36,Incred,Heatmap which show how many user view the report log,Mazaharul Hassan Saiyed,12/23/2025 8:52:02 AM,12/30/2025 8:52:02 AM,310,198.00,Deployed at client uat 9 jan.approval pending.,19
+37,Kotak Securities,Reinstate contacts of kotak-securities,Prashant Nar,12/22/2025 11:56:55 AM,12/22/2025 11:56:55 AM,559,,,1
+38,Spark Avendus,Unable to upload model(Indocount and Welspun Living),Gopinath S,12/22/2025 9:03:15 AM,12/22/2025 9:03:15 AM,117,,,1
+39,Arqaam Capital ,Taaleem Company is already there however when I click on “import data” it’s not in the list.,Arqaam Support Desk,12/22/2025 8:19:24 AM,12/22/2025 8:19:24 AM,737,,,1
+40,Spark Avendus,Disclaimers to be updated,Gopinath S,12/22/2025 7:40:16 AM,12/22/2025 7:40:16 AM,116,51.00,,1
+41,Incred,unable to generate Initiation note,Mazaharul Hassan Saiyed,12/19/2025 11:50:47 AM,12/19/2025 11:50:47 AM,309,,,1
+42,Arqaam Capital ,Merging issue where all docs get messed up after merging.,Salma Saad,12/18/2025 7:12:02 AM,12/18/2025 7:12:02 AM,736,,,1
+43,Oman Investment Bank,Banking report not generating,Al Maamun  Al Mutairi,12/18/2025 1:45:05 AM,12/25/2025 1:45:05 AM,3,,,16
+44,Axis Capital,"License renewal (31st Dec25 to 31st March, 2026)",Axis Capital Support Desk,12/18/2025 1:31:55 AM,12/18/2025 1:31:55 AM,564,266.00,,4
+45,Databank - 365,License renewal (31st Dec25 to 31stDec26),Databank Support,12/18/2025 1:29:34 AM,12/18/2025 1:29:34 AM,12,8.00,,8
+46,ICICI Securities,License renewal,Ankit Khotari,12/18/2025 1:28:16 AM,12/24/2025 1:28:16 AM,62,37.00,,8
+47,Nuvama Institutional Equities,Request to Remove Test Report from Front End – Report ID 22971,Omkar Bankar,12/17/2025 2:31:39 AM,12/17/2025 2:31:39 AM,781,,,1
+48,B&K Securities,Unable to install Equiexcel,Naveen Prabhu,12/16/2025 12:47:05 PM,12/16/2025 12:47:05 PM,84,,,1
+49,Incred,Incred - research portal >download button not showing.,Mazaharul Hassan Saiyed,12/16/2025 12:28:50 PM,12/16/2025 12:28:50 PM,307,,,1
+50,Databank - 365,Request to Relocate the Daily/Weekly Template,Grace Monanyun,12/16/2025 8:08:10 AM,12/19/2025 8:08:10 AM,13,,,6
+51,Nuvama Institutional Equities,New requirement points - 1.Addition of Analyst in Secondary Analyst section 2. Validation on Research Portal,Omkar Bankar,12/15/2025 9:44:05 AM,12/15/2025 9:44:05 AM,780,,,7
+52,Kotak Securities,Footer & Disclaimer Text for Garima Mishra Author Selection,Anish Mathew,12/11/2025 11:47:43 AM,12/11/2025 11:47:43 AM,557,316.00,,27
+53,SICO Bank,Remove OTP form Admin-Analyst Login on Equity Monitor,Nishit Lakhotia,12/11/2025 11:07:15 AM,12/13/2025 11:07:15 AM,1151,,,9
+54,SICO Bank,SSL Certificate Error,Nishit Lakhotia,12/11/2025 8:34:25 AM,12/11/2025 8:34:25 AM,1150,,,1
+55,Nuvama Institutional Equities,Issue in Uploader sheet,Omkar Bankar,12/11/2025 8:12:35 AM,12/11/2025 8:12:35 AM,779,,,1
+56,Elara Capital, User is unable to refresh the Premier Energy report,Jinesh Bhansali,12/11/2025 4:01:36 AM,12/11/2025 4:01:36 AM,71,,,4
+57,Arqaam Capital ,Client cannot login to research portal,Premsingh Patil,12/11/2025 3:35:50 AM,12/11/2025 3:35:50 AM,735,,,3
+58,JM Financial,Error in reco price chart,Tarak Mehta,12/11/2025 2:23:52 AM,12/11/2025 2:23:52 AM,518,,,1
+59,Kotak Securities,Reinstate aparna.shanker@wealthcompany.in on urgent basis,Mini Pillai,12/11/2025 2:07:43 AM,12/11/2025 2:07:43 AM,558,,,1
+60,CIMB - Equity Research,Exhibit not working correctly,June Yap,12/10/2025 11:05:00 AM,12/10/2025 11:05:00 AM,62,39.00,,21
+61,SICO Bank,"Price related line items (P?E, P/Bv, Div Yield) not showing on the report for Mouwasat Healthcare Services ",Sawsan AbdulLatif,12/10/2025 3:36:42 AM,12/10/2025 3:36:42 AM,1149,,,1
+62,Nuvama Institutional Equities,Nuvama UAT Site is not working,Omkar Bankar,12/9/2025 8:52:39 AM,12/9/2025 8:52:39 AM,778,,,1
+63,ICICI Securities,New DC design architecture,Gaurav Potkar,12/9/2025 8:07:25 AM,12/9/2025 8:07:25 AM,61,,,7
+64,JM Financial,Equitech: Lag issue,Dinesh  kodere,12/8/2025 12:35:45 PM,12/8/2025 12:35:45 PM,517,,,1
+65,Nuvama Institutional Equities,Apollo Equitec - Request to Align DR Setup with Production,Omkar Bankar,12/8/2025 9:54:31 AM,12/9/2025 9:54:31 AM,777,218.00,,5
+66,Kotak Securities,Clients did not receive automated reset password email,Mini Pillai,12/8/2025 7:07:12 AM,12/8/2025 7:07:12 AM,555,,,2
+67,CIMB - Equity Research,When refreshing an already generated report the name of the prop-position company disappears from the Disclaimer,June Yap,12/8/2025 1:36:34 AM,12/8/2025 1:36:34 AM,61,38.00,,23
+68,Arqaam Capital ,Bullet points formatting issue,Arqaam Support Desk,12/5/2025 11:30:32 AM,12/5/2025 11:30:32 AM,734,,,2
+69,Incred,"A ‘login failed’ notification email is being triggered during CRM login, despite successful access to the system",Mazaharul Hassan Saiyed,12/5/2025 9:42:01 AM,12/5/2025 9:42:01 AM,306,197.00,,7
+70,Kotak Securities,unable to distribute report,Paul Xavier,12/5/2025 7:10:43 AM,12/5/2025 7:10:43 AM,556,,,2
+71,CIMB - Equity Research,Unable to login or access Equitec application,June Yap,12/5/2025 1:11:45 AM,12/5/2025 1:11:45 AM,63,,,10
+72,Emkay-O365, Re-arrange the existing Colour codes,Deepak Pansari,12/4/2025 12:41:07 PM,12/4/2025 12:41:07 PM,62,35.00,,24
+73,SICO Bank,Tawuniya backpage line iteams numbers not uploading correctly in DB,SICO Support Desk,12/4/2025 10:58:47 AM,12/8/2025 10:58:47 AM,1148,,,12
+74,Incred,Company Name & SEBI Registration Change Due to Merger,Selvan Mohan,12/4/2025 8:35:34 AM,12/4/2025 8:35:34 AM,305,,,10
+75,Nirmal Bang,Insti crm slowloading,Girish Pai,12/4/2025 7:57:34 AM,12/4/2025 7:57:34 AM,36,,,1
+76,CIMB - Equity Research,The value of ADTV should be divided by 1000000 in SFTP,June Yap,12/4/2025 2:17:48 AM,12/4/2025 2:17:48 AM,60,37.00,,2
+77,Incred,EquiExcel Exception Error Occurring,Mazaharul Hassan Saiyed,12/3/2025 7:42:36 AM,12/3/2025 7:42:36 AM,304,196.00,,12
+78,Kotak Securities,Reinstate email id (palak.shah@mlp.com )  ,Mini Pillai,12/3/2025 7:06:26 AM,12/3/2025 7:06:26 AM,554,,,1
+79,SICO Bank,Saudi Weekly: The price change (%) by sector has a formatting issue.  ,Nishit Lakhotia,12/3/2025 3:06:24 AM,12/3/2025 3:06:24 AM,1147,,,1
+80,JM Financial,Uploading of Compliance Audit Report on the Research Portal,Tarak Mehta,12/3/2025 2:22:58 AM,12/4/2025 2:22:58 AM,516,188.00,,6
+81,CIMB - Equity Research,2 issues raised for ISIN ,June Yap,12/2/2025 4:01:40 AM,12/2/2025 4:01:40 AM,59,36.00,,11
+82,SICO Bank,Published Target Price formula to be shared with Nishit ,Nishit Lakhotia,12/2/2025 3:03:08 AM,12/3/2025 3:03:08 AM,1146,,,1
+83,CIMB - Equity Research,"When trying to refresh a report, the coverform box keeps on loading",June Yap,12/1/2025 1:48:59 AM,12/1/2025 1:48:59 AM,58,,,1
+84,CIMB - Equity Research,Error occurred when analyst tries to submit the report to workflow,June Yap,12/1/2025 1:22:50 AM,12/1/2025 1:22:50 AM,56,,,1
+85,CIMB - Equity Research,"In the prop position list, when we refresh the cover form, the prop list does not display the company name in the disclaimer.",June Yap,11/28/2025 1:02:57 AM,11/28/2025 1:02:57 AM,55,,,1
+86,CIMB - Equity Research,4 issues raised for Scheduler,June Yap,11/27/2025 10:11:10 AM,11/27/2025 10:11:10 AM,54,,,19
+87,CIMB - Equity Research,Unable to edit any Accounts in the Accounts screen,June Yap,11/27/2025 10:09:02 AM,11/27/2025 10:09:02 AM,53,,,1
+88,Kotak Securities,Activate Panview Capital group from backend.,Mini Pillai,11/27/2025 2:14:56 AM,11/27/2025 2:14:56 AM,553,,,1
+89,Spark Avendus,License renewal,Gopinath S,11/27/2025 1:13:45 AM,11/27/2025 1:13:45 AM,115,50.00,,1
+90,B&K Securities,Company restricted to the analyst error comes when analyst try to refresh the existing report throgh cover form.,Pankaj Gawade,11/26/2025 12:10:14 PM,11/26/2025 12:10:14 PM,82,50.00,,11
+91,SICO Bank,CMP not displayed on Company Update template ,SICO Support Desk,11/26/2025 11:51:38 AM,11/26/2025 11:51:38 AM,1145,,,2
+92,Emkay-O365,Issue in generating exhibits(Side by side only),Deepak Pansari,11/26/2025 7:23:19 AM,11/26/2025 7:23:19 AM,61,,,2
+93,Axis Capital,Unable to upload the model,Zameer Khan,11/26/2025 4:12:28 AM,11/26/2025 4:12:28 AM,563,,,1
+94,CIMB - Equity Research,4 queries raised for Portal,June Yap,11/26/2025 3:50:03 AM,11/26/2025 3:50:03 AM,52,34.00,,15
+95,B&K Securities,"2.At CP, in code section KAYNES only coming instead  of KAYNES IN",Pankaj Gawade,11/26/2025 1:54:33 AM,11/26/2025 1:54:33 AM,83,,,1
+96,SICO Bank,Price history chart not plotting latest details on the chart for NBB,SICO Support Desk,11/25/2025 11:53:16 AM,11/25/2025 11:53:16 AM,1143,,,1
+97,SICO Bank,To initiate logging the last logon date and password change dates for each active user to ensure compliance with SICO's cybersecurity policy,SICO Support Desk,11/25/2025 11:52:22 AM,11/25/2025 11:52:22 AM,1142,491.00,,19
+98,SICO Bank,1. Multi-Factor Authentication (MFA) 2. IP Allowlisting / VPN Restriction. 3. Password Policy Enforcement,SICO Support Desk,11/25/2025 8:45:02 AM,11/26/2025 8:45:02 AM,1144,492.00,,21
+99,Kotak Securities,Reinstate - Mr. Abhishek Rathi - Exception,Mini Pillai,11/25/2025 7:52:52 AM,11/25/2025 7:52:52 AM,552,,,1
+100,Incred,CRM Not Logging – Issue for All Users (Live Environment),Mazaharul Hassan Saiyed,11/25/2025 7:42:08 AM,11/25/2025 7:42:08 AM,302,195.00,,8
+101,Equitec,"A new UAT setup needs to be created for Excel, PPT, and CP for AVENDUS SPARK.(Internal CCF)",Komel Nayani,11/24/2025 12:36:19 PM,11/24/2025 12:36:19 PM,30,126.00,,5
+102,Incred,Company Report deletion from workflow,Mazaharul Hassan Saiyed,11/24/2025 11:52:41 AM,11/24/2025 11:52:41 AM,301,194.00,,1
+103,B&K Securities,Back-page data is not coming through after using the cover form.,Pankaj Gawade,11/24/2025 3:13:45 AM,11/24/2025 3:13:45 AM,81,,,1
+104,JM Financial,The model was not getting uploaded.,Dinesh  kodere,11/24/2025 3:10:56 AM,11/24/2025 3:10:56 AM,515,,,1
+105,CIMB - Equity Research,"CMP , Upside% coming the data is showing 0 on the Portal screener screen",June Yap,11/21/2025 11:45:58 AM,11/21/2025 11:45:58 AM,49,33.00,,3
+106,Spark Avendus,Disclaimer changes,Gopinath S,11/21/2025 8:34:50 AM,11/21/2025 8:34:50 AM,114,49.00,,1
+107,CIMB - Equity Research,2 issues raised for CP,June Yap,11/21/2025 7:37:41 AM,11/21/2025 7:37:41 AM,47,31.00,,3
+108,CIMB - Equity Research,Unable to submit  Dayang report,June Yap,11/21/2025 2:40:24 AM,11/21/2025 2:40:24 AM,51,,,1
+109,CIMB - Equity Research,Implement parallel connections for the mailer.,June Yap,11/21/2025 2:33:33 AM,11/25/2025 2:33:33 AM,50,32.00,,3
+110,CIMB - Equity Research,The price performance chart appears in the Company Update instead of the disclaimer.,June Yap,11/20/2025 3:16:31 AM,11/20/2025 3:16:31 AM,46,30.00,,4
+111,CIMB - Equity Research,Change ADVT USD to ADVT Ringgit MYR,June Yap,11/19/2025 4:10:33 AM,11/19/2025 4:10:33 AM,45,29.00,,5
+112,CIMB - Equity Research,The note can be uploaded automatically with the 3 bullet points,June Yap,11/19/2025 4:09:57 AM,11/19/2025 4:09:57 AM,44,,,5
+113,SICO Bank,On the GCC evening mail. The wrong file was uploaded for Bahrain daily.,SICO Support Desk,11/19/2025 2:57:01 AM,11/19/2025 2:57:01 AM,1137,,,2
+114,Phillip Capital,Uploading lumax auto model but output in word is not correct,Ganesh Deorukhkar,11/18/2025 12:28:41 PM,11/18/2025 12:28:41 PM,68,,,1
+115,CIMB - Equity Research,Error occurred when analyst tried to submit the report,June Yap,11/18/2025 12:22:00 PM,11/18/2025 12:22:00 PM,43,,,1
+116,Elara Capital,Not able to upload the model(LG Electronics),Jinesh Bhansali,11/18/2025 8:48:56 AM,11/18/2025 8:48:56 AM,70,,,1
+117,Kotak Securities,Ventive company template issue,Sunita Baldawa,11/17/2025 4:14:49 AM,11/17/2025 4:14:49 AM,551,,,1
+118,Nuvama Institutional Equities,Issue in uploading the excel and submitting report through Equitec,Omkar Bankar,11/17/2025 1:57:22 AM,11/17/2025 1:57:22 AM,776,,,1
+119,CIMB - Equity Research,CIMB Report Upload Failure,June Yap,11/14/2025 9:22:18 AM,11/14/2025 9:22:18 AM,42,,,1
+120,Kotak Securities,Changes in Signature,Mohan Sahu,11/14/2025 7:36:58 AM,11/14/2025 7:36:58 AM,550,,,11
+121,Spark Avendus,Error - unable to generate the Oil India report,Gopinath S,11/14/2025 3:38:37 AM,11/14/2025 3:38:37 AM,113,,,9
+122,Nuvama Institutional Equities,Request to add to PN Gadgil note,Dharamraj Tini,11/13/2025 12:45:56 PM,11/13/2025 12:45:56 PM,775,,,1
+123,SICO Bank,Morning Call news to be tagged to the companies for the days morning call failed,Nishit Lakhotia,11/13/2025 10:24:19 AM,11/14/2025 10:24:19 AM,1135,,,35
+124,SICO Bank,Saudi Weekly tables not copying correctly in the report,Nishit Lakhotia,11/13/2025 10:20:12 AM,11/13/2025 10:20:12 AM,1134,,,1
+125,JM Financial,Morning Brief | Ticker Details Change,Tarak Mehta,11/13/2025 9:11:37 AM,11/14/2025 9:11:37 AM,514,,,8
+126,Incred,The templates are not getting auto update on the user machine,Mazaharul Hassan Saiyed,11/13/2025 7:49:37 AM,11/13/2025 7:49:37 AM,300,,,10
+127,CIMB - Equity Research,Blank email body when trying to send email distribution after replacing pdf,June Yap,11/13/2025 2:31:52 AM,11/18/2025 2:31:52 AM,41,28.00,,9
+128,SICO Bank,Client not receiving Mail,Nishit Lakhotia,11/12/2025 10:17:59 AM,11/12/2025 10:17:59 AM,1133,,,1
+129,Incred,To enable to username field on Edit button in the client contacts.,Mazaharul Hassan Saiyed,11/12/2025 8:12:09 AM,11/17/2025 8:12:09 AM,299,193.00,,17
+130,SICO Bank,"SICO is conducting our annual user access review for all SICO systems, including Equitec.",SICO Support Desk,11/12/2025 3:24:24 AM,11/12/2025 3:24:24 AM,1139,,,12
+131,CIMB - Equity Research,Report cover form not showing details,June Yap,11/12/2025 2:15:22 AM,11/12/2025 2:15:22 AM,39,,,1
+132,CIMB - Equity Research,Implement Daily Digest,June Yap,11/12/2025 1:29:48 AM,11/12/2025 1:29:48 AM,57,35.00,,41
+133,B&K Securities,"Getting the error ""Company is restricted""",Pankaj Gawade,11/11/2025 8:41:49 AM,11/11/2025 8:41:49 AM,80,,,12
+134,Axis Capital,Historical Reports & Rating History Data,Hussain Gandhi,11/11/2025 4:34:44 AM,11/11/2025 4:34:44 AM,562,,,12
+135,CIMB - Equity Research,DTP does not recieve the Email alert when report is submitted to Workflow,June Yap,11/11/2025 4:27:10 AM,11/11/2025 4:27:10 AM,38,,,1
+136,CIMB - Equity Research,Wrong date shows up for date the report in workflow and publish notification emails,June Yap,11/10/2025 3:38:27 AM,11/10/2025 3:38:27 AM,36,27.00,,12
+137,SICO Bank,Tier Classification and access.,Hassan Ali,11/10/2025 2:13:14 AM,11/14/2025 2:13:14 AM,1136,,,17
+138,CIMB - Equity Research,Unable to add callout for Exhibit figure 7,June Yap,11/10/2025 1:38:15 AM,11/10/2025 1:38:15 AM,37,,,1
+139,CIMB - Equity Research,Unable to add callout for Exhibit figure 7,June Yap,11/10/2025 1:38:15 AM,11/10/2025 1:38:15 AM,37,,,12
+140,B&K Securities,Incorrect Unit Display in SBI Financial Summary (Equi Report),Shreejit Nair,11/9/2025 7:53:02 AM,11/9/2025 7:53:02 AM,79,,,1
+141,SICO Bank, Server migration activity,SICO Support Desk,11/9/2025 3:18:50 AM,11/13/2025 3:18:50 AM,1138,,,10
+142,CIMB - Equity Research,Disclaimer is not coming in Company Result and Company QuickTake on Yue Jia,June Yap,11/7/2025 9:51:08 AM,11/7/2025 9:51:08 AM,35,,,13
+143,CIMB - Equity Research,Unable to submit company quicktake report (Yue Jia),June Yap,11/7/2025 9:42:05 AM,11/7/2025 9:42:05 AM,34,26.00,,1
+144,Nuvama Institutional Equities,To remove the authentication from the research portal.,Amit Surve,11/7/2025 9:16:10 AM,11/7/2025 9:16:10 AM,774,217.00,,3
+145,Nuvama Institutional Equities,"Getting #VALUE error whenever I refresh GETMARKETDATA formulas. Also, can't upload models as there is no pop-up prompt",Tanay Kotecha,11/7/2025 9:12:14 AM,11/7/2025 9:12:14 AM,773,,,1
+146,JM Financial,Issue in Reco Charts and Reco history,Tarak Mehta,11/7/2025 9:02:11 AM,11/7/2025 9:02:11 AM,513,,,6
+147,Kotak Securities,To instate AlfAccurate - Reinstate. ,Mini Pillai,11/7/2025 4:17:07 AM,11/7/2025 4:17:07 AM,549,,,1
+148,B&K Securities,Change code EPACKPEB IN EQUTY to EPACKPEB IN.,Pankaj Gawade,11/7/2025 3:27:58 AM,11/7/2025 3:27:58 AM,78,,,1
+149,Elara Capital,Analyst section in the Diet Sector report isn’t populating with numbers in the CP,Jinesh Bhansali,11/7/2025 1:26:45 AM,11/7/2025 1:26:45 AM,69,33.00,,14
+150,CIMB - Equity Research,Valuation metrics display incorrectly after adding companies post sector note generation,June Yap,11/6/2025 10:20:14 AM,11/6/2025 10:20:14 AM,33,25.00,,14
+151,Axis Capital,Workflow alert mail was not received,Hussain Gandhi,11/6/2025 7:04:37 AM,11/6/2025 7:04:37 AM,561,,,4
+152,SICO Bank,The export button on Equity Monitor to download client data with added fields  ,Nishit Lakhotia,11/5/2025 8:32:07 AM,11/6/2025 8:32:07 AM,1132,490.00,,33
+153,SICO Bank,Configure the button to give you all the relevant fields from the database. ,Nishit Lakhotia,11/5/2025 3:26:55 AM,11/5/2025 3:26:55 AM,1140,,,17
+154,SICO Bank,Morning Note is Not Published.,SICO Support Desk,11/4/2025 11:39:04 AM,11/4/2025 11:39:04 AM,1130,489.00,,21
+155,SICO Bank,Need to share 10 client contacts from data base,SICO Support Desk,11/4/2025 8:29:07 AM,11/4/2025 8:29:07 AM,1131,,,2
+156,CIMB - Equity Research,3 issues raised for email body,June Yap,11/4/2025 8:13:26 AM,11/4/2025 8:13:26 AM,31,23.00,,16
+157,CIMB - Equity Research,"In the Prop-Position, validation should be based on the ISIN number, not the company name",June Yap,11/3/2025 9:37:02 AM,11/3/2025 9:37:02 AM,32,24.00,,17
+158,Kotak Securities,India Daily merging stuck on heavy earnings days,Mohan Sahu,11/3/2025 8:33:22 AM,11/3/2025 8:33:22 AM,548,,,18
+159,CIMB - Equity Research,Unable to submit sector report to workflow,June Yap,11/3/2025 8:19:28 AM,11/3/2025 8:19:28 AM,30,22.00,,2
+160,CIMB - Equity Research,"While generating the company result, the disclaimer is not appearing",June Yap,11/3/2025 8:15:48 AM,11/3/2025 8:15:48 AM,29,,,1
+161,CIMB - Equity Research,The email body isn’t displaying in the correct format,June Yap,11/3/2025 8:13:35 AM,11/3/2025 8:13:35 AM,28,21.00,,2
+162,CIMB - Equity Research," ""Click here"" link is not working in Workflow distribution",June Yap,11/3/2025 8:01:18 AM,11/3/2025 8:01:18 AM,27,,,1
+163,Nuvama Institutional Equities,To login screen is getting frozen. ,Omkar Bankar,11/3/2025 7:35:15 AM,11/3/2025 7:35:15 AM,772,,,9
+164,Nuvama Institutional Equities,Issue while uploading model - United Spirits,Omkar Bankar,10/31/2025 4:06:16 AM,10/31/2025 4:06:16 AM,770,,,1
+165,Kotak Securities,Unable to merger in India Daily,Mohan Sahu,10/31/2025 4:02:27 AM,10/31/2025 4:02:27 AM,547,,,1
+166,Kotak Securities,To reinstate the Ashutosh Shirwaikar  Fund Manager - Equity  ashutosh.shirwaikar@navi.com client contact.,Mini Pillai,10/30/2025 6:38:17 AM,10/30/2025 6:38:17 AM,546,,,1
+167,Incred,The Equitec tab is disappeared from the Excel after closing the Excel document.,Mazaharul Hassan Saiyed,10/29/2025 12:33:59 PM,10/31/2025 12:33:59 PM,298,192.00,,7
+168,Spark Avendus,Disclaimer changes,Gopinath S,10/29/2025 10:20:55 AM,10/29/2025 10:20:55 AM,112,48.00,,1
+169,Incred,Unable to send the forgot password link to Mayank Chaturvadi from the research portal.,Mazaharul Hassan Saiyed,10/29/2025 9:27:27 AM,10/29/2025 9:27:27 AM,297,,,1
+170,Kotak Securities,The system shall provide functionality to configure client-level access rights to read or download research reports on the Research Portal.,Debraj Das,10/28/2025 12:49:41 PM,11/5/2025 12:49:41 PM,535,312.00,,37
+171,SICO Bank,SICO Trading App Integration with Research Data,Hussam Qasem,10/28/2025 10:07:05 AM,10/28/2025 10:07:05 AM,1127,488.00,,41
+172,CIMB - Equity Research,The mailing list based on sector preferences is not working,June Yap,10/28/2025 3:34:44 AM,10/28/2025 3:34:44 AM,26,20.00,,3
+173,SICO Bank,Vulnerability: Web Server Version Exposed need to share the list of URLs.,SICO Support Desk,10/28/2025 1:25:47 AM,10/29/2025 1:25:47 AM,1129,,,5
+174,JM Financial,Feedback on Chart Formatting and Colour Scheme ,Tarak Mehta,10/27/2025 8:34:01 AM,10/27/2025 8:34:01 AM,511,187.00,,9
+175,CIMB - Equity Research,Queries raised (5),June Yap,10/27/2025 3:26:17 AM,10/28/2025 3:26:17 AM,25,,,1
+176,SICO Bank,AWS Migration WAF fine tuning,SICO Support Desk,10/27/2025 1:45:53 AM,10/27/2025 1:45:53 AM,1126,,,1
+177,SICO Bank,Kindly note that our Cyber Threat Intelligence Platform identified a critical issue on the websites,SICO Support Desk,10/27/2025 1:23:04 AM,10/27/2025 1:23:04 AM,1128,,,2
+178,Incred,Unable to publish the report from the workflow if the company name has the special character.,Mazaharul Hassan Saiyed,10/27/2025 1:15:08 AM,10/29/2025 1:15:08 AM,296,191.00,,12
+179,SICO Bank,AWS Migration WAF fine tuning,SICO Support Desk,10/26/2025 1:44:48 AM,10/26/2025 1:44:48 AM,1125,,,1
+180,JM Financial,Unable to upload the Dr Reddys Laboratories model,Dinesh  kodere,10/25/2025 10:02:01 AM,10/25/2025 10:02:01 AM,512,,,1
+181,Axis Capital,Error in submitting the report in Work Flow,Zameer Khan,10/24/2025 12:19:43 PM,10/24/2025 12:19:43 PM,560,,,1
+182,Incred,Junk characters are appearing in the email body besides analyst name.,Mazaharul Hassan Saiyed,10/24/2025 10:09:40 AM,10/28/2025 10:09:40 AM,295,190.00,,13
+183,Incred,To delete the report from workflow,Mazaharul Hassan Saiyed,10/24/2025 8:55:37 AM,10/24/2025 8:55:37 AM,294,189.00,,1
+184,SICO Bank,AWS Migration WAF fine tuning,SICO Support Desk,10/23/2025 11:53:08 AM,10/23/2025 11:53:08 AM,1124,,,2
+185,SICO Bank,Saudi Weekly table fixes in mail body,Nishit Lakhotia,10/23/2025 1:04:04 AM,10/23/2025 1:04:04 AM,1123,487.00,,1
+186,B&K Securities,Unable to generate the research report,Pankaj Gawade,10/20/2025 7:56:41 AM,10/20/2025 7:56:41 AM,77,,,4
+187,Nuvama Institutional Equities,Nuvama Research Portal Login issues,Omkar Bankar,10/17/2025 10:10:55 AM,10/17/2025 10:10:55 AM,768,216.00,,20
+188,Elara Capital,ADTV value in the report is missing,Jinesh Bhansali,10/17/2025 9:42:33 AM,10/17/2025 9:42:33 AM,68,32.00,,4
+189,Elara Capital,Market data comes up 0 for CE Info Systems,Jinesh Bhansali,10/17/2025 8:34:54 AM,10/17/2025 8:34:54 AM,67,,,1
+190,Incred,The client reports are not providing the interaction data whose account name has changed.,Mazaharul Hassan Saiyed,10/17/2025 4:20:44 AM,10/27/2025 4:20:44 AM,293,188.00,,5
+191,Emkay-O365,Need bullets Points option in 1st page of all report and in mailbody.,Deepak Pansari,10/17/2025 3:52:36 AM,10/17/2025 3:52:36 AM,60,,,13
+192,JM Financial,Error while generating company update of NBFC,Tarak Mehta,10/16/2025 11:34:51 AM,10/16/2025 11:34:51 AM,510,,,7
+193,JM Financial,"Change Series, X-Axis, and Y-Axis Font to Nunito in Excel",Tarak Mehta,10/15/2025 10:02:41 AM,10/17/2025 10:02:41 AM,509,185.00,,8
+194,JM Financial,The rating history table & chart of the reports are not picking up the ADD & REDUCE when we generate a new company update,Tarak Mehta,10/15/2025 9:50:14 AM,10/15/2025 9:50:14 AM,508,186.00,,12
+195,SICO Bank,"Try to upload the NAVs and click on “Upload,” an error appears.",Maryam Nasser,10/15/2025 7:36:49 AM,10/15/2025 7:36:49 AM,1122,,,2
+196,Motilal  Oswal,"Company Name Change Bloomberg Code not changing in Code ""Section""",Rahul Hitesh Shah,10/14/2025 9:27:37 AM,10/14/2025 9:27:37 AM,166,,,1
+197,ICICI-2021,Unable to install the Equitec applicatio on one user machine.,Monty Fernandes,10/14/2025 4:10:21 AM,10/14/2025 4:10:21 AM,23,,,1
+198,SICO Bank,Missing newsletter logs in the MIS and download logs,Nishit Lakhotia,10/14/2025 4:07:07 AM,10/14/2025 4:07:07 AM,1121,,,1
+199,Elara Capital,"We don't need the INR mn and INR bn to be populated from the model, instead it should be hardcoded in the template itself",Jinesh Bhansali,10/14/2025 3:43:06 AM,10/14/2025 3:43:06 AM,65,31.00,,2
+200,Nuvama Institutional Equities,Addition of PDF on CMS portal (server),Omkar Bankar,10/14/2025 3:35:58 AM,10/14/2025 3:35:58 AM,769,,,3
+201,Nuvama Institutional Equities,Audit Requirements - Apollo Equitec,Omkar Bankar,10/14/2025 2:06:03 AM,10/14/2025 2:06:03 AM,767,,,13
+202,SICO Bank,Map all clients to education sector ,Nishit Lakhotia,10/13/2025 9:41:29 AM,10/15/2025 9:41:29 AM,1120,486.00,,31
+203,CIMB - Equity Research,"Users should be authenticated directly through the Equitec application, without using AD (KAF Server)",June Yap,10/13/2025 9:16:10 AM,10/30/2025 9:16:10 AM,22,18.00,,40
+204,Incred,To set the email address in the username for client contacts whose username is first name or name. ,Mazaharul Hassan Saiyed,10/13/2025 8:52:17 AM,10/13/2025 8:52:17 AM,292,187.00,,1
+205,FAB Securities,License renewal,Mohamed Shibin KP,10/13/2025 8:49:17 AM,10/13/2025 8:49:17 AM,26,21.00,,1
+206,JM Financial,Changes in disclaimer & channges in pdf of terms& conditions including MITC,Tarak Mehta,10/13/2025 8:12:36 AM,10/14/2025 8:12:36 AM,507,184.00,,3
+207,Databank - 365,The client contact preba.arkaah@gmail.com is receiving the daily report emails although it's not mapped in the client contact. ,Grace Monanyun,10/13/2025 7:59:48 AM,10/13/2025 7:59:48 AM,10,,,10
+208,Nuvama Institutional Equities,To update the research report disclaimer.,Omkar Bankar,10/13/2025 6:44:04 AM,10/13/2025 6:44:04 AM,766,215.00,,1
+209,Elara Capital,Equitec Application not accessible post Elara server maintenance,Shriniwas Gurrap,10/13/2025 3:49:44 AM,10/13/2025 3:49:44 AM,66,,,1
+210,Axis Capital,Appsec points for Equity Monitor.,Hussain Gandhi,10/10/2025 10:14:06 AM,10/10/2025 10:14:06 AM,559,,,3
+211,Axis Capital,Appsec points for research portal.,Hussain Gandhi,10/10/2025 10:13:28 AM,10/10/2025 10:13:28 AM,558,,,6
+212,Nuvama Institutional Equities,Research Client data - Equitec,Omkar Bankar,10/10/2025 9:36:00 AM,10/10/2025 9:36:00 AM,765,,,1
+213,Emkay-O365,Morning post FP table content should properly aligned to the center of each row's height.,Deepak Pansari,10/10/2025 9:15:14 AM,10/10/2025 9:15:14 AM,59,34.00,,61
+214,Emkay-O365,"In Emkay Morning Post mail body, at Daily Volumes (INR bn) 3M is come as 1M",Deepak Pansari,10/10/2025 9:05:10 AM,10/10/2025 9:05:10 AM,58,33.00,,61
+215,SICO Bank,Source to be added in the signature for Saudi Weekly,Nishit Lakhotia,10/10/2025 4:10:26 AM,10/23/2025 4:10:26 AM,1118,485.00,,9
+216,SICO Bank,Factset,SICO Support Desk,10/10/2025 1:09:59 AM,10/10/2025 1:09:59 AM,1119,,,40
+217,CIMB - Treasury Research,Header changes for Macro Navigator and Market Musings in the Treasury Research Template.,Yee Ping Lim,10/9/2025 12:46:31 PM,10/14/2025 12:46:31 PM,9,7.00,,13
+218,Emkay-O365,Wrong values in quarterly sheet in Banking & NBFC sector - Strategy book,Meenal  Bhagwat,10/9/2025 1:51:20 AM,10/9/2025 1:51:20 AM,57,31.00,,62
+219,Nuvama Institutional Equities,Enhancements in CMS and Equitec,Naimat Choudhary,10/8/2025 12:42:03 PM,12/2/2025 12:42:03 PM,751,214.00,,63
+220,SICO Bank,"list of cookies currently in use and their purposes (e.g., essential, analytics, marketing, etc.)",Nadeen Oweis,10/8/2025 10:31:30 AM,10/8/2025 10:31:30 AM,1117,,,11
+221,Emkay-O365,Bullet format should not changed after clicking on Enter,Meenal  Bhagwat,10/8/2025 8:27:50 AM,10/8/2025 8:27:50 AM,56,32.00,,15
+222,Emkay-O365,Place holder of 1st page and TOC getting Scattered and formatting also getting disturb,Rajendran Subbiah,10/8/2025 8:20:02 AM,10/8/2025 8:20:02 AM,55,30.00,,15
+223,CIMB - Equity Research,Missing Equitec Add-in in Word,June Yap,10/8/2025 1:27:12 AM,10/8/2025 1:27:12 AM,24,,,1
+224,JM Financial,To delete the 21 duplicate companies from the backend,Tarak Mehta,10/7/2025 4:19:38 AM,10/7/2025 4:19:38 AM,506,,,1
+225,Centrum broking ,The role of Yashika Pancholi from Sales to Analyst in CRM.,Mehdi Jiwani,10/7/2025 3:15:53 AM,10/7/2025 3:15:53 AM,125,64.00,,1
+226,SICO Bank,"When selecting tier 4 to onboard a new client - it unticks Saudi weekly and GCC Arabic Market Watch, Tier 4 to have access to all periodical reports.",Nishit Lakhotia,10/6/2025 10:59:50 AM,10/10/2025 10:59:50 AM,1114,484.00,,3
+227,SICO Bank, 1. Humansoft Company not included in quarterly preview - Education sector.  2.new sector added Map all clients to education sector ,Nishit Lakhotia,10/6/2025 4:00:08 AM,10/7/2025 4:00:08 AM,1115,,,3
+228,Emkay-O365,IPO note not merging in the Morning post.,Rajendran Subbiah,10/6/2025 3:10:42 AM,10/6/2025 3:10:42 AM,54,,,1
+229,Incred,To implement the authentication on research portal.,Selvan Mohan,10/6/2025 2:43:37 AM,10/8/2025 2:43:37 AM,291,186.00,,5
+230,Nuvama Institutional Equities,Note Submission Error - Equitec,Yesha Shah,10/3/2025 9:07:33 AM,10/3/2025 9:07:33 AM,764,,,2
+231,Elara Capital,Table headers not fully displayed for backpage tables,Jinesh Bhansali,10/3/2025 8:26:41 AM,10/9/2025 8:26:41 AM,64,30.00,,6
+232,Emkay-O365,"Tables in the first page should be shown in mailbody in Strategy, Economy & IPO note.",Rajendran Subbiah,10/3/2025 7:58:41 AM,10/3/2025 7:58:41 AM,53,29.00,,17
+233,ICICI-2021,Compliance name to be replaced in the disclaimer. ,Monty Fernandes,10/3/2025 6:55:57 AM,10/3/2025 6:55:57 AM,21,12.00,,1
+234,Incred,Change Request for Client Research Portal.,Selvan Mohan,10/3/2025 6:32:38 AM,10/3/2025 6:32:38 AM,290,185.00,,22
+235,CIMB - Treasury Research,Report editing in CP affects latest report and featured status,Danny Hor Wai Wah,10/1/2025 9:18:32 AM,10/7/2025 9:18:32 AM,8,6.00,,19
+236,Databank - 365,Weekly report fixes,Grace Monanyun,10/1/2025 1:16:24 AM,10/6/2025 1:16:24 AM,9,6.00,,3
+237,ICICI-2021,Please change Bloomberg code in Equitec,Monty Fernandes,9/30/2025 8:50:17 AM,9/30/2025 8:50:17 AM,22,,,3
+238,Databank - 365,Attachment is delivering along with the emails,Grace Monanyun,9/30/2025 7:52:28 AM,9/30/2025 7:52:28 AM,8,,,3
+239,Nuvama Institutional Equities,Issue While Updating Company Annexures in Word,Rishikesh Prabhu,9/30/2025 4:27:27 AM,9/30/2025 4:27:27 AM,763,,,1
+240,Incred,License renewal,Mazaharul Hassan Saiyed,9/29/2025 6:49:43 AM,9/30/2025 6:49:43 AM,289,184.00,,1
+241,AMInvestment Bank Berhad - O365,License renewal,Norazila Mazni,9/29/2025 6:37:57 AM,9/29/2025 6:37:57 AM,42,,,1
+242,AMInvestment Bank Berhad - O365,License renewal,Norazila Mazni,9/29/2025 6:37:57 AM,9/30/2025 6:37:57 AM,42,19.00,,1
+243,Databank - 365,The distribution emails are getting missed randomly for a few clients.,Grace Monanyun,9/26/2025 9:29:15 AM,9/26/2025 9:29:15 AM,7,5.00,,1
+244,Nuvama Institutional Equities,Recommendations for Missing & Unused Indexes – Equitec Production DB Server,Tejas Chauhan,9/26/2025 9:15:58 AM,9/26/2025 9:15:58 AM,762,,,2
+245,Equirus,Issue in generation of price charts for Pidilite.,Jinesh Kothari,9/26/2025 8:49:30 AM,9/26/2025 8:49:30 AM,146,,,1
+246,Spark Avendus,The second secondary analyst is not appearing in the outlook report.,Gopinath S,9/26/2025 8:34:52 AM,9/26/2025 8:34:52 AM,111,,,1
+247,CIMB - Equity Research,Bugs raised (10),June Yap,9/25/2025 12:20:41 PM,10/23/2025 12:20:41 PM,23,19.00,,26
+248,Kotak Securities,Change in signature for IT Services team.,Mohan Sahu,9/25/2025 12:05:12 PM,9/25/2025 12:05:12 PM,542,,,10
+249,Kotak Securities,Equitec Tool - issue in mailing list output file,Prashant Nar,9/25/2025 8:06:35 AM,10/10/2025 8:06:35 AM,543,315.00,,25
+250,SICO Bank," SICO"" in the Mail address should be in all caps, so it reads ""SICO Research"" instead of ""Sico Research.",Nishit Lakhotia,9/24/2025 12:26:55 PM,9/24/2025 12:26:55 PM,1113,483.00,,5
+251,Nuvama Institutional Equities,Not able to upload models through equitec in Excel.,Kunal Shah,9/23/2025 12:31:23 PM,9/23/2025 12:31:23 PM,761,,,1
+252,Emkay-O365," wherever the exhibits are mentioned, they are being displayed as ""(0)"" instead of the actual exhibit number or reference.",Meenal  Bhagwat,9/23/2025 9:58:46 AM,9/23/2025 9:58:46 AM,52,26.00,,26
+253,SICO Bank,"Unable to add, edit any client from our client list.",SICO Support Desk,9/23/2025 9:41:23 AM,9/23/2025 9:41:23 AM,1112,,,1
+254,Kotak Securities,Reinstate - Edel AIF Pub Alts,Mini Pillai,9/23/2025 8:22:34 AM,9/23/2025 8:22:34 AM,545,,,4
+255,Kotak Securities,Kinsite - Please share the list of client companies where no active clients showing,Prashant Nar,9/23/2025 8:08:27 AM,9/23/2025 8:08:27 AM,544,,,4
+256,Elara Capital,ADTV value in the report is missing,Jinesh Bhansali,9/23/2025 4:19:31 AM,9/23/2025 4:19:31 AM,63,,,1
+257,JM Financial,New JM brand identity,Venkatesh Balasubramaniam,9/23/2025 1:35:12 AM,10/7/2025 1:35:12 AM,505,183.00,,18
+258,Emkay-O365,Front page side table - ADTV -3m (mn shares) number format change,Meenal  Bhagwat,9/22/2025 10:25:40 AM,9/22/2025 10:25:40 AM,51,27.00,,27
+259,Axis Capital,Hexaware technology - last page Reco chart (Reco table is fine),Zameer Khan,9/22/2025 9:21:11 AM,9/22/2025 9:21:11 AM,557,,,1
+260,KAF,Legacy chart issue,KAF Supprot,9/22/2025 8:50:40 AM,9/22/2025 8:50:40 AM,83,,,1
+261,B&K Securities,The page width charts are not properly align.,Mahendra sawardekar,9/22/2025 8:05:14 AM,9/25/2025 8:05:14 AM,76,49.00,,10
+262,Motilal  Oswal,ISIN codes for all the companies to be populated from the backend,Rahul Hitesh Shah,9/22/2025 2:44:21 AM,9/22/2025 2:44:21 AM,165,94.00,,86
+263,Motilal  Oswal,Issues with Word report and CP,Rahul Hitesh Shah,9/22/2025 2:31:18 AM,10/1/2025 2:31:18 AM,164,95.00,,12
+264,JM Financial,To change the text on the 1st page right hand bottom side.,Tarak Mehta,9/22/2025 1:09:43 AM,9/22/2025 1:09:43 AM,504,182.00,,1
+265,Equitec,Equitec website Phone number change and Add book appointment button.,Komel Nayani,9/19/2025 12:01:13 PM,9/22/2025 12:01:13 PM,170,125.00,,21
+266,Nuvama Institutional Equities,To allow the specific special character in the contact us field.,Naimat Choudhary,9/19/2025 10:23:06 AM,9/25/2025 10:23:06 AM,760,213.00,,7
+267,JM Financial,Market data failed to upload.,Tarak Mehta,9/19/2025 4:26:16 AM,9/19/2025 4:26:16 AM,503,,,1
+268,Databank - 365,Attachments failed to send with Daily report mass mail distribution. ,Grace Monanyun,9/19/2025 3:58:51 AM,9/19/2025 3:58:51 AM,5,,,6
+269,B&K Securities,Unable to generate the non-banking report.,Pankaj Gawade,9/19/2025 3:39:11 AM,9/19/2025 3:39:11 AM,75,,,1
+270,Kotak Securities,Changes in the Make public screen,Sunita Baldawa,9/18/2025 8:26:46 AM,9/23/2025 8:26:46 AM,541,314.00,,5
+271,Equirus,Mistakes in Equitech while auto fetching data in report,Vinay Jain,9/17/2025 7:18:54 AM,9/17/2025 7:18:54 AM,145,,,2
+272,Emkay-O365,Time needed with dates in the Research Reports(CP) tab.,Rajendran Subbiah,9/17/2025 1:35:34 AM,9/17/2025 1:35:34 AM,50,25.00,,29
+273,Elara Capital,Content controller is not set for Associates Email ID for the Diet Sector report,Jinesh Bhansali,9/16/2025 9:11:53 AM,9/18/2025 9:11:53 AM,62,29.00,,2
+274,Emkay-O365,Value of NIFTY 50 not coming in word report,Deepak Pansari,9/11/2025 9:18:33 AM,9/11/2025 9:18:33 AM,47,21.00,,7
+275,CIMB - Treasury Research,2 points raised,Danny Hor Wai Wah,9/11/2025 9:02:06 AM,9/17/2025 9:02:06 AM,7,5.00,,13
+276,CIMB - Equity Research,The attachment fails to go through when distributing the report,June Yap,9/11/2025 8:52:52 AM,9/17/2025 8:52:52 AM,20,16.00,,7
+277,Incred,Model is not getting uploaded when it's saved on onedrive.,Mazaharul Hassan Saiyed,9/11/2025 8:03:18 AM,9/15/2025 8:03:18 AM,288,183.00,,4
+278,Axis Capital,CIN number update in the disclaimer,Ashish Rajput,9/11/2025 7:48:02 AM,9/11/2025 7:48:02 AM,556,,,1
+279,Emkay-O365,Codes should fetch from Bloomberg code not equitec code in strategy book,Meenal  Bhagwat,9/11/2025 4:19:49 AM,9/11/2025 4:19:49 AM,48,22.00,,7
+280,Incred,Delete report from Research portal,Mazaharul Hassan Saiyed,9/10/2025 12:42:53 PM,9/10/2025 12:42:53 PM,287,182.00,,3
+281,Emkay-O365,To change code of jindal steel in backend,Meenal  Bhagwat,9/9/2025 3:40:47 AM,9/9/2025 3:40:47 AM,46,,,1
+282,Nuvama Institutional Equities,Issue with CP Value in Uploader and Published Reports,Omkar Bankar,9/9/2025 1:25:09 AM,9/9/2025 1:25:09 AM,759,,,4
+283,Elara Capital,"Model uploads should validate against the current Bloomberg code, not the Equitec code",Gurunath Parab,9/9/2025 1:09:39 AM,9/9/2025 1:09:39 AM,61,28.00,,5
+284,Arqaam Capital ,"empty fields (valuation, TP, investment highlights) for Americana company",Arqaam Support Desk,9/8/2025 3:46:24 AM,9/8/2025 3:46:24 AM,733,,,1
+285,SICO Bank,Content Security Policy,Anisur Rahman,9/5/2025 9:13:42 AM,9/12/2025 9:13:42 AM,1111,482.00,,16
+286,Nuvama Institutional Equities,Apollo - SBOM,Naimat Choudhary,9/5/2025 2:28:58 AM,9/9/2025 2:28:58 AM,758,,,8
+287,Axis Capital,The deadlock error appearing in the event viewer for EquiMailer (Internal Ticket).,Ashish Rajput,9/2/2025 10:33:32 AM,9/2/2025 10:33:32 AM,554,,,13
+288,JM Financial,New companies BB data not getting reflected in Uploader sheet,Tarak Mehta,9/2/2025 9:49:56 AM,9/2/2025 9:49:56 AM,501,,,1
+289,JM Financial,Proposed changes to the recommendation system,Venkatesh Balasubramaniam,9/2/2025 8:25:28 AM,9/12/2025 8:25:28 AM,502,181.00,,13
+290,Axis Capital,To change the CIN number in the email body.,Ashish Rajput,9/2/2025 2:13:46 AM,9/5/2025 2:13:46 AM,555,265.00,"1) We have informed the client that the deployment packages has been uploaded on the SFTP - 04-Sep-2025.
+2) Client has deployed the changes on the UAT environment - 05-Sep-2025.
+3) We shared a reminder to the client for the UAT sign off - 08-Sep-2025.
+4) Client shared the confirmation for the UAT changes and requested to share note for the production - 09-Sep-2025.
+5) Release note shared with the client - 09-sep-2025.",5
+291,Axis Capital,Equitec - Unable to receive workflow mails,Ashish Rajput,9/1/2025 10:29:22 AM,9/1/2025 10:29:22 AM,553,,,1
+292,Kotak Securities,The high important sign is not displayed for India Daily report and low important sign is displayed for other research reports,Anish Mathew,9/1/2025 6:36:18 AM,9/1/2025 6:36:18 AM,539,313.00,,1
+293,Elara Capital,"When making any changes to the Bloomberg Code for a company in the CP, Market and Historical Data are not displaying correctly when generating its report.",Jinesh Bhansali,9/1/2025 1:30:58 AM,9/1/2025 1:30:58 AM,60,27.00,,5
+294,SICO Bank,"On the Research Portal Company page, the Analyst name is not reflecting correctly.",Nishit Lakhotia,9/1/2025 1:13:03 AM,9/5/2025 1:13:03 AM,1110,481.00,,15
+295,Phillip Capital,SEBI Compliance - Certificate to be taken from vendor,Ganesh Deorukhkar,8/29/2025 8:52:24 AM,8/29/2025 8:52:24 AM,66,,,4
+296,B&K Securities,To changes the code for the Jindal Steel Ltd,Pankaj Gawade,8/29/2025 5:18:43 AM,8/29/2025 5:18:43 AM,74,48.00,,1
+297,JM Financial,Bloomberg data is not reflecting the closing price.,Tarak Mehta,8/28/2025 12:58:36 PM,8/29/2025 12:58:36 PM,500,,,2
+298,Equitec,Equitec privacy policy,Komel Nayani,8/28/2025 12:58:04 PM,8/29/2025 12:58:04 PM,169,124.00,,7
+299,CIMB - Equity Research,Grey list implementation,June Yap,8/28/2025 9:53:03 AM,8/28/2025 9:53:03 AM,18,14.00,,8
+300,SICO Bank,Saudi Weekly Report,Nishit Lakhotia,8/28/2025 6:27:13 AM,8/28/2025 6:27:13 AM,1109,480.00,,24
+301,SICO Bank,Exception error,SICO Support Desk,8/28/2025 6:16:46 AM,8/28/2025 6:16:46 AM,1108,,,1
+302,SICO Bank,Financials not displaying on the report,Indarpreet Singh,8/28/2025 6:14:37 AM,8/28/2025 6:14:37 AM,1107,,,1
+303,Alchemy ,MD automation application is not working.,Ali Sayyed,8/28/2025 4:33:57 AM,8/28/2025 4:33:57 AM,35,,,3
+304,CIMB - Treasury Research,4 points raised,Danny Hor Wai Wah,8/28/2025 3:23:30 AM,8/28/2025 3:23:30 AM,6,4.00,,13
+305,Databank - 365,Optimize the distribution email,Grace Monanyun,8/27/2025 3:29:19 AM,9/1/2025 3:29:19 AM,4,3.00,,17
+306,Emkay-O365,The share price chart of newly listed companies is not displaying correctly in relation to Nifty.,Deepak Pansari,8/27/2025 1:42:26 AM,8/27/2025 1:42:26 AM,45,28.00,,45
+307,Kotak Securities,Sampath Reddy | Azurean Investment Managers - Reinstate.,Mini Pillai,8/26/2025 7:32:42 AM,8/26/2025 7:32:42 AM,538,,,1
+308,SICO Bank,Education sector not displaying on Research Portal.,Nishit Lakhotia,8/25/2025 12:48:29 PM,8/25/2025 12:48:29 PM,1106,,,1
+309,Axis Capital,Net core API implementation (Internal ticket).,Hussain Gandhi,8/25/2025 9:42:33 AM,8/25/2025 9:42:33 AM,551,264.00,,33
+310,Equirus,Additional text to be added with the Co-branded disclaimer ,VIkas Jain,8/25/2025 8:42:11 AM,9/29/2025 8:42:11 AM,144,40.00,,26
+311,Equirus,Additional text to be added with the Co-branded disclaimer ,VIkas Jain,8/25/2025 8:42:11 AM,8/25/2025 8:42:11 AM,144,,,3
+312,Nuvama Institutional Equities,First call report error,Naimat Choudhary,8/25/2025 8:23:10 AM,8/25/2025 8:23:10 AM,757,,,1
+313,Emkay-O365,Dec ending cos' numbers not being fetched correctly in the Strategy Book,Meenal  Bhagwat,8/22/2025 4:05:51 AM,8/22/2025 4:05:51 AM,44,20.00,,21
+314,Nuvama Institutional Equities,Login Issue – OTP Functionality Not Working on Nuvama Research Portal,Omkar Bankar,8/22/2025 3:53:18 AM,8/25/2025 3:53:18 AM,756,212.00,,11
+315,Incred,Research portal is not working due to changes made on the server.,Selvan Mohan,8/22/2025 3:14:40 AM,8/22/2025 3:14:40 AM,286,,,1
+316,Elara Capital,The ADTV values for INR and USD are not appearing in the right-hand table on the front page,Jinesh Bhansali,8/22/2025 3:05:14 AM,8/22/2025 3:05:14 AM,59,,,1
+317,Emkay-O365,Unable to access Equitech add-in,Meenal  Bhagwat,8/22/2025 1:57:56 AM,8/22/2025 1:57:56 AM,43,,,1
+318,Emkay-O365,File hangs completely while inserting a table in Strategy Template,Meenal  Bhagwat,8/22/2025 1:55:21 AM,8/22/2025 1:55:21 AM,42,,,1
+319,Axis Capital,Disclaimer text changes in the email body.,Ashish Rajput,8/22/2025 1:53:10 AM,8/25/2025 1:53:10 AM,552,263.00,1) We have requested the client to share the remote access to the server for the deployment but no response received from the client 25-Aug-2025.,6
+320,Arqaam Capital ,Team Page Update,Jaap Meijer,8/21/2025 2:01:47 AM,8/22/2025 2:01:47 AM,732,,,1
+321,FAB Securities,Update the source path for the image in the email body,Mohamed Shibin KP,8/21/2025 1:43:12 AM,8/21/2025 1:43:12 AM,25,20.00,,12
+322,Nuvama Institutional Equities,Space issue on the production DB server (10.32.29.11) ,Naimat Choudhary,8/20/2025 9:50:35 AM,8/21/2025 9:50:35 AM,755,211.00,,2
+323,Arqaam Capital ,Microsoft SQL Server Vulnerabilities,Arqaam Support Desk,8/20/2025 7:27:45 AM,8/20/2025 7:27:45 AM,731,,,1
+324,SICO Bank,Disclaimer rating table and charts data is not proper and date is wrong in the rating table.,Fatema AlDoseri,8/20/2025 4:29:50 AM,8/27/2025 4:29:50 AM,1105,,,4
+325,SICO Bank,VAPT fixes - August 2025,Mohammed Ibrahim,8/19/2025 12:11:52 PM,9/10/2025 12:11:52 PM,1104,479.00,,24
+326,JM Financial,Bloomberg data is not reflecting the closing price. (Hg infra engineering ltd),Tarak Mehta,8/18/2025 10:03:32 AM,8/18/2025 10:03:32 AM,499,,,2
+327,Kotak Securities,Problem with charts in equitec template,Bhavik Bochar,8/18/2025 7:35:25 AM,8/18/2025 7:35:25 AM,537,,,24
+328,Kotak Securities,India Daily file merging issues,Debojyoti Baruah,8/18/2025 7:10:12 AM,8/18/2025 7:10:12 AM,536,,,4
+329,Elara Capital,Unable to add a company in Control Panel,Gurunath Parab,8/18/2025 1:11:44 AM,8/18/2025 1:11:44 AM,58,,,1
+330,B&K Securities,Equitec Word Issue,Pankaj Gawade,8/14/2025 4:29:07 AM,8/14/2025 4:29:07 AM,73,,,1
+331,JM Financial,Excel and word application not working. ,Tarak Mehta,8/13/2025 12:15:32 PM,8/14/2025 12:15:32 PM,498,,,1
+332,Nuvama Institutional Equities,There is a data fetching issue from Equitec regarding the Colgate company.,Omkar Bankar,8/13/2025 12:09:53 PM,8/14/2025 12:09:53 PM,753,,,1
+333,Elara Capital,Template fixes,Jinesh Bhansali,8/13/2025 10:01:56 AM,8/13/2025 10:01:56 AM,57,26.00,,8
+334,Nuvama Institutional Equities,Error while uploading the model.,Omkar Bankar,8/13/2025 7:56:18 AM,8/13/2025 7:56:18 AM,754,,,1
+335,Spark Avendus,Oil India model is not getting uploaded,Gopinath S,8/13/2025 4:21:13 AM,8/13/2025 4:21:13 AM,110,,,1
+336,Kotak Securities,Feedback received post full report in email body ,Mohan Sahu,8/13/2025 3:45:16 AM,8/26/2025 3:45:16 AM,534,311.00,,14
+337,SICO Bank,Back Sheet Issue During Word Report Generation,Chiradeep Ghosh,8/13/2025 2:08:51 AM,8/14/2025 2:08:51 AM,1103,,,1
+338,SICO Bank,Back Sheet Issue During Word Report Generation,Chiradeep Ghosh,8/13/2025 1:39:52 AM,8/14/2025 1:39:52 AM,1102,,,1
+339,Incred,Disclaimer changes,Mazaharul Hassan Saiyed,8/12/2025 8:34:42 AM,8/12/2025 8:34:42 AM,285,181.00,,1
+340,Equirus,Additional sentence to be added in the front of report.,Vinay Jain,8/11/2025 11:02:06 AM,8/11/2025 11:02:06 AM,143,,,8
+341,Arqaam Capital ,Trying to load RAKPROP and half the page is blank,Mohamad Haidar,8/11/2025 9:09:17 AM,8/11/2025 9:09:17 AM,730,,,3
+342,SICO Bank,To create Insurance uploader and backpage for Report ,Nishit Lakhotia,8/11/2025 3:48:03 AM,8/25/2025 3:48:03 AM,1101,478.00,,30
+343,FAB Securities,Change the colour of Dirham Currency to White from Black,Mohamed Shibin KP,8/11/2025 1:01:27 AM,8/11/2025 1:01:27 AM,24,19.00,,5
+344,Databank - 365,To add the product preference in the mailing list (Internal),Grace Monanyun,8/8/2025 8:54:18 AM,8/11/2025 8:54:18 AM,3,2.00,,8
+345,Equirus,Unable to restore the Jindal company from the control panel.,Siddharth Gadekar,8/8/2025 7:50:53 AM,8/8/2025 7:50:53 AM,142,39.00,,1
+346,Kotak Securities,Query on estimates and actual data,Sunita Baldawa,8/7/2025 9:53:18 AM,8/7/2025 9:53:18 AM,533,,,10
+347,Emkay-O365,Emkay Enhancements - 2,Meenal  Bhagwat,8/7/2025 9:30:47 AM,8/14/2025 9:30:47 AM,24,11.00,,23
+348,Emkay-O365,Emkay Enhancements - 3,Rajendran Subbiah,8/7/2025 9:08:39 AM,8/7/2025 9:08:39 AM,36,14.00,,23
+349,JM Financial,Recommendation History chart doesn't come in proper size for many users,Tarak Mehta,8/7/2025 4:13:47 AM,8/8/2025 4:13:47 AM,497,,,11
+350,SICO Bank," Update Email Workflow for ""Send for Approval"" in SICO - GCC Market Watch",Nishit Lakhotia,8/7/2025 1:28:48 AM,8/7/2025 1:28:48 AM,1100,477.00,,15
+351,Incred,The junk numbers are appearing while downloading the company note report from the portal.,Mazaharul Hassan Saiyed,8/6/2025 4:10:43 AM,8/11/2025 4:10:43 AM,284,180.00,"1) We have deployed the template changes on the UAT, but no response received from the client and after sending 2 reminders client revert that they will test and confirm on 22-Aug-2025",13
+352,CIMB - Equity Research,Email notification not getting sent to editor after analyst submits the report  ,June Yap,8/6/2025 1:42:29 AM,8/6/2025 1:42:29 AM,17,13.00,,3
+353,SICO Bank,"The screener action button not working. (View, download and reset). ",Nishit Lakhotia,8/6/2025 1:16:22 AM,8/11/2025 1:16:22 AM,1099,476.00,,16
+354,CIMB - Equity Research,10 bugs raised ,June Yap,8/5/2025 9:54:19 AM,8/5/2025 9:54:19 AM,16,12.00,,15
+355,Nuvama Institutional Equities,Data Fetching issue from Equitec,Omkar Bankar,8/5/2025 7:39:01 AM,8/6/2025 7:39:01 AM,752,,,1
+356,JM Financial,SEBI CSCRF requirement Data at rest and Data in Transit has to be encrypted,Suhas Shenoy,8/5/2025 7:23:32 AM,8/5/2025 7:23:32 AM,496,,,1
+357,Equirus,Alethia Problem - Second Page of Disclosure going across 3 pages,Paresh Panchal,8/4/2025 10:06:50 AM,8/4/2025 10:06:50 AM,141,,,1
+358,Elara Capital,Unable to generate the report for Swiggy (Internal),Jinesh Bhansali,8/4/2025 7:46:46 AM,8/4/2025 7:46:46 AM,56,25.00,,13
+359,Databank - 365,Migrate the mailing list,Armah Akotey,8/4/2025 4:32:32 AM,8/11/2025 4:32:32 AM,2,1.00,,12
+360,Bank of Bahrain and Kuwait,"In PT(VAPT), it has been mentioned that they want to upgrade the minimum SDK version required to 33 from 24. ",sohil ravjani,8/4/2025 4:12:46 AM,8/6/2025 4:12:46 AM,53,71.00,,3
+361,Incred,To Equitec application was not working (Internal Ticket),Mazaharul Hassan Saiyed,8/4/2025 2:49:27 AM,8/4/2025 2:49:27 AM,283,,,1
+362,JM Financial,Unable to upload model,Monal Dcunha,8/3/2025 12:04:06 PM,8/4/2025 12:04:06 PM,495,,,1
+363,Emkay-O365,Price Trend chart not visible,Deepak Pansari,8/1/2025 8:57:13 AM,8/1/2025 8:57:13 AM,41,,,1
+364,Emkay-O365, SBS Bloomberg code is not found in Equitec application for Craftsman Automation,Rajendran Subbiah,7/31/2025 9:43:08 AM,7/31/2025 9:43:08 AM,40,,,1
+365,B&K Securities,Feedback on the economy report,Mahendra sawardekar,7/31/2025 8:06:13 AM,7/31/2025 8:06:13 AM,72,47.00,"1) We have requested the client to do the joint testing but didn't received any update from the client.
+2) We have reopen this ticket on 07-Aug-2025.",7
+366,Alchemy ,MD automation error.,Ali Sayyed,7/31/2025 7:42:05 AM,7/31/2025 7:42:05 AM,34,,,2
+367,Axis Capital,Add Research Analyst in email body.,Hussain Gandhi,7/31/2025 1:24:15 AM,7/31/2025 1:24:15 AM,549,,1) Client has requested to keep this request on Hold.,10
+368,JM Financial,Bajaj Finance Reco History Chart not showing correctly,Tarak Mehta,7/30/2025 10:33:05 AM,7/31/2025 10:33:05 AM,494,,,3
+369,Kotak Securities,Need MIS of research report download.,Melanie Dsouza,7/30/2025 9:56:21 AM,7/30/2025 9:56:21 AM,532,,,5
+370,Axis Capital,Server & technology version disclosure.,Hussain Gandhi,7/30/2025 9:31:25 AM,7/30/2025 9:31:25 AM,550,,,9
+371,Spark Avendus,Disclaimer changes,Gopinath S,7/29/2025 8:22:38 AM,7/29/2025 8:22:38 AM,109,47.00,,1
+372,Nuvama Institutional Equities,Problem with generating report,Omkar Bankar,7/29/2025 8:16:03 AM,7/30/2025 8:16:03 AM,750,,,1
+373,Nuvama Institutional Equities,Problem with generating report,Omkar Bankar,7/29/2025 8:16:03 AM,7/30/2025 8:16:03 AM,750,,,1
+374,Emkay-O365,Change in the format of Financial Years header in note sent back from editor,Deepak Pansari,7/29/2025 1:48:11 AM,7/29/2025 1:48:11 AM,39,,,1
+375,Arqaam Capital ,URGENT !! Issue with report's front page.,Aliya El Husseini,7/28/2025 8:24:21 AM,7/28/2025 8:24:21 AM,729,,,12
+376,Kotak Securities,"For diversified financial sector under banking, we want to shift it BPS in the template as well as kotakval.",Sunita Baldawa,7/28/2025 8:13:34 AM,7/28/2025 8:13:34 AM,531,,,2
+377,JM Financial,JM (old) -Issue in uploading models & Cover page,Tarak Mehta,7/28/2025 4:16:18 AM,7/29/2025 4:16:18 AM,493,,,3
+378,JM Financial,ERROR in SAIL model,Tarak Mehta,7/28/2025 4:13:07 AM,7/28/2025 4:13:07 AM,492,,,1
+379,SICO Bank,GCC Daily Email Body,Nishit Lakhotia,7/28/2025 1:31:26 AM,7/30/2025 1:31:26 AM,1098,475.00,,7
+380,CIMB - Equity Research,Unable to upload the file due to the presence of the character 'é' in the file name.,June Yap,7/25/2025 12:36:44 PM,7/25/2025 12:36:44 PM,14,,,7
+381,Emkay-O365,Recommendation History Source Change in Equitec,Deepak Pansari,7/25/2025 9:42:36 AM,7/25/2025 9:42:36 AM,38,18.00,,32
+382,FAB Securities,Configuration Key for LDAP Authentication Switching (Internal),Mohamed Shibin KP,7/25/2025 4:18:58 AM,7/25/2025 4:18:58 AM,23,18.00,,11
+383,SICO Bank,Ibrahim Masood is  not receiving emails ,Nishit Lakhotia,7/24/2025 9:41:31 AM,7/24/2025 9:41:31 AM,1096,,,1
+384,Alchemy ,Error- Unable to use Equitec software,Ali Sayyed,7/24/2025 9:39:31 AM,7/24/2025 9:39:31 AM,33,,,5
+385,Nuvama Institutional Equities,Chart is not appearing on first call report,Sridhar B,7/24/2025 4:14:07 AM,7/28/2025 4:14:07 AM,749,,,2
+386,SICO Bank,SICO mobile apps to be hosted on SICO Apple & Android accounts,Nishit Lakhotia,7/24/2025 3:49:45 AM,7/24/2025 3:49:45 AM,1097,,,90
+387,Emkay-O365,Issue in Yields & Currencies,Deepak Pansari,7/24/2025 3:28:17 AM,7/24/2025 3:28:17 AM,37,19.00,,21
+388,Elara Capital,The country code is not updating for any users,Jinesh Bhansali,7/23/2025 10:16:18 AM,7/23/2025 10:16:18 AM,55,24.00,,6
+389,Axis Capital,Remove unsafe inline from CSP headers from research portal,Hussain Gandhi,7/23/2025 9:17:34 AM,7/23/2025 9:17:34 AM,548,,,5
+390,FAB Securities,"Add a new rating option labeled ""Under Review"" to the rating dropdown",Mohamed Shibin KP,7/23/2025 4:35:35 AM,7/23/2025 4:35:35 AM,22,15.00,,8
+391,CIMB - Equity Research,2 issues raised in CP,June Yap,7/23/2025 1:00:55 AM,7/23/2025 1:00:55 AM,13,10.00,,2
+392,FAB Securities,Changes in Add Company Report form,Mohamed Shibin KP,7/22/2025 8:24:42 AM,7/22/2025 8:24:42 AM,21,16.00,,14
+393,Nuvama Institutional Equities,Formatting Issue in CMS Portal,Omkar Bankar,7/22/2025 8:24:08 AM,7/24/2025 8:24:08 AM,748,,,4
+394,FAB Securities,Featured Report Issues – Missing CP/TP Upside handling & incorrect currency for Saudi reports,Mohamed Shibin KP,7/22/2025 8:14:17 AM,7/22/2025 8:14:17 AM,20,17.00,,14
+395,ICICI-2021,Disabled the user login after 60 days.,Chetan Gole,7/22/2025 7:57:49 AM,7/22/2025 7:57:49 AM,20,,,11
+396,Spark Avendus,To change the code of Zomato company.,Naman Jain,7/22/2025 6:44:32 AM,7/22/2025 6:44:32 AM,108,46.00,,1
+397,ICICI-2021,Auto-Disable Inactive users,Chetan Gole,7/22/2025 4:13:47 AM,7/22/2025 4:13:47 AM,19,,,4
+398,JM Financial,Error while uploading,Tarak Mehta,7/22/2025 3:49:09 AM,7/28/2025 3:49:09 AM,491,,,7
+399,Emkay-O365,Exhibits title color change when table change to page width or text width,Rajendran Subbiah,7/22/2025 1:41:14 AM,7/22/2025 1:41:14 AM,35,15.00,,23
+400,Emkay-O365,If changes tracking is on and we accept the all the changes and stops tracking the backpage tableheader format distorted,Rajendran Subbiah,7/22/2025 1:34:28 AM,7/22/2025 1:34:28 AM,34,16.00,,23
+401,Kotak Securities,Make Quarterly numbers public option in the Kinsite application,Sunita Baldawa,7/21/2025 9:06:57 AM,9/11/2025 9:06:57 AM,528,310.00,,44
+402,Equirus,To check the server configurations.,Paresh Panchal,7/21/2025 8:15:22 AM,7/21/2025 8:15:22 AM,140,,,1
+403,Centrum broking ,2. Disclaimer chart doesn’t reflects current data,Sanjay  Menge,7/21/2025 8:12:35 AM,7/21/2025 8:12:35 AM,124,63.00,,6
+404,Nuvama Institutional Equities,unable to generate the report of The company (Imagicaa world Entertainment Limited),Naimat Choudhary,7/21/2025 7:35:55 AM,7/21/2025 7:35:55 AM,746,,,1
+405,Incred,Industry name and share price is not appearing.,Mazaharul Hassan Saiyed,7/21/2025 7:31:39 AM,7/21/2025 7:31:39 AM,281,179.00,,3
+406,Kotak Securities,Quarterly estimate table NA conditions.,Sunita Baldawa,7/21/2025 6:56:41 AM,7/21/2025 6:56:41 AM,530,,,6
+407,Elara Capital,The analyst’s mobile number appears in the Company Update report but is missing from the Sector Update,Jinesh Bhansali,7/21/2025 4:21:35 AM,7/21/2025 4:21:35 AM,54,23.00,,8
+408,FAB Securities,Encountering an error when trying to access the URL,Mohamed Shibin KP,7/21/2025 4:19:17 AM,7/21/2025 4:19:17 AM,19,,,2
+409,Emkay-O365,Bold the RHS header from the 2nd page in all reports ,Rajendran Subbiah,7/21/2025 3:31:41 AM,7/21/2025 3:31:41 AM,33,17.00,,24
+410,Incred,Word to HTML,Mazaharul Hassan Saiyed,7/18/2025 8:25:27 AM,7/28/2025 8:25:27 AM,282,178.00,,110
+411,Centrum broking ,1. Analyst name & photo is not aligned at bottom of 1st page.,Sanjay  Menge,7/18/2025 8:11:47 AM,7/18/2025 8:11:47 AM,123,,,7
+412,Nuvama Institutional Equities,The client is unable to upload the model(Tata Comms),Naimat Choudhary,7/18/2025 7:38:26 AM,7/18/2025 7:38:26 AM,747,,,2
+413,SICO Bank,Newsletter Distribution Error,Maryam Nasser,7/17/2025 11:40:07 AM,7/17/2025 11:40:07 AM,1095,,,1
+414,Incred,To send the analyst models to Bloomberg,Mazaharul Hassan Saiyed,7/17/2025 9:26:18 AM,8/21/2025 9:26:18 AM,280,177.00,,42
+415,Nirmal Bang,VAPT fixes.,VAPT Team,7/17/2025 4:32:54 AM,7/17/2025 4:32:54 AM,35,,,9
+416,B&K Securities,Request for Backend Update and Analyst Name Change Functionality,Pankaj Gawade,7/16/2025 4:18:36 AM,7/16/2025 4:18:36 AM,71,,,9
+417,Nuvama Institutional Equities,"SBS API Failed to Respond"" is shown in the Research Reports section at nuvama uat",Naimat Choudhary,7/16/2025 2:44:00 AM,7/16/2025 2:44:00 AM,745,,,1
+418,Emkay-O365,Issue with report generation,Deepak Pansari,7/16/2025 1:45:37 AM,7/16/2025 1:45:37 AM,32,,,1
+419,Emkay-O365,Missing Recommendation History Details in HDB Financial Services Report,Deepak Pansari,7/16/2025 1:30:29 AM,7/16/2025 1:30:29 AM,31,,,1
+420,Emkay-O365,P/E numbers are different in word & excel,Deepak Pansari,7/16/2025 1:09:05 AM,7/16/2025 1:09:05 AM,30,,,1
+421,Kotak Securities,PPFAS Asset Management - Reinstate,Mini Pillai,7/15/2025 12:19:39 PM,7/15/2025 12:19:39 PM,527,,,1
+422,Equirus,Disclaimer change,Vinay Jain,7/15/2025 8:55:51 AM,7/17/2025 8:55:51 AM,139,37.00,,1
+423,Equirus,V-Mart Annual Report Analysis - Alethia,Vinay Jain,7/15/2025 8:54:07 AM,7/21/2025 8:54:07 AM,138,38.00,,4
+424,Equirus,V-Mart Annual Report Analysis - Alethia,Vinay Jain,7/15/2025 8:54:07 AM,7/16/2025 8:54:07 AM,138,,,4
+425,ICICI-2021,Nifty chart - I-Opener,Chetan Gole,7/15/2025 8:45:45 AM,7/15/2025 8:45:45 AM,18,,,1
+426,SICO Bank,"Sico Mobile app- App must target Android 15 (API level 35) or higher, as required by Google Play policies.",Nishit Lakhotia,7/15/2025 8:36:53 AM,7/21/2025 8:36:53 AM,1094,474.00,,9
+427,Elara Capital,"The values displayed under Key Data, Price Chart, and Price Performance table are incorrect",Jinesh Bhansali,7/15/2025 8:17:20 AM,7/15/2025 8:17:20 AM,53,,,4
+428,Emkay-O365,Price Related Items in the Report are showing Nil,Deepak Pansari,7/15/2025 2:02:17 AM,7/15/2025 2:02:17 AM,29,,,1
+429,Equirus,Problems in using Equitec Word,Vinay Jain,7/14/2025 10:50:29 AM,7/14/2025 10:50:29 AM,137,,,2
+430,Elara Capital,Unable to upload multiple models of Shweta Upadhyay,Gurunath Parab,7/14/2025 2:22:55 AM,7/14/2025 2:22:55 AM,52,,,1
+431,Nuvama Institutional Equities,Unable to upload the model on the UAT PC,Sandeep Kosambi,7/11/2025 10:32:01 AM,7/11/2025 10:32:01 AM,744,,,1
+432,Phillip Capital,Error in generating report,Ganesh Deorukhkar,7/11/2025 10:10:37 AM,7/11/2025 10:10:37 AM,65,,,3
+433,Axis Capital,Comparing Readership MIS with Distribution logs.,Hussain Gandhi,7/10/2025 7:33:34 AM,7/21/2025 7:33:34 AM,547,261.00,,11
+434,Axis Capital,Appsec Open points - Equitymonitor,Hussain Gandhi,7/10/2025 7:28:34 AM,7/30/2025 7:28:34 AM,546,262.00,,16
+435,Axis Capital,To show the Rating column in the Distribution logs.,Hussain Gandhi,7/10/2025 4:03:26 AM,7/18/2025 4:03:26 AM,545,260.00,,4
+436,Phillip Capital,Application add-ins issue: showing root element is missing,Ganesh Deorukhkar,7/9/2025 10:37:17 AM,7/9/2025 10:37:17 AM,64,,,9
+437,Elara Capital,"Sector update >in the coverage matrix table, replace ""Mcap (INR bn)"" with ""Mcap (USD mn)""",Jinesh Bhansali,7/9/2025 10:37:15 AM,7/9/2025 10:37:15 AM,51,21.00,,6
+438,Elara Capital,We need the email IDs for Associates in the Analyst details section,Jinesh Bhansali,7/9/2025 10:26:58 AM,7/9/2025 10:26:58 AM,50,22.00,,6
+439,Emkay-O365,Need space after a year in footer,Rajendran Subbiah,7/9/2025 9:38:26 AM,7/9/2025 9:38:26 AM,27,13.00,,32
+440,Centrum broking ,The exhibit bottom borders are not appearing,Mehdi Jiwani,7/9/2025 8:49:43 AM,7/9/2025 8:49:43 AM,121,,,1
+441,Centrum broking ,The exhibit bottom borders are not appearing,Mehdi Jiwani,7/9/2025 8:49:43 AM,7/10/2025 8:49:43 AM,121,62.00,,6
+442,Centrum broking ,To share the distribution application timeline & costing,Mehdi Jiwani,7/9/2025 7:33:50 AM,7/9/2025 7:33:50 AM,122,,,6
+443,Emkay-O365,placeholder & trend chart not coming in mailbody,Deepak Pansari,7/9/2025 4:15:38 AM,7/9/2025 4:15:38 AM,28,,,3
+444,JM Financial,To add two links in the Research Portal website.,Suhas Shenoy,7/9/2025 1:22:45 AM,7/9/2025 1:22:45 AM,490,180.00,,4
+445,CIMB - Equity Research,New scheduler enhancements v.2,June Yap,7/8/2025 8:15:20 AM,7/8/2025 8:15:20 AM,11,9.00,,20
+446,Axis Capital,Unable to use the data in the download logs,Percy Bharucha,7/8/2025 6:58:03 AM,7/15/2025 6:58:03 AM,544,259.00,,6
+447,B&K Securities,To change the the code of siemens energy India Correct code is ENRIN IN.,Pankaj Gawade,7/8/2025 1:12:23 AM,7/8/2025 1:12:23 AM,70,46.00,,1
+448,JM Financial, Modification in Disclosures of Research Reports - Urgent and Important.,Tarak Mehta,7/7/2025 12:15:37 PM,7/7/2025 12:15:37 PM,489,179.00,,1
+449,Emkay-O365,High Frequency of Financials Uploading Failure,Deepak Pansari,7/7/2025 12:10:07 PM,7/7/2025 12:10:07 PM,26,,,1
+450,Elara Capital,Unable to generate the coverage history charts in the Word output,Jinesh Bhansali,7/7/2025 1:46:39 AM,7/7/2025 1:46:39 AM,49,,,1
+451,Equirus,Equitec Application not working.,Paresh Panchal,7/5/2025 6:50:06 AM,7/14/2025 6:50:06 AM,136,,,11
+452,Axis Capital,"Exact all users, Sector, and companies data from the backend.",Zameer Khan,7/4/2025 9:39:57 AM,7/4/2025 9:39:57 AM,543,,,1
+453,CIMB - Equity Research,FTP integration,June Yap,7/4/2025 8:03:33 AM,7/4/2025 8:03:33 AM,12,,,37
+454,Nuvama Institutional Equities,UAT Control board (IRF Restricted companies),Naimat Choudhary,7/4/2025 3:58:07 AM,7/4/2025 3:58:07 AM,742,,,2
+455,Equirus,To change the disclaimer path from (EQUIRUSNAS\Published_work\Equirus) to Appdata templates.,Paresh Panchal,7/4/2025 2:06:50 AM,7/7/2025 2:06:50 AM,135,35.00,,2
+456,JM Financial,Disclaimer text in sector update is still in Calibri font,Tarak Mehta,7/3/2025 6:53:14 AM,7/3/2025 6:53:14 AM,488,,,1
+457,Elara Capital,Backpage table has no values for L&T Infra,Gurunath Parab,7/3/2025 1:39:34 AM,7/3/2025 1:39:34 AM,48,,,2
+458,Nuvama Institutional Equities,UAT Research Portal Issue,Naimat Choudhary,7/2/2025 10:25:59 AM,7/2/2025 10:25:59 AM,741,,,6
+459,Nuvama Institutional Equities,Error in generating report,Dharamraj Tini,7/2/2025 10:14:51 AM,7/2/2025 10:14:51 AM,743,,,7
+460,Nuvama Institutional Equities,Unable to create charts and tables,Sandeep Kosambi,7/2/2025 8:52:37 AM,7/2/2025 8:52:37 AM,740,,,1
+461,SICO Bank, To apply NM in company and sector financials ,Nishit Lakhotia,7/1/2025 6:55:09 AM,7/7/2025 6:55:09 AM,1089,472.00,,20
+462,Kotak Securities,Reinstate - Mayur Chauhan (mayur@quantumamc.com),Prashant Nar,7/1/2025 6:38:21 AM,7/1/2025 6:38:21 AM,526,,,1
+463,Equitec,Change the copyright year on the support portal from 2023-2024 to 2025-2026.,Firoz Haider,7/1/2025 3:31:09 AM,7/1/2025 3:31:09 AM,168,123.00,,11
+464,Equirus,Query Builder function is not working.,Vinay Jain,6/30/2025 10:19:54 AM,6/30/2025 10:19:54 AM,134,36.00,,6
+465,SICO Bank,NAV Distributions,Nishit Lakhotia,6/30/2025 7:25:44 AM,7/1/2025 7:25:44 AM,1092,471.00,,15
+466,Axis Capital, Issue with Audio upload,Hussain Gandhi,6/30/2025 7:25:10 AM,7/1/2025 7:25:10 AM,542,258.00,,11
+467,SICO Bank,Saudi Weekly Report,Nishit Lakhotia,6/30/2025 7:02:18 AM,6/30/2025 7:02:18 AM,1091,,,20
+468,SICO Bank,Need to create a dedicated back page for insurance. ,Nishit Lakhotia,6/30/2025 7:00:04 AM,6/30/2025 7:00:04 AM,1090,473.00,,20
+469,ICICI-2021,To changes the disclaimer,Monty Fernandes,6/30/2025 2:35:41 AM,7/1/2025 2:35:41 AM,17,11.00,,4
+470,Emkay-O365,Patch Fixes(Internal),Rajendran Subbiah,6/30/2025 1:09:58 AM,6/30/2025 1:09:58 AM,25,12.00,,5
+471,Equirus,All users Equitec menu disabled,Paresh Panchal,6/28/2025 7:43:47 AM,6/28/2025 7:43:47 AM,133,,,1
+472,SICO Bank,MIS Issue( Duplicate logs are coming),Nishit Lakhotia,6/27/2025 9:00:32 AM,7/7/2025 9:00:32 AM,1093,,,28
+473,Nuvama Institutional Equities,The issue of files freezing and shutting down on their own.,Naimat Choudhary,6/27/2025 7:05:28 AM,6/27/2025 7:05:28 AM,736,,,1
+474,Nuvama Institutional Equities,The target price displayed in the ratings and daily volume chart was incorrect.,Anant Dumbhare,6/27/2025 7:01:05 AM,6/27/2025 7:01:05 AM,735,,,1
+475,Nuvama Institutional Equities,"There is an error indicating that the company price has not been uploaded, ",Naimat Choudhary,6/27/2025 4:26:10 AM,6/27/2025 4:26:10 AM,739,,,1
+476,Nuvama Institutional Equities,Issues with Model Files in Bloomberg File Path ,Naimat Choudhary,6/27/2025 3:04:55 AM,6/27/2025 3:04:55 AM,738,,,13
+477,Elara Capital,Market data has not been updating since 20th June for Nykaa,Gurunath Parab,6/27/2025 2:49:51 AM,6/27/2025 2:49:51 AM,47,,,1
+478,Nuvama Institutional Equities,The rating distribution (buy/sell) count is not displaying accurately in the report.,Sridhar B,6/27/2025 1:32:35 AM,6/27/2025 1:32:35 AM,737,,,1
+479,Elara Capital,Unable to upload Market Data Sheet,Jinesh Bhansali,6/27/2025 1:28:55 AM,6/27/2025 1:28:55 AM,46,,,1
+480,ICICI-2021,To check the I-opener issue on Shreekanth machine.,Shreekant Joshi,6/26/2025 8:26:15 AM,6/26/2025 8:26:15 AM,16,,,2
+481,Emkay-O365,Report Intros are not getting after merge in today Emkay Morning Post,Rajendran Subbiah,6/26/2025 6:46:54 AM,6/26/2025 6:46:54 AM,23,,,1
+482,ICICI-2021,To enable to the Rating history tab in the excel.,Shreekant Joshi,6/26/2025 3:59:00 AM,6/27/2025 3:59:00 AM,15,10.00,"1) The client UAT deployment release note shared with the client on 27-June-2025.
+2) Taken an update from the client on 03-July-2025.
+3) A reminder shared with the client again on 04-July-2025.
+4) 3 follow up with the client on 7-July-2025.
+5) Escalated the issue to Shreekanth Joshi on 08-July-2025.
+6) Approval received from the client on 09-Jul-2025 for the production deployment.",9
+483,Axis Capital,1) Change in Headings - FY24 to FY26E on Sector Valuation Summary Page 2) 1. when - is uploaded it should show as - and not 0 2. Change estimate year to FY26,Zameer Khan,6/26/2025 2:24:51 AM,6/30/2025 2:24:51 AM,541,257.00,,13
+484,B&K Securities,Economy report changes,Mahendra sawardekar,6/25/2025 8:59:00 AM,6/30/2025 8:59:00 AM,69,45.00,,9
+485,Emkay-O365,Emkay Enhancements - 1,Rajendran Subbiah,6/25/2025 3:33:00 AM,6/25/2025 3:33:00 AM,22,10.00,,42
+486,Phillip Capital,The IP addresses of the Phillip UAT environment are invalid,Ganesh Deorukhkar,6/24/2025 12:33:45 PM,6/24/2025 12:33:45 PM,63,,,1
+487,FAB Securities,Research Portal - Text Overflow,Mohamed Shibin KP,6/24/2025 10:01:37 AM,6/24/2025 10:01:37 AM,18,14.00,,4
+488,SICO Bank,User Download Logs are incorrect [Readby] and Logs by IP is Not Matching,Nishit Lakhotia,6/24/2025 9:07:18 AM,6/24/2025 9:07:18 AM,1088,469.00,,1
+489,SICO Bank,User Download Logs are incorrect [Readby] and Logs by IP is Not Matching,Nishit Lakhotia,6/24/2025 9:07:18 AM,6/24/2025 9:07:18 AM,1088,470.00,,1
+490,CIMB - Equity Research,VAPT Remediation CP,June Yap,6/24/2025 8:40:40 AM,6/24/2025 8:40:40 AM,9,6.00,,21
+491,Incred,The client UAT application is not working,Mazaharul Hassan Saiyed,6/24/2025 4:13:53 AM,6/24/2025 4:13:53 AM,279,,,1
+492,Emkay-O365,Issue with Equitec Table Formatting,Rajendran Subbiah,6/23/2025 12:59:32 PM,6/23/2025 12:59:32 PM,21,,,1
+493,Axis Capital,Vulnerabilities in website,Hussain Gandhi,6/23/2025 7:44:54 AM,6/23/2025 7:44:54 AM,539,256.00,,4
+494,Emkay-O365,Issue in generating Report,Rajendran Subbiah,6/23/2025 7:29:30 AM,6/23/2025 7:29:30 AM,20,,,1
+495,Axis Capital,The HDFC Asset management company flash note distribution is stuck. ,Hussain Gandhi,6/23/2025 4:29:12 AM,6/23/2025 4:29:12 AM,540,,,1
+496,Equirus,The price chart is not generating for Aditya Birla company.,Prajwal Rahod,6/22/2025 9:44:29 AM,6/22/2025 9:44:29 AM,132,,,1
+497,Equirus,The Equibase application was not working.,Paresh Panchal,6/21/2025 9:39:03 AM,6/21/2025 9:39:03 AM,131,,,1
+498,Axis Capital,Equitec Add-in issue on multiple systems,Hussain Gandhi,6/20/2025 12:18:56 PM,6/20/2025 12:18:56 PM,537,,,1
+499,Nuvama Institutional Equities,Not able to install EquiWord and EquiExcel add-ins at Nuvama UAT,Sandeep Kosambi,6/20/2025 12:12:27 PM,7/7/2025 12:12:27 PM,734,,,12
+500,Elara Capital,Add the ShareDrive link to the code for the disclaimer,Jinesh Bhansali,6/20/2025 11:58:34 AM,6/20/2025 11:58:34 AM,45,20.00,,7
+501,Elara Capital,"Market Data not getting updated for CAMS, KFIN Tech & IDFC Bank",Gurunath Parab,6/20/2025 9:51:43 AM,6/20/2025 9:51:43 AM,44,,,4
+502,Kotak Securities,Kotak valuation sheet - USDINR values are not updating,Sunita Baldawa,6/20/2025 3:36:17 AM,6/20/2025 3:36:17 AM,525,,,1
+503,Elara Capital,4 issues raised,Jinesh Bhansali,6/19/2025 12:40:51 PM,6/19/2025 12:40:51 PM,42,,,2
+504,Elara Capital,Update the SFTP configuration to change the database system from BBG code to code,Jinesh Bhansali,6/19/2025 9:19:52 AM,6/19/2025 9:19:52 AM,43,19.00,,6
+505,JM Financial,Indian Banking Sector on JM research portal is not working.,Tarak Mehta,6/19/2025 7:43:27 AM,6/19/2025 7:43:27 AM,487,,,6
+506,Axis Capital,To implement logs in the Masters in control panel,Hussain Gandhi,6/19/2025 7:18:14 AM,6/19/2025 7:18:14 AM,538,,,6
+507,B&K Securities,Equibase License renewal.,Pankaj Gawade,6/19/2025 6:58:11 AM,6/20/2025 6:58:11 AM,68,44.00,"1) We have shared the release note with the client on 20-June-2025.
+2) Client have deployed the changes and revert on 24-Jun-2025 (after sending a reminder email)
+3) We have shared the release note with the client for the production deployment on 24-Jun-2025.
+",3
+508,Axis Capital,To change the bloomberg code from SEIL IB Equity to ENRIN IB Equity,Zameer Khan,6/19/2025 3:42:29 AM,6/19/2025 3:42:29 AM,536,255.00,,1
+509,Kotak Securities,PGIM India Mutual Fund - need to change group to DHFL Pramerica,Prashant Nar,6/19/2025 3:29:32 AM,6/19/2025 3:29:32 AM,524,,,1
+510,AMInvestment Bank Berhad - O365,"Generated a new report for kelington (KGRB MK), but the side table chart is not loading",Aimi Nasuha,6/19/2025 2:43:55 AM,6/19/2025 2:43:55 AM,41,,,2
+511,Nuvama Institutional Equities,Error while uploading report in word equitec,Pranav Tella,6/19/2025 1:35:33 AM,6/19/2025 1:35:33 AM,733,,,1
+512,Nuvama Institutional Equities,UAT Research Control Board not working,Sandeep Kosambi,6/18/2025 9:01:29 AM,6/18/2025 9:01:29 AM,731,,,2
+513,Phillip Capital,Price chart not generating properly for a MTARTECH IN equity company.,Ganesh Deorukhkar,6/18/2025 8:28:01 AM,6/25/2025 8:28:01 AM,62,36.00,,14
+514,FAB Securities,LDAPS for Control Panel & CRM,Mohamed Shibin KP,6/18/2025 8:02:08 AM,6/18/2025 8:02:08 AM,17,13.00,,8
+515,Emkay-O365,when associate copy and paste the data it gets XML error,Deepak Pansari,6/17/2025 12:40:37 PM,6/17/2025 12:40:37 PM,19,,,4
+516,Arqaam Capital ,To separate Research portal application and Database.,Sumeet Akewar,6/17/2025 7:44:49 AM,8/12/2025 7:44:49 AM,726,215.00,,22
+517,Emkay-O365,Price Trend chart not visible,Deepak Pansari,6/17/2025 7:19:25 AM,6/17/2025 7:19:25 AM,18,,,8
+518,SICO Bank,Sohar initiation report - details not showing on the dashboard in the latest reports table.,Nishit Lakhotia,6/17/2025 4:03:08 AM,6/17/2025 4:03:08 AM,1087,,,1
+519,SICO Bank,Not able to fetch target price using GetData.,Nishit Lakhotia,6/16/2025 11:50:48 AM,6/16/2025 11:50:48 AM,1086,,,1
+520,Arqaam Capital ,Is it possible to add the PDF (report) link to it,Sumeet Akewar,6/16/2025 9:34:09 AM,6/16/2025 9:34:09 AM,727,,,4
+521,Phillip Capital,Unable to delete a specific username from the Control Panel. ,Ganesh Deorukhkar,6/16/2025 9:22:53 AM,6/16/2025 9:22:53 AM,61,,,1
+522,Phillip Capital,Issue in generating the Free Float report.,Ganesh Deorukhkar,6/16/2025 9:20:24 AM,6/16/2025 9:20:24 AM,60,,,1
+523,SICO Bank,Not able to log in to the research portal,Nishit Lakhotia,6/16/2025 8:07:10 AM,6/16/2025 8:07:10 AM,1085,,,1
+524,Arqaam Capital ,Request for Research Publication Data from Arqaam Capital,Sumeet Akewar,6/16/2025 4:13:31 AM,6/16/2025 4:13:31 AM,728,,,4
+525,Axis Capital,Redirect Events Tab in Research Portal,Hussain Gandhi,6/13/2025 12:42:21 PM,6/18/2025 12:42:21 PM,535,254.00,,2
+526,Emkay-O365,The cover form kept loading continuously while analyst was trying to create an initiating coverage note,Deepak Pansari,6/13/2025 2:07:18 AM,6/13/2025 2:07:18 AM,17,9.00,,16
+527,CIMB - Equity Research,4 bugs raised for scheduler,June Yap,6/13/2025 2:01:07 AM,6/13/2025 2:01:07 AM,8,5.00,,37
+528,Nuvama Institutional Equities,The PPFAS shareholding in the Coal India report is not appearing correctly.,Naimat Choudhary,6/12/2025 11:42:08 AM,6/12/2025 11:42:08 AM,730,,,4
+529,CIMB - Equity Research,Overall enhancements,June Yap,6/12/2025 10:37:44 AM,6/12/2025 10:37:44 AM,7,4.00,,38
+530,CIMB - Equity Research,Unable to login EquiExcel & EquiWord,June Yap,6/12/2025 9:40:25 AM,6/12/2025 9:40:25 AM,5,,,1
+531,Emkay-O365,1-Year share price trend (Rs) is did not display in mail body (Internal ticket),Rajendran Subbiah,6/12/2025 9:09:33 AM,6/12/2025 9:09:33 AM,16,8.00,,22
+532,Kotak Securities,Mr. Kunal Desai - Gulf Investment Bank Asset Mgmt - Reinstate,Mini Pillai,6/12/2025 7:48:48 AM,6/12/2025 7:48:48 AM,523,,,1
+533,Elara Capital,Border issue for Side by Side exhibits,Jinesh Bhansali,6/12/2025 7:19:25 AM,6/13/2025 7:19:25 AM,41,18.00,,158
+534,CIMB - Equity Research,The values for Dividend Yield are showing up as 0 in the Financial Summary section of the report,June Yap,6/11/2025 9:41:32 AM,6/11/2025 9:41:32 AM,6,,,1
+535,Alchemy ,Unable to Edit Rainbow Children’s Medicare Ltd.,Ali Sayyed,6/11/2025 9:38:24 AM,6/13/2025 9:38:24 AM,32,24.00,,4
+536,Nuvama Institutional Equities,Bootstrap Migration for Research Portal,Naimat Choudhary,6/11/2025 9:30:06 AM,8/29/2025 9:30:06 AM,728,210.00,"1) We have shared the release note for Bootstrap CCF on the client UAT 05-Sep-2025.
+2) Client IT team has confirmed that the deployment has been completed on the UAT 05-sep-2025.
+3) No update received from the client till 15-Sep-2025.
+4) Reminder shared with the client 16-sep-2025.
+5) Client confirmed that the Bootstrap changes working on the UAT but raised the new point of Missing Input Validation.
+",74
+537,Arqaam Capital ,Code to be changed from BSFR to BSF,Arqaam Support Desk,6/11/2025 8:17:31 AM,6/11/2025 8:17:31 AM,725,214.00,,159
+538,Arqaam Capital ,Unable to upload the historical prices sheet,Arqaam Support Desk,6/11/2025 8:15:48 AM,6/11/2025 8:15:48 AM,724,,,1
+539,Nuvama Institutional Equities,Equitec - Investor Charter Updates,Naimat Choudhary,6/11/2025 7:10:57 AM,6/11/2025 7:10:57 AM,729,,,1
+540,Emkay-O365, Disclaimer Page Table Change,Deepak Pansari,6/11/2025 2:03:29 AM,6/11/2025 2:03:29 AM,15,7.00,,18
+541,SICO Bank,The disclaimer doesn't show the Initiation and Buy symbols from the chart.,Sumaya Ali,6/11/2025 1:24:14 AM,6/11/2025 1:24:14 AM,1084,,,8
+542,Phillip Capital,Option to update the disclaimer,Ganesh Deorukhkar,6/10/2025 12:11:28 PM,6/10/2025 12:11:28 PM,59,35.00,,20
+543,B&K Securities,Flash Note Migration – Formatting and Data Corrections,Pankaj Gawade,6/10/2025 12:05:54 PM,6/10/2025 12:05:54 PM,67,43.00,,13
+544,CIMB - Equity Research,New scheduler enhancements,June Yap,6/10/2025 10:23:15 AM,6/10/2025 10:23:15 AM,4,3.00,,39
+545,Emkay-O365,"placeholder not displayed in mailbody in Sector report(with table),economy & strategy ",Rajendran Subbiah,6/9/2025 9:52:21 AM,6/9/2025 9:52:21 AM,14,6.00,,25
+546,Emkay-O365,Table Headers are different in sector report (with table),Rajendran Subbiah,6/9/2025 9:29:09 AM,6/9/2025 9:29:09 AM,13,5.00,,20
+547,Axis Capital,Equiexcel not working on Sankaranarayanan system,Hussain Gandhi,6/9/2025 8:36:41 AM,6/9/2025 8:36:41 AM,534,,,1
+548,Kotak Securities,The insurance sector report is not getting publish.,Mohan Sahu,6/9/2025 4:33:30 AM,6/9/2025 4:33:30 AM,522,,,1
+549,SICO Bank,Create a back sheet for Insurance,Fatema AlShakar,6/6/2025 12:37:09 PM,6/6/2025 12:37:09 PM,1083,,,10
+550,Nuvama Institutional Equities,Research portal changes (change in Grievance Redressal/Escalation Matrix),Sandeep Kosambi,6/6/2025 2:46:58 AM,6/6/2025 2:46:58 AM,727,,,5
+551,ICICI-2021,The DII charts is not coming properly in the I-opener word report ,Monty Fernandes,6/6/2025 2:24:41 AM,6/6/2025 2:24:41 AM,14,9.00,,3
+552,CIMB - Equity Research,3 issues spotted in the REITs uploader,June Yap,6/5/2025 11:43:27 AM,6/5/2025 11:43:27 AM,3,,,5
+553,B&K Securities,Error- Target Price (Previous),Pankaj Gawade,6/5/2025 10:35:51 AM,6/5/2025 10:35:51 AM,66,,,1
+554,KAF,To unblock mzulhilmi.sobry@cimb.com from the backend,KAF Supprot,6/5/2025 10:33:56 AM,6/5/2025 10:33:56 AM,82,,,1
+555,Nirmal Bang,VAPT changes - 1) Implementation of HTTP Strict Transport Security (HSTS) 2) Restriction of HTTP Methods,VAPT Team,6/5/2025 10:06:29 AM,6/6/2025 10:06:29 AM,34,17.00,,23
+556,JM Financial,Text changes to be made on JMFISL (Research Portal) website,Tarak Mehta,6/5/2025 8:01:52 AM,6/10/2025 8:01:52 AM,486,178.00,,9
+557,Equirus,To have the ability to publish co-branded research report.,Ashutosh Tiwari,6/5/2025 4:14:34 AM,6/26/2025 4:14:34 AM,130,34.00,,19
+558,Incred,Change Forecast years in Summary Valuation Metrics sector report,Mazaharul Hassan Saiyed,6/4/2025 12:05:20 PM,6/11/2025 12:05:20 PM,278,176.00,,21
+559,JM Financial,Equiword is not working,Dinesh  kodere,6/4/2025 7:19:56 AM,6/4/2025 7:19:56 AM,485,,,1
+560,FAB Securities,Currency changes on the Research Portal,Mohammad Jabir,6/4/2025 1:37:46 AM,6/4/2025 1:37:46 AM,16,12.00,,164
+561,JM Financial,The India Financials sector PDF is not getting saved on the control panel.,Dinesh  kodere,6/3/2025 6:39:51 AM,6/3/2025 6:39:51 AM,484,,,1
+562,JM Financial,Getting  error while opening chemical sector companies on the research portal,Dinesh  kodere,6/2/2025 9:34:20 AM,6/2/2025 9:34:20 AM,483,,,2
+563,B&K Securities,To renew the Equibase application license from 2 June 2025 to 30 June 2025,Naveen Prabhu,6/2/2025 9:09:45 AM,6/2/2025 9:09:45 AM,65,42.00,,1
+564,Emkay-O365,"There was a login issue at the client site. When the client logs in and then logs out, the issue gets resolved.",Deepak Pansari,6/2/2025 8:50:43 AM,6/2/2025 8:50:43 AM,11,,,19
+565,Elara Capital,Add a refresh historical prices button in CP (Internal),Jinesh Bhansali,6/2/2025 7:37:49 AM,6/4/2025 7:37:49 AM,40,16.00,,166
+566,Emkay-O365,Company’s name did not display for Result Update at cp,Rajendran Subbiah,5/30/2025 12:08:56 PM,5/30/2025 12:08:56 PM,10,3.00,,4
+567,Emkay-O365,Error while uploading financial,Deepak Pansari,5/30/2025 10:11:38 AM,5/30/2025 10:11:38 AM,9,,,1
+568,Elara Capital,Unable to retrieve the coverage history chart with the latest data,Gurunath Parab,5/30/2025 9:54:05 AM,5/30/2025 9:54:05 AM,39,17.00,,167
+569,Emkay-O365,1-Year share price trend (Rs) is did not display in mail body ,Rajendran Subbiah,5/30/2025 9:42:46 AM,5/30/2025 9:42:46 AM,8,,,2
+570,Emkay-O365,Incorrect numbers FCFE Yield,Deepak Pansari,5/30/2025 9:41:24 AM,5/30/2025 9:41:24 AM,7,,,2
+571,SICO Bank,Disclaimer already added to the report,Sumaya Ali,5/29/2025 3:35:15 AM,5/29/2025 3:35:15 AM,1081,,,1
+572,Nuvama Institutional Equities,Issue in generating pricing and volume chart while generating templates,Sandeep Kosambi,5/29/2025 1:49:27 AM,5/29/2025 1:49:27 AM,726,,,1
+573,Elara Capital,The price performance charts are not being generated when creating reports for Star Life and Medi Assets,Jinesh Bhansali,5/28/2025 11:47:57 AM,5/28/2025 11:47:57 AM,37,,,1
+574,Axis Capital,Video not uploading in Tiny MCE,Hussain Gandhi,5/28/2025 11:47:40 AM,5/28/2025 11:47:40 AM,532,,,4
+575,SICO Bank,Disclaimer chart – it does not show the B and the X on the chart itself,Sumaya Ali,5/28/2025 9:25:55 AM,5/28/2025 9:25:55 AM,1080,,,1
+576,AMInvestment Bank Berhad - O365,The market data numbers for Oriental Kopi Company are not appearing in the Word report,Calvin Kwa Hock Keat,5/28/2025 4:39:17 AM,5/28/2025 4:39:17 AM,39,,,1
+577,Emkay-O365,EV number not captured in Strategy Book Properly,Deepak Pansari,5/28/2025 3:39:30 AM,5/28/2025 3:39:30 AM,6,2.00,,6
+578,Emkay-O365,EV number not captured in Strategy Book Properly,Deepak Pansari,5/28/2025 3:39:30 AM,5/28/2025 3:39:30 AM,6,4.00,,6
+579,Axis Capital,Video upload option required in report,Hussain Gandhi,5/28/2025 2:32:52 AM,5/28/2025 2:32:52 AM,533,,,17
+580,Elara Capital,Unable to upload model for Bajaj Auto,Jinesh Bhansali,5/28/2025 1:04:17 AM,5/28/2025 1:04:17 AM,38,,,1
+581,Emkay-O365,There is an issue with the Sector field in the cover form of the sector report,Deepak Pansari,5/27/2025 7:56:57 AM,5/27/2025 7:56:57 AM,5,,,1
+582,Equirus,The charts are not generating for colgate and united spirit company,Paresh Panchal,5/27/2025 4:31:26 AM,5/27/2025 4:31:26 AM,129,,,1
+583,Kotak Securities,To reinstate the bhavya.shah@arkimpact.co.kr client contact,Mini Pillai,5/27/2025 4:29:47 AM,5/27/2025 4:29:47 AM,521,,,1
+584,Spark Avendus,The Model is not getting for uploaded for RateGain company.,Gopinath S,5/27/2025 4:16:17 AM,5/27/2025 4:16:17 AM,107,,,1
+585,Elara Capital,"When pasting an exhibit, the source note is appearing within the table itself, rather than below it",Jinesh Bhansali,5/26/2025 9:18:07 AM,5/26/2025 9:18:07 AM,36,15.00,,171
+586,Incred,sending models to Bloomberg,Mazaharul Hassan Saiyed,5/26/2025 8:46:21 AM,5/26/2025 8:46:21 AM,277,,,6
+587,SICO Bank,Sico live mobile app has stopped working.  No reports are accessible,Nishit Lakhotia,5/26/2025 8:30:32 AM,5/26/2025 8:30:32 AM,1078,468.00,,1
+588,Axis Capital,URGENT - Audio released to client but not playing on website,Hussain Gandhi,5/26/2025 7:55:29 AM,5/26/2025 7:55:29 AM,531,253.00,,2
+589,SICO Bank,Changes in GCC Arabic watch - there must be a (-) instead of 0 in GCC Market Statistics.,Fatema AlShakar,5/26/2025 7:48:06 AM,5/26/2025 7:48:06 AM,1077,,,1
+590,Phillip Capital, Disclaimer changes & change the logo in all report templates,Ganesh Deorukhkar,5/23/2025 4:04:15 AM,5/23/2025 4:04:15 AM,58,34.00,,7
+591,Elara Capital,Unable to login CP using domain/username and password,Jinesh Bhansali,5/23/2025 1:41:22 AM,5/23/2025 1:41:22 AM,35,14.00,,172
+592,Emkay-O365,Issues with refreshing the uploaded numbers,Meenal  Bhagwat,5/22/2025 2:50:51 AM,5/22/2025 2:50:51 AM,4,,,1
+593,Emkay Global,Issues with refreshing the uploaded numbers,Nilesh Devlekar,5/22/2025 2:49:01 AM,5/22/2025 2:49:01 AM,319,,,1
+594,SICO Bank,Fix Display of # of Arabic Word Report,Fatema AlShakar,5/22/2025 2:06:06 AM,5/22/2025 2:06:06 AM,1076,,,1
+595,Incred,Urgent - Unable to generate a report.,Mazaharul Hassan Saiyed,5/21/2025 12:58:30 PM,5/21/2025 12:58:30 PM,276,,,1
+596,Elara Capital,Implement Elmah Error Log in Control Panel,Gurunath Parab,5/21/2025 12:34:26 PM,5/21/2025 12:34:26 PM,32,13.00,,174
+597,Arqaam Capital ,"Want the ability to restrict clients from downloading more than 10 research reports per login per day, so that we can control report distribution and ensure fair usage.",Kiran Menon,5/21/2025 12:14:26 PM,5/30/2025 12:14:26 PM,722,213.00,,174
+598,Axis Capital,Rishi Shah from Torrent Power — Not getting emails since 25th Feb,Hussain Gandhi,5/21/2025 9:39:11 AM,5/21/2025 9:39:11 AM,529,,,3
+599,SICO Bank, AWS migration,Nishit Lakhotia,5/21/2025 8:09:41 AM,5/21/2025 8:09:41 AM,1075,,"1. Ticket raised - 21st May 2025
+2. Ticket closed - 21st May 2025
+
+we have close the entry on the same day and received the UAT sign off from the client.
+Client has revert on 11th september 2025 to roll the changes on production.",111
+600,Axis Capital,TinyMCE payment,Hussain Gandhi,5/21/2025 2:59:01 AM,5/21/2025 2:59:01 AM,530,,,1
+601,Al Bastaki,The PCFS application is working very slow,Al bastaki Support Desk,5/20/2025 7:10:37 AM,5/20/2025 7:10:37 AM,309,,,4
+602,Kotak Securities,Unable to change Group,Prashant Nar,5/19/2025 11:40:58 AM,5/19/2025 11:40:58 AM,520,309.00,,1
+603,Elara Capital,Unable to upload Shweta's photo in CP,Gurunath Parab,5/19/2025 9:16:24 AM,5/19/2025 9:16:24 AM,33,,,3
+604,Arqaam Capital ,Research log 18-5-2025,Salma Saad,5/19/2025 9:09:33 AM,5/19/2025 9:09:33 AM,723,,,3
+605,Incred,Mazhar is unable to login CRM.,Mazaharul Hassan Saiyed,5/19/2025 6:46:32 AM,5/19/2025 6:46:32 AM,275,,,6
+606,SICO Bank,"When scrolled down on the companies list for a particular sector, the page scrolls down instead of the company list, please fix this for all sectors under the company tab.",Nishit Lakhotia,5/19/2025 6:40:14 AM,5/19/2025 6:40:14 AM,1074,467.00,,8
+607,ICICI-2021,New logo on research reports,Chetan Gole,5/19/2025 1:05:14 AM,5/20/2025 1:05:14 AM,13,8.00,,6
+608,Centrum broking ,Feedback points on the Equischeduler.,Mehdi Jiwani,5/16/2025 9:54:01 AM,5/16/2025 9:54:01 AM,120,,,28
+609,Elara Capital,FCF yield or Dividend yield values come up as 0,Jinesh Bhansali,5/16/2025 9:24:58 AM,5/16/2025 9:24:58 AM,34,,,4
+610,Kotak Securities,Matthew Williams - Aberdeen Standard Investments - Reinstate,Mini Pillai,5/16/2025 8:58:07 AM,5/16/2025 8:58:07 AM,519,,,1
+611,B&K Securities,Urgent help needed- Report not generating,Varun Julasaria,5/16/2025 8:54:17 AM,5/16/2025 8:54:17 AM,64,,,2
+612,Incred,CRM is not working ,Mazaharul Hassan Saiyed,5/16/2025 7:24:48 AM,5/23/2025 7:24:48 AM,273,175.00,,41
+613,Emkay-O365,AD login failed,Meenal  Bhagwat,5/16/2025 2:45:25 AM,5/16/2025 2:45:25 AM,3,,,1
+614,Emkay-O365,Repeated text in mail Body,Rajendran Subbiah,5/16/2025 1:00:05 AM,5/16/2025 1:00:05 AM,2,,,11
+615,Axis Capital,"Email is stuck, this time no emails pending from Netcore too.",Hussain Gandhi,5/15/2025 9:53:01 AM,5/19/2025 9:53:01 AM,528,252.00,,4
+616,Elara Capital,Market data values are missing from the ITC Hotels report.,Jinesh Bhansali,5/15/2025 8:24:05 AM,5/15/2025 8:24:05 AM,31,,,2
+617,Nuvama Institutional Equities,Company price data is not uploaded,Naimat Choudhary,5/15/2025 8:06:06 AM,5/15/2025 8:06:06 AM,725,,,1
+618,Elara Capital,Unable to add disclaimer to the report,Jinesh Bhansali,5/14/2025 11:58:03 AM,5/15/2025 11:58:03 AM,28,,,179
+619,SICO Bank, Sico-MobileApp for Authorization Enhancement.(Internal),Fatema AlShakar,5/14/2025 8:08:01 AM,5/16/2025 8:08:01 AM,1073,465.00,,4
+620,Axis Capital,CIPLA - Multiple calculation error in reports -URGENT,Zameer Khan,5/14/2025 8:04:19 AM,5/14/2025 8:04:19 AM,526,,,1
+621,SICO Bank,Analyzing User Engagement: Tracking Clicks to Measure Interest in the Arabic Report,Fatema AlShakar,5/14/2025 7:57:51 AM,5/16/2025 7:57:51 AM,1072,466.00,,29
+622,Kotak Securities,To save the first 8 character of the sector as a short name,Prashant Nar,5/14/2025 7:40:44 AM,5/20/2025 7:40:44 AM,518,307.00,,33
+623,Bank of Bahrain and Kuwait, IOS and Android Apps certification issue. Mobile app showing error,sohil ravjani,5/14/2025 7:32:37 AM,5/14/2025 7:32:37 AM,52,,,16
+624,Equirus,The Mumbai base auto schedule Bloomberg data is not updating.,Paresh Panchal,5/14/2025 7:14:07 AM,5/14/2025 7:14:07 AM,128,,,1
+625,Axis Capital,Cipla company numbers are not coming in the word report,Zameer Khan,5/14/2025 7:10:52 AM,5/14/2025 7:10:52 AM,527,,,1
+626,Elara Capital,Template fixes - 3 points,Jinesh Bhansali,5/14/2025 4:17:05 AM,5/14/2025 4:17:05 AM,30,11.00,,179
+627,Elara Capital,Word and Excel add-ins are getting disabled,Gurunath Parab,5/14/2025 4:05:28 AM,5/14/2025 4:05:28 AM,29,10.00,,179
+628,Equitec,Implement Google Analytics in Equitec Websites,Komel Nayani,5/14/2025 2:56:34 AM,5/14/2025 2:56:34 AM,167,122.00,,20
+629,Elara Capital,Issues with ADTV 3M (INR mn/USD mn),Jinesh Bhansali,5/14/2025 2:24:39 AM,5/14/2025 2:24:39 AM,27,,,2
+630,Systematix shares and stocks ltd,Deployment of Equibase application to the New server.,Sytematix IT desk,5/13/2025 12:59:01 PM,5/13/2025 12:59:01 PM,35,,,2
+631,Centrum broking ,Production deployment,Mehdi Jiwani,5/13/2025 7:05:14 AM,5/14/2025 7:05:14 AM,119,61.00,,3
+632,Incred,URGENT: CRM not working.,Mazaharul Hassan Saiyed,5/13/2025 6:52:01 AM,5/13/2025 6:52:01 AM,274,,,2
+633,Axis Capital,Archive Old Unpublished Workflow records,Hussain Gandhi,5/12/2025 6:31:33 AM,5/12/2025 6:31:33 AM,524,,,3
+634,Elara Capital,"Add ""Rating Upgrade"" or ""Rating Downgrade"" after report type in Word",Jinesh Bhansali,5/12/2025 3:36:21 AM,5/12/2025 3:36:21 AM,17,9.00,,181
+635,Axis Capital,VAPT - 2025,Hussain Gandhi,5/12/2025 3:13:52 AM,5/14/2025 3:13:52 AM,523,250.00,,34
+636,Axis Capital,There is an issue with the pagination on the control panel at the publisher screen.,Hussain Gandhi,5/12/2025 2:55:17 AM,5/14/2025 2:55:17 AM,522,249.00,,34
+637,SICO Bank,Fix Display of # of Arabic Word Report,Fatema AlDoseri,5/9/2025 11:41:18 AM,5/13/2025 11:41:18 AM,1071,,,4
+638,SICO Bank,Research portal API for the SICO Team,Nishit Lakhotia,5/9/2025 11:39:19 AM,5/9/2025 11:39:19 AM,1070,,,3
+639,Spark Avendus,Unable to upload the Swiggy company model,Madhav Yadav,5/9/2025 9:27:53 AM,5/9/2025 9:27:53 AM,106,,,1
+640,Kotak Securities,To reinstate the Ms. Nutangaba Patwari - nutangaba.patwari@homefirstindia.com,Mini Pillai,5/9/2025 9:23:24 AM,5/9/2025 9:23:24 AM,517,,,1
+641,Nirmal Bang,Request for Confirmation on Application Compatibility with Planned System Upgrades,Hitesh Joshi,5/9/2025 6:37:52 AM,5/9/2025 6:37:52 AM,33,,,69
+642,Elara Capital,Remove the login prompt when opening Word or Excel or provide a 'Remember Me' option to avoid repeated logins,Jinesh Bhansali,5/9/2025 2:22:00 AM,5/9/2025 2:22:00 AM,25,12.00,,182
+643,Nuvama Institutional Equities,The IC file keeps crashing on a specific analyst's system. ,Sandeep Kosambi,5/9/2025 1:35:41 AM,5/9/2025 1:35:41 AM,724,,,1
+644,SICO Bank,Disclaimer template mapping glitch,Nishit Lakhotia,5/8/2025 12:28:42 PM,5/13/2025 12:28:42 PM,1069,463.00,,3
+645,Phillip Capital,Model download,Ganesh Deorukhkar,5/8/2025 7:49:29 AM,5/8/2025 7:49:29 AM,57,,,8
+646,Phillip Capital,Product Migration,Ganesh Deorukhkar,5/8/2025 7:48:39 AM,5/8/2025 7:48:39 AM,56,,,183
+647,Phillip Capital,Scheduler Product Demo,Ganesh Deorukhkar,5/8/2025 7:40:07 AM,5/8/2025 7:40:07 AM,55,,,8
+648,Kotak Securities,Sector preference showing blank when we took excel dump,Prashant Nar,5/8/2025 7:29:53 AM,5/8/2025 7:29:53 AM,516,,,1
+649,SICO Bank,Disclaimer issue in the company report,Nishit Lakhotia,5/7/2025 11:46:26 AM,5/7/2025 11:46:26 AM,1068,,,1
+650,Elara Capital,The Price Date in the Equibase uploaders is currently appearing in the incorrect format,Jinesh Bhansali,5/7/2025 10:20:25 AM,5/7/2025 10:20:25 AM,16,8.00,,184
+651,Axis Capital,Super Urgent ||Investigation Request : One97 Report Anomaly,Ashish Rajput,5/7/2025 7:36:29 AM,5/7/2025 7:36:29 AM,525,,,32
+652,Kotak Securities,Capturing the full text of the report in the body of email,Debraj Das,5/7/2025 7:22:41 AM,7/14/2025 7:22:41 AM,509,305.00," 
+1) Client UAT deployment done on 09-Jul-2025.
+2) Below feedback received from the client - 14-Jul-2025.
+ 
+1) To show the Bullet2 and Bullet3 button in the Equitec ribbon separately. Currently the buttons are shown on the text tool dropdown.
+2) The stretch the cover body text window in the kinsite application.
+ 
+3) Requested the client to share the access to the Mohan's machine (2 UAT machine) 14-Jul-2025.
+4) Received the feedback from the client on Mohan - 17-Jul-2025.
+5) Have responded to the client feedback - 21-Jul-2025.
+6) Went on a call with the client and noted down the feedback related to the bullet spacing in the email body 24-Jul-2025.
+7) Shared the revised sample with the client from UAT for approval 24-Jul-2025.
+8) Received a feedback from the client on 31-Jul-2025.
+ 
+1) Unable to release report from Kotak UAT
+2) Alignment of cover bullet
+The first point from the client feedback was resolved immediately (RCA - The compliance approval was not give for that report from the workflow due to which the report was unable to publish)
+ 
+10) Have responded to the client for Alignment of cover bullet feedback - 01-Aug-2025
+11) Client requested to change the RGB of the bullet level 2, R160,G160,B160 - 04-Aug-2025.
+12) We have deployed the requested changes on the client UAT - 05-Aug-2025
+13) Client has raised some queries and we responded to there queries- 06-Aug-2025
+14) Go live approval received from the client - 07-Aug-2025
+15) Deployment done on the production -11-Aug-2025",68
+653,Arqaam Capital ,ID already existing not being found,Lena Allam,5/7/2025 3:22:43 AM,5/7/2025 3:22:43 AM,721,,,184
+654,Incred,CRM address book issue,Mazaharul Hassan Saiyed,5/7/2025 3:06:24 AM,5/9/2025 3:06:24 AM,272,174.00,,10
+655,Kotak Securities,To implement the logs in the Equimailer application.,Mohan Sahu,5/7/2025 1:49:13 AM,5/7/2025 1:49:13 AM,515,304.00,,5
+656,Kotak Securities,Client not showing in drop down,Prashant Nar,5/7/2025 1:07:47 AM,5/7/2025 1:07:47 AM,514,,,2
+657,SICO Bank,"Growth should be shown ""nm"" for -ve to +ve or +ve to -ve in the Company Report & Sector backpages",Nishit Lakhotia,5/6/2025 11:44:39 AM,5/6/2025 11:44:39 AM,1067,464.00,,39
+658,Systematix shares and stocks ltd,To check the new server specifications.,Vijayendra  Achrekar,5/6/2025 8:16:03 AM,5/6/2025 8:16:03 AM,34,,,2
+659,Kotak Securities,Central distribution failed for India daily report.,Mohan Sahu,5/6/2025 7:37:53 AM,5/6/2025 7:37:53 AM,513,,,5
+660,Equirus,To sent an alert email to the IT team if the MD automation failed.,Kushal  Chovatia,5/6/2025 7:03:47 AM,5/6/2025 7:03:47 AM,127,,,3
+661,Centrum broking ,The Equischeduler sheet is not uploading,Mehdi Jiwani,5/6/2025 7:01:16 AM,5/6/2025 7:01:16 AM,118,,,1
+662,Centrum broking ,The Equischeduler sheet is not uploading,Mehdi Jiwani,5/6/2025 7:01:16 AM,5/6/2025 7:01:16 AM,118,,,3
+663,B&K Securities,Changes in the Economic & strategy report,Mahendra sawardekar,5/5/2025 12:21:22 PM,5/5/2025 12:21:22 PM,63,,,16
+664,Incred,Digital Signature implementation in Equitec application.,Selvan Mohan,5/5/2025 3:12:39 AM,5/27/2025 3:12:39 AM,256,165.00,,43
+665,B&K Securities,Table alignment - Error,Pankaj Gawade,5/5/2025 2:25:48 AM,5/5/2025 2:25:48 AM,62,,,3
+666,Equirus,The Market data values are not appearing in the Word report for the Nuvoco Vistas company.,Suryakant Dubey,5/4/2025 9:30:12 AM,5/4/2025 9:30:12 AM,126,,,1
+667,Centrum broking ,The report is not generating for Home first finance company,Mehdi Jiwani,5/3/2025 9:26:15 AM,5/3/2025 9:26:15 AM,117,,,1
+668,Elara Capital,Unable to upload the Rating History sheet,Gurunath Parab,5/3/2025 8:16:27 AM,5/3/2025 8:16:27 AM,15,,,1
+669,JM Financial,The rating history chart is not appearing for the Eternal company.,Tarak Mehta,5/3/2025 7:04:30 AM,5/3/2025 7:04:30 AM,482,,,1
+670,FAB Securities,Change the report name from “Global Investment Outlook Report” to “Earnings Flash”.,Mohamed Shibin KP,5/2/2025 12:33:32 PM,5/2/2025 12:33:32 PM,15,11.00,,187
+671,ICICI-2021,Bloomberg Code Changes,Monty Fernandes,5/2/2025 10:15:32 AM,5/2/2025 10:15:32 AM,12,7.00,,8
+672,SICO Bank,GCC Arabic Daily - Template Update,Fatema AlShakar,5/2/2025 7:44:52 AM,5/2/2025 7:44:52 AM,1066,,,3
+673,CIMB - Equity Research,Disable Migrate Model tab in EquiExcel,June Yap,5/2/2025 1:20:43 AM,5/2/2025 1:20:43 AM,2,2.00,,187
+674,B&K Securities,License renewal ,Naveen Prabhu,5/1/2025 11:51:45 AM,5/1/2025 11:51:45 AM,61,41.00,,1
+675,Elara Capital,Unable to upload model for Page Industries,Gurunath Parab,4/30/2025 12:58:12 PM,4/30/2025 12:58:12 PM,14,,,1
+676,SICO Bank,Disclaimer for English Daily Report ,Fatema AlShakar,4/30/2025 10:11:37 AM,4/30/2025 10:11:37 AM,1065,,,2
+677,SICO Bank,OneDrive support,Nishit Lakhotia,4/30/2025 9:23:39 AM,4/30/2025 9:23:39 AM,1063,,,2
+678,Nuvama Institutional Equities,Issue with uploading Five-star result note,Sandeep Kosambi,4/30/2025 1:07:43 AM,4/30/2025 1:07:43 AM,723,,,1
+679,SICO Bank,Issue with Arabic daily distribution and report generation,Fatema AlShakar,4/29/2025 12:57:42 PM,4/29/2025 12:57:42 PM,1061,462.00,,3
+680,Elara Capital,Add 'Rating Upgrade' or 'Rating Downgrade' after the word Result Update.,Gurunath Parab,4/29/2025 12:18:09 PM,4/29/2025 12:18:09 PM,13,7.00,,190
+681,Axis Capital,Issue catalog,Hussain Gandhi,4/29/2025 9:18:59 AM,4/29/2025 9:18:59 AM,521,,,3
+682,Spark Avendus,To fetch the data from the query builder based on bloomberg code.,Sriram Sampath,4/29/2025 6:33:37 AM,4/29/2025 6:33:37 AM,105,,,1
+683,SICO Bank,Changing TP in SICO research,Fatema AlShakar,4/29/2025 1:13:55 AM,4/29/2025 1:13:55 AM,1062,,,3
+684,Incred,To change the domain from Incredresearch.com to Incredcapital.com.,Selvan Mohan,4/28/2025 12:54:58 PM,4/28/2025 12:54:58 PM,271,,,6
+685,Axis Capital,The search function is not working properly on the publisher screen.,Hussain Gandhi,4/28/2025 12:51:51 PM,5/6/2025 12:51:51 PM,520,248.00,,44
+686,Elara Capital,To recalculate the Dividend Yield,Jinesh Bhansali,4/28/2025 12:14:28 PM,4/28/2025 12:14:28 PM,11,5.00,,191
+687,SICO Bank,To replicate the same client contact from the English to Arabic market watch report.,Fatema AlShakar,4/28/2025 9:58:48 AM,4/28/2025 9:58:48 AM,1060,461.00,,4
+688,Elara Capital,Disclaimer Changes,Gurunath Parab,4/28/2025 9:53:57 AM,4/29/2025 9:53:57 AM,12,6.00,,191
+689,Spark Avendus,Change in the method of fetching the data through query builder.,Sriram Sampath,4/28/2025 4:28:16 AM,4/28/2025 4:28:16 AM,103,45.00,,8
+690,SICO Bank,Arabic Daily fixes.,Nishit Lakhotia,4/28/2025 1:04:15 AM,4/28/2025 1:04:15 AM,1059,460.00,,1
+691,Nuvama Institutional Equities,Template Issue with 'Result Update' Note for Cholamandalam Investment - Page 2 Alignment,Sandeep Kosambi,4/28/2025 1:02:03 AM,4/28/2025 1:02:03 AM,722,,,1
+692,Axis Capital,Syngene RU note - no RRC alert triggered despite large EPS change,Percy Bharucha,4/25/2025 12:55:00 PM,6/4/2025 12:55:00 PM,518,251.00,The delay happens because of the client UAT server was not functional and we haven't received the server on 4 June 2025 and client will share it on 06 - June - 2025.,45
+693,Axis Capital,Email Delays since 2 days,Hussain Gandhi,4/25/2025 12:52:35 PM,4/25/2025 12:52:35 PM,517,,,18
+694,Axis Capital,Disclaimer change,Hussain Gandhi,4/25/2025 10:02:27 AM,4/25/2025 10:02:27 AM,519,247.00,,6
+695,SICO Bank,Numbers are not updating while generating the Arabic Daily Report.,SICO Support Desk,4/24/2025 12:53:20 PM,4/24/2025 12:53:20 PM,1058,,,1
+696,SICO Bank,Disclaimer is not generated in Company Update.,Nishit Lakhotia,4/24/2025 12:37:44 PM,4/24/2025 12:37:44 PM,1057,,,1
+697,Kotak Securities,The client contact password is not saving on institutional,Mini Pillai,4/24/2025 9:30:49 AM,4/24/2025 9:30:49 AM,512,303.00,,57
+698,Kotak Securities,The client contact password is not saving on institutional,Mini Pillai,4/24/2025 9:30:49 AM,4/24/2025 9:30:49 AM,512,306.00,,57
+699,Arqaam Capital ,API integration.,Kiran Menon,4/24/2025 7:07:16 AM,4/24/2025 7:07:16 AM,720,,,18
+700,Kotak Securities,Copying bulk subscription to a mailing list,Melanie Dsouza,4/23/2025 8:14:53 AM,4/23/2025 8:14:53 AM,511,,,16
+701,Elara Capital,"For Page Industries, which is covered by Prerna Jhunjhunwala, her photo is not appearing; instead, it shows Shweta Daptardar’s photo. The same issue is occurring for the NBFC analyst as well.",Jinesh Bhansali,4/23/2025 8:11:33 AM,4/23/2025 8:11:33 AM,8,,,-1
+702,Elara Capital,Changes in the EV/ EBITDA calculation.,Jinesh Bhansali,4/23/2025 4:20:58 AM,4/23/2025 4:20:58 AM,10,4.00,,194
+703,Incred,Delete test report from workflow.,Mazaharul Hassan Saiyed,4/23/2025 2:06:03 AM,4/23/2025 2:06:03 AM,270,173.00,,3
+704,Elara Capital,Unable to upload Market Data Sheet,Jinesh Bhansali,4/22/2025 2:13:42 AM,4/22/2025 2:13:42 AM,20,,,18
+705,Elara Capital,Unable to login into Equitec,Jinesh Bhansali,4/22/2025 2:12:20 AM,4/23/2025 2:12:20 AM,19,,,18
+706,Incred,Error appeared upon clicking on the address book.,Mazaharul Hassan Saiyed,4/21/2025 12:09:14 PM,4/21/2025 12:09:14 PM,269,172.00,,11
+707,ICICI-2021,To change the disclaimer.,Chetan Gole,4/21/2025 11:46:14 AM,4/21/2025 11:46:14 AM,11,6.00,,11
+708,Kotak Securities,Change in signature for the EquiData method ,Sunita Baldawa,4/21/2025 5:55:52 AM,6/16/2025 5:55:52 AM,510,308.00,"1) We have deployed changes as per the timeline 16-June-2025.
+2) Shared a reminder with the client on 18-Jun-2025 for testing update.
+3) Second reminder shared with the client on 23-June-2025 for testing update.
+4) Confirmation received from the client on 23-June-2025 for the production deployment.
+5) We have created the setup and informed to confirm the downtime of 1 hour on 25-Jun-2025.
+6) Client requested to deploy the changes post market hours on Monday 30-June-2025.
+7) We have deployed the changes on production 30-June-2025.",50
+709,Elara Capital,Unable to upload Rating History sheet,Jinesh Bhansali,4/21/2025 2:15:35 AM,4/21/2025 2:15:35 AM,21,,,19
+710,Arqaam Capital ,URL changes in Index file,Arqaam Support Desk,4/21/2025 1:37:25 AM,4/21/2025 1:37:25 AM,719,212.00,,196
+711,Nuvama Institutional Equities,Zomato name changed to Eternal,Sandeep Kosambi,4/18/2025 11:45:08 AM,4/18/2025 11:45:08 AM,721,,,4
+712,Incred,To deploy the Equimailer application to the New production server.,Mazaharul Hassan Saiyed,4/18/2025 4:14:02 AM,4/18/2025 4:14:02 AM,268,171.00,,1
+713,FAB Securities,Update Email template body: The logo and footer of the email template should remain unchanged,Mohammad Jabir,4/17/2025 10:50:14 AM,4/17/2025 10:50:14 AM,14,10.00,,198
+714,Axis Capital,"1) Distribution logs export option alignment incorrect 2)Distribution logs screen, next button removes date filter.",Hussain Gandhi,4/17/2025 1:28:52 AM,4/17/2025 1:28:52 AM,516,,,2
+715,Nuvama Institutional Equities,TP Mismatch on Site,Naimat Choudhary,4/17/2025 1:18:07 AM,4/17/2025 1:18:07 AM,720,,,6
+716,Elara Capital,35 queries raised on Equibase,Jinesh Bhansali,4/16/2025 12:31:00 PM,4/16/2025 12:31:00 PM,7,3.00,,9
+717,Spark Avendus,Valuation sheet,Sriram Sampath,4/16/2025 7:51:07 AM,4/16/2025 7:51:07 AM,104,,,4
+718,Systematix shares and stocks ltd,"The server has crashed, and need to reinstall the Equitec application on new server.",Sytematix IT desk,4/16/2025 3:17:03 AM,4/16/2025 3:17:03 AM,33,,,8
+719,Axis Capital,To change the disclaimer for all the report.,Hussain Gandhi,4/16/2025 2:26:08 AM,4/16/2025 2:26:08 AM,515,245.00,,1
+720,Elara Capital,Unable to upload the Rating History sheet,Jinesh Bhansali,4/16/2025 1:46:36 AM,4/16/2025 1:46:36 AM,6,,,1
+721,Axis Capital,The audio file should get deleted from the distributed email after removing it from the control panel.,Hussain Gandhi,4/15/2025 11:44:55 AM,4/15/2025 11:44:55 AM,514,246.00,,10
+722,ICICI-2021,The alerts emails are not working.,Monty Fernandes,4/15/2025 9:39:53 AM,4/15/2025 9:39:53 AM,10,,,1
+723,SICO Bank,Research Summary Distribution Via Whatsapp,Nishit Lakhotia,4/15/2025 4:45:20 AM,4/15/2025 4:45:20 AM,1056,,,163
+724,Nuvama Institutional Equities,Issue while uploading the report,Sandeep Kosambi,4/15/2025 2:23:15 AM,4/16/2025 2:23:15 AM,719,,,1
+725,FAB Securities,The FAB logo is not appearing in the emails,Mohamed Shibin KP,4/15/2025 1:28:50 AM,4/15/2025 1:28:50 AM,12,,,1
+726,Elara Capital,SFTP implementation on Equibase application (Internal),Jinesh Bhansali,4/14/2025 12:32:09 PM,4/18/2025 12:32:09 PM,4,,,201
+727,Elara Capital,"In the shareholding pattern sheet, 4 new columns are to be added.",Jinesh Bhansali,4/14/2025 12:06:44 PM,4/14/2025 12:06:44 PM,3,1.00,,201
+728,Axis Capital,Error while uploading the model ,Zameer Khan,4/14/2025 9:14:48 AM,4/14/2025 9:14:48 AM,513,,,1
+729,Elara Capital,"In financial table, years is coming from FY22-FY26 we need to start from FY23-FY27 ",Jinesh Bhansali,4/14/2025 1:08:43 AM,4/14/2025 1:08:43 AM,5,2.00,,201
+730,Emkay Global,Bloomberg Code Change,Nilesh Devlekar,4/11/2025 10:51:57 AM,4/11/2025 10:51:57 AM,316,,,1
+731,Incred,Production Server migration.,Selvan Mohan,4/11/2025 8:09:09 AM,4/11/2025 8:09:09 AM,267,,,6
+732,ICICI-2021,The I-opener report is not generating.,Monty Fernandes,4/11/2025 3:01:00 AM,4/11/2025 3:01:00 AM,9,,,3
+733,Centrum broking ,"The formatting is not working on the line items of the back page table (AMC, General Insurance, Life Insurance, and Wealth). ",Mehdi Jiwani,4/10/2025 3:58:39 AM,4/10/2025 3:58:39 AM,116,60.00,,4
+734,SICO Bank,Check the Email ID's mailing list,Nishit Lakhotia,4/10/2025 3:11:54 AM,4/11/2025 3:11:54 AM,1055,,,16
+735,SICO Bank,Broken banner on SICO UAT.,Nishit Lakhotia,4/9/2025 12:24:14 PM,4/9/2025 12:24:14 PM,1053,,,1
+736,Axis Capital,To remove the content type vulnerability from the control panel.,Hussain Gandhi,4/9/2025 2:05:13 AM,4/9/2025 2:05:13 AM,511,242.00,,5
+737,Kotak Securities,To change the estimate year in the Kotak Val sheet.,Sunita Baldawa,4/8/2025 12:03:27 PM,4/8/2025 12:03:27 PM,507,301.00,,4
+738,SICO Bank,Signature update in newspaper Template,Sawsan AbdulLatif,4/8/2025 10:08:48 AM,4/8/2025 10:08:48 AM,1051,457.00,,6
+739,Spark Avendus,Data fetch request from backend,Sriram Sampath,4/8/2025 10:00:04 AM,4/8/2025 10:00:04 AM,102,,,1
+740,Axis Capital,TInyMCE - Power Paste not working correctly.,Hussain Gandhi,4/8/2025 8:59:16 AM,4/8/2025 8:59:16 AM,509,241.00,,6
+741,Arqaam Capital ,Configuration error shows up when trying to log into Control Panel & CRM on Equitec UAT,Arqaam Support Desk,4/8/2025 8:33:23 AM,4/8/2025 8:33:23 AM,718,209.00,,2
+742,SICO Bank,Quarterly Preview NM Query / Quarterly Preview Al Marai getting unticked in Equity Monitor,Nishit Lakhotia,4/8/2025 3:44:34 AM,4/8/2025 3:44:34 AM,1052,458.00,,18
+743,SICO Bank,Quarterly Preview NM Query / Quarterly Preview Al Marai getting unticked in Equity Monitor,Nishit Lakhotia,4/8/2025 3:44:34 AM,4/8/2025 3:44:34 AM,1052,459.00,,18
+744,Emkay Global,Data Upload & Private/Public Setup,Nilesh Devlekar,4/7/2025 10:53:24 AM,4/7/2025 10:53:24 AM,315,,,5
+745,Axis Capital,Prioritize and pick all Axis cap emails in the distribution list.,Hussain Gandhi,4/7/2025 7:35:21 AM,4/7/2025 7:35:21 AM,510,243.00,,8
+746,Incred,Unable to upload a report,Mazaharul Hassan Saiyed,4/7/2025 7:05:17 AM,4/7/2025 7:05:17 AM,266,,,1
+747,Centrum broking ,To add 2 rows in the quarter table in Wealth sector group ,Mehdi Jiwani,4/4/2025 12:13:15 PM,4/4/2025 12:13:15 PM,115,59.00,,1
+748,Incred,New email format for research emails.,Mazaharul Hassan Saiyed,4/4/2025 10:15:03 AM,4/4/2025 10:15:03 AM,265,,,8
+749,Arqaam Capital ,CrowdStrike to MS Defender,Premsingh Patil,4/4/2025 3:37:53 AM,4/4/2025 3:37:53 AM,716,,,4
+750,Centrum broking ,The IS_INV_INC_P code is missing in control panel report items for Life Insurance sector group. ,Mehdi Jiwani,4/3/2025 12:17:17 PM,4/3/2025 12:17:17 PM,114,58.00,,1
+751,Centrum broking ,"The Quarterly data is not coming for AMC, Wealth, Life and General Insurance.",Mehdi Jiwani,4/3/2025 12:12:45 PM,4/3/2025 12:12:45 PM,113,57.00,,1
+752,Axis Capital,Tiny MCE Bullet Alignment issue,Satnam Singh,4/3/2025 9:47:57 AM,4/3/2025 9:47:57 AM,507,,,5
+753,Kotak Securities,To reinstate the amrutha.kandukuri@kotak.com client contact.,Mini Pillai,4/3/2025 8:38:18 AM,4/3/2025 8:38:18 AM,506,,,1
+754,Axis Capital,Delay in email distribution,Hussain Gandhi,4/3/2025 6:51:13 AM,4/3/2025 6:51:13 AM,508,,,1
+755,Axis Capital,Delay in email distribution,Hussain Gandhi,4/3/2025 6:51:13 AM,4/3/2025 6:51:13 AM,508,,,1
+756,Nuvama Institutional Equities,"Rating data, volume data, and data of CIFC in equity are not uploaded for Cholamandalam Investment and Finance Company.",Sandeep Kosambi,4/2/2025 12:59:46 PM,4/2/2025 12:59:46 PM,718,,,1
+757,Nuvama Institutional Equities,Hindustan Aeronautics - Issue while uploading note ,Sandeep Kosambi,4/2/2025 9:30:43 AM,4/2/2025 9:30:43 AM,717,,,1
+758,Incred,Email are delivering late from the outlook.,Mazaharul Hassan Saiyed,4/2/2025 8:34:51 AM,4/2/2025 8:34:51 AM,264,,,1
+759,Incred,The readership log screen is showing an error (Internal Ticket),Mazaharul Hassan Saiyed,4/1/2025 9:58:59 AM,4/1/2025 9:58:59 AM,262,169.00,,1
+760,Incred,Unable to download readership report from 1st Apr 2024 onwards.,Mazaharul Hassan Saiyed,4/1/2025 9:58:14 AM,4/1/2025 9:58:14 AM,261,170.00,,2
+761,Kotak Securities,Email MIS required to be sent to the relevant people after completion of distribution.,Melanie Dsouza,4/1/2025 8:00:44 AM,4/1/2025 8:00:44 AM,505,,,8
+762,Kotak Securities,To take the last published data instead of selecting the date reference.,Sunita Baldawa,4/1/2025 7:36:09 AM,4/1/2025 7:36:09 AM,504,,,74
+763,Equirus,The MD automation is not working.,Paresh Panchal,4/1/2025 7:16:18 AM,4/1/2025 7:16:18 AM,125,,,1
+764,ICICI-2021,To integrate the AD authentication with Equibase application.,Monty Fernandes,3/28/2025 11:52:21 AM,3/28/2025 11:52:21 AM,8,,,6
+765,Kotak Securities, To reinstate the Shikha Vageria’s profile.,Mini Pillai,3/27/2025 8:19:34 AM,3/27/2025 8:19:34 AM,503,,,1
+766,Incred,Research portal is not working.,Mazaharul Hassan Saiyed,3/27/2025 8:16:00 AM,3/27/2025 8:16:00 AM,260,,,1
+767,Incred,Implementation of AD/SAML with Equibase application.,Selvan Mohan,3/27/2025 7:42:36 AM,3/27/2025 7:42:36 AM,263,,,77
+768,Equitec,VAPT - Apollo Application FY 2024-25- (Nuvama ),Komel Nayani,3/27/2025 2:23:31 AM,3/27/2025 2:23:31 AM,166,121.00,,10
+769,Centrum broking ,Unable to log in to the Equitec control panel on the centrum UAT environment.,Mehdi Jiwani,3/26/2025 12:12:18 PM,3/26/2025 12:12:18 PM,112,,,4
+770,Equirus,License renewal,Paresh Panchal,3/24/2025 10:32:10 AM,3/24/2025 10:32:10 AM,124,33.00,,3
+771,Systematix shares and stocks ltd,License renewal.,Sytematix IT desk,3/24/2025 10:16:41 AM,3/24/2025 10:16:41 AM,32,20.00,,3
+772,Alchemy ,Unable to use Edit the Dr Reddy’s Laboratories Ltd company in the control panel.,Ali Sayyed,3/24/2025 10:14:58 AM,3/24/2025 10:14:58 AM,31,23.00,,1
+773,SICO Bank,"Disclaimer Table and Chart - Closing Price, Historical Price Data Error",Sumaya Ali,3/23/2025 2:43:16 AM,3/31/2025 2:43:16 AM,1050,,,33
+774,Phillip Capital,VAPT point (HSTS Missing From HTTPS Server),Ganesh Deorukhkar,3/21/2025 12:27:28 PM,3/24/2025 12:27:28 PM,54,,,7
+775,Axis Capital,Audio upload in reports,Merle Almeida,3/21/2025 7:41:03 AM,3/21/2025 7:41:03 AM,506,240.00,,18
+776,JM Financial,License renewal,Tarak Mehta,3/21/2025 4:18:48 AM,3/21/2025 4:18:48 AM,481,177.00,,8
+777,Kotak Securities,To reinstate the  Prasad.Murudkar@avivaindia.com client contact.,Mini Pillai,3/19/2025 9:51:06 AM,3/19/2025 9:51:06 AM,502,,,1
+778,KAF,Disclaimer to be updated in Word Report,KAF Supprot,3/19/2025 9:50:56 AM,3/24/2025 9:50:56 AM,81,23.00,,6
+779,Axis Capital,New Profile not saving in the CP.,Hussain Gandhi,3/19/2025 7:36:08 AM,3/19/2025 7:36:08 AM,504,,,1
+780,Centrum broking ,License renewal,Mehdi Jiwani,3/19/2025 7:08:34 AM,3/19/2025 7:08:34 AM,111,56.00,,7
+781,Axis Capital,Issue in Audio upload in report on client UAT,Hussain Gandhi,3/18/2025 7:40:36 AM,3/18/2025 7:40:36 AM,505,239.00,,15
+782,Motilal  Oswal,License Renewal (31-03-25 to 31-03-26),Motial Oswal Support Desk,3/17/2025 9:21:18 AM,3/17/2025 9:21:18 AM,163,93.00,,11
+783,Axis Capital,Not able to change the Bloomberg Code for Hexaware technologies.,Zameer Khan,3/13/2025 2:05:59 AM,3/13/2025 2:05:59 AM,503,236.00,,2
+784,Kotak Securities,Change the Item code for NIM and credit cost.,Sunita Baldawa,3/11/2025 10:10:22 AM,3/11/2025 10:10:22 AM,501,299.00,,22
+785,Axis Capital,Error log implementation in the control panel.,Axis Capital Support Desk,3/11/2025 8:13:57 AM,3/11/2025 8:13:57 AM,500,235.00,,4
+786,Incred,Distribution Emails are sending slow to the client.,Mazaharul Hassan Saiyed,3/11/2025 3:53:26 AM,3/11/2025 3:53:26 AM,259,168.00,,4
+787,Equitec,The content is not generating for compressed files,Firoz Haider,3/10/2025 12:13:47 PM,3/10/2025 12:13:47 PM,165,120.00,,25
+788,ICICI-2021,Unable to login into the Equitec control panel (client UAT).,Monty Fernandes,3/10/2025 1:22:28 AM,3/10/2025 1:22:28 AM,7,,,12
+789,Axis Capital,Package Update from EPPLUS to ClosedXML. (Internal ticket),Axis Capital Support Desk,3/7/2025 2:26:55 AM,3/7/2025 2:26:55 AM,499,233.00,,28
+790,Axis Capital,Error occurred while publishing the report from workflow.,Hussain Gandhi,3/6/2025 3:29:50 AM,3/6/2025 3:29:50 AM,498,,,8
+791,FAB Securities,Dependency Scan - 2 points,Mohamed Shibin KP,3/6/2025 3:28:09 AM,3/6/2025 3:28:09 AM,10,,,1
+792,ICICI-2021,Error log implementation for control panel.,Monty Fernandes,3/6/2025 1:25:35 AM,3/6/2025 1:25:35 AM,6,5.00,,9
+793,Axis Capital,Unable to insert image in the Tiny MCE tool,Hussain Gandhi,3/5/2025 6:15:30 AM,3/5/2025 6:15:30 AM,497,234.00,,23
+794,FAB Securities,Remove CSP header values unsafe-inline & unsafe-eval ,Mohamed Shibin KP,3/4/2025 8:01:21 AM,3/4/2025 8:01:21 AM,9,8.00,,20
+795,Kotak Securities,Storing historical model data for published reports.,Debraj Das,3/3/2025 11:46:49 AM,3/3/2025 11:46:49 AM,500,298.00,,95
+796,Kotak Securities,Storing historical model data for published reports.,Debraj Das,3/3/2025 11:46:49 AM,3/3/2025 11:46:49 AM,500,300.00,,95
+797,Whiteoak,To implement the Azure Entra ID in IMS application.,Rohan Choudhari,2/28/2025 12:52:25 PM,2/28/2025 12:52:25 PM,1,1.00,,11
+798,Motilal  Oswal,Analyst Mapping Issue,Rahul Hitesh Shah,2/28/2025 4:06:39 AM,2/28/2025 4:06:39 AM,162,,,5
+799,Axis Capital,Distribution log not showing all reports in search range,Percy Bharucha,2/28/2025 3:01:21 AM,2/28/2025 3:01:21 AM,490,237.00,,33
+800,Spark Avendus,To fetch the data based on the company code instead of Bloomberg code. ,Santosh Kumar,2/27/2025 12:36:46 PM,2/27/2025 12:36:46 PM,101,44.00,,4
+801,Nuvama Institutional Equities,VAPT - Apollo Application FY 2024-25,Naimat Choudhary,2/27/2025 2:38:22 AM,2/27/2025 2:38:22 AM,716,209.00,,49
+802,Equirus,License renewal.,Paresh Panchal,2/27/2025 1:32:39 AM,2/27/2025 1:32:39 AM,123,32.00,,1
+803,Emkay-O365,Issues with Updated Strategy,Deepak Pansari,2/26/2025 9:52:40 AM,2/26/2025 9:52:40 AM,1,1.00,,52
+804,Alchemy ,License renewal.,Ali Sayyed,2/25/2025 12:21:50 PM,2/27/2025 12:21:50 PM,30,22.00,,2
+805,Incred,To change the date for India strategy report from 06-Dec-2024 to 06-Feb-2025.,Mazaharul Hassan Saiyed,2/20/2025 11:51:07 AM,2/20/2025 11:51:07 AM,258,166.00,,3
+806,SICO Bank,Distribute reports via WhatsApp ,Equitec Support Data team,2/20/2025 10:56:01 AM,2/20/2025 10:56:01 AM,1048,454.00,,2
+807,SICO Bank,SICO Arabic Report,Equitec Support Data team,2/20/2025 9:25:24 AM,2/20/2025 9:25:24 AM,1046,455.00,,26
+808,Kotak Securities,To reinstate the client contact.,Mini Pillai,2/20/2025 8:51:39 AM,2/20/2025 8:51:39 AM,499,297.00,,3
+809,SICO Bank,Code Cleanup in the Research portal,Equitec Support Data team,2/19/2025 12:33:48 PM,2/25/2025 12:33:48 PM,1049,456.00,,27
+810,Axis Capital,To share the distribution logs details from 11-Nov-2024.,Percy Bharucha,2/19/2025 9:39:12 AM,2/19/2025 9:39:12 AM,495,,,3
+811,CIMB - Equity Research,Economics report appearing as strategy,June Yap,2/19/2025 3:04:19 AM,2/19/2025 3:04:19 AM,1,1.00,,11
+812,Arqaam Capital ,Text to speech.,Kiran Menon,2/18/2025 8:45:35 AM,2/18/2025 8:45:35 AM,715,,,4
+813,Axis Capital,Force checkout issue.,Percy Bharucha,2/18/2025 8:02:09 AM,2/18/2025 8:02:09 AM,496,232.00,,20
+814,Axis Capital,Unable to upload report.,Hussain Gandhi,2/18/2025 4:38:09 AM,2/18/2025 4:38:09 AM,494,,,5
+815,Axis Capital,New Profile not saving in the CP.,Hussain Gandhi,2/18/2025 4:37:16 AM,2/18/2025 4:37:16 AM,493,238.00,,32
+816,Incred,VAPT point.,Selvan Mohan,2/18/2025 4:24:43 AM,12/18/2024 4:24:43 AM,242,167.00,,27
+817,SICO Bank,Changes need to be done on SICO Registration form,Equitec Support Data team,2/17/2025 3:37:37 AM,2/17/2025 3:37:37 AM,1045,453.00,,40
+818,Equirus,The Metropolis healthcare uploader failed to upload.,Ashutosh Tiwari,2/13/2025 1:32:04 AM,2/13/2025 1:32:04 AM,122,,,7
+819,Spark Avendus,Unable to upload the Voltamp Model. ,Vedikaa K,2/11/2025 9:57:52 AM,2/11/2025 9:57:52 AM,100,,,1
+820,SICO Bank,Jqeury issue.,Mohammed Ibrahim,2/11/2025 3:14:58 AM,2/11/2025 3:14:58 AM,1044,452.00,,16
+821,Equitec,To deploy the EquiExcel and EquiWord on dreams 365.,Komel Nayani,2/11/2025 2:04:56 AM,2/11/2025 2:04:56 AM,164,,,10
+822,Axis Capital,Unable to generate the report after uploading the market data for the first time.,Hussain Gandhi,2/10/2025 12:35:57 PM,2/10/2025 12:35:57 PM,492,,,11
+823,Axis Capital,The research portal same site key is not showing lax value.,Hussain Gandhi,2/10/2025 12:14:43 PM,2/10/2025 12:14:43 PM,491,,,1
+824,Kotak Securities,Delayed email receivers are not able to open the report link.,Mini Pillai,2/10/2025 6:24:42 AM,2/10/2025 6:24:42 AM,498,296.00,,4
+825,KAF,The price performance chart and table data are not coming proper in the word report for F&N Holdings.,KAF Supprot,2/7/2025 8:30:14 AM,2/7/2025 8:30:14 AM,79,,,6
+826,Kotak Securities,To reinstate the client contact.,Mini Pillai,2/7/2025 3:58:24 AM,2/7/2025 3:58:24 AM,497,295.00,,1
+827,KAF,To restore the two users from the backend,Kanagaraj Tarmalingam,2/7/2025 1:35:21 AM,2/7/2025 1:35:21 AM,80,22.00,,1
+828,Nuvama Institutional Equities,Authentication failure,Sandeep Kosambi,2/6/2025 10:21:04 AM,2/6/2025 10:21:04 AM,715,,,4
+829,ICICI-2021,Fixes in the Historical data uploader sheet.,Shreekant Joshi,2/6/2025 3:47:37 AM,2/6/2025 3:47:37 AM,5,4.00,,112
+830,AMInvestment Bank Berhad - O365,To share the suspended and deleted script for the users.,Nik Suriani Nik Ramzi Shah,2/6/2025 3:17:38 AM,2/6/2025 3:17:38 AM,38,,,1
+831,Centrum broking ,Unable to Login in Control Panel ( Internal Ticket ),Ashish Shah,2/5/2025 12:45:15 PM,2/7/2025 12:45:15 PM,110,54.00,,1
+832,B&K Securities,Word report fixes,Mahendra sawardekar,2/5/2025 4:53:28 AM,2/5/2025 4:53:28 AM,60,40.00,,37
+833,Incred,Junk characters are coming while downloading the PDF report from the Research portal.,Mazaharul Hassan Saiyed,2/5/2025 3:21:30 AM,2/5/2025 3:21:30 AM,257,,,4
+834,Kotak Securities,Implement password encryption on kinsite.,Debraj Das,2/4/2025 8:23:23 AM,2/4/2025 8:23:23 AM,477,287.00,,23
+835,Kotak Securities,EquiExcel Migration from VB TO C#( Internal Ticket ),Mohan Sahu,2/4/2025 2:42:21 AM,2/18/2025 2:42:21 AM,496,294.00,,114
+836,Phillip Capital,VAPT points,Ganesh Deorukhkar,2/3/2025 2:15:16 AM,2/3/2025 2:15:16 AM,53,,,1
+837,Incred,PPT automation,Mazaharul Hassan Saiyed,1/30/2025 9:52:05 AM,1/30/2025 9:52:05 AM,239,164.00,,5
+838,Centrum broking ,Queries related to the Control panel.,Mehdi Jiwani,1/30/2025 7:06:53 AM,1/30/2025 7:06:53 AM,109,55.00,,8
+839,Spark Avendus,Unable to Upload the Emami Model.,Madhav Yadav,1/30/2025 6:25:56 AM,1/30/2025 6:25:56 AM,99,,,1
+840,Axis Capital,Unable to insert image in the Tiny MCE tool.,Hussain Gandhi,1/30/2025 3:07:59 AM,1/30/2025 3:07:59 AM,489,,,6
+841,B&K Securities,Changes in the P_E calculations and Market Cap in USD needs to replace with INR.,Pankaj Gawade,1/29/2025 11:41:25 AM,2/7/2025 11:41:25 AM,59,39.00,,42
+842,B&K Securities,Unable to upload the Bajaj finance model.,Ruchika Virwani,1/29/2025 8:53:17 AM,1/29/2025 8:53:17 AM,58,,,2
+843,JM Financial,Unable to upload the PDS model ,Tarak Mehta,1/29/2025 6:29:00 AM,1/29/2025 6:29:00 AM,480,,,2
+844,Spark Avendus,Emami company model is not getting uploaded,Santosh Kumar,1/29/2025 4:26:15 AM,1/29/2025 4:26:15 AM,98,,,1
+845,Kotak Securities,To reinstate the client contact.,Mini Pillai,1/29/2025 2:59:47 AM,1/29/2025 2:59:47 AM,495,293.00,,2
+846,Axis Capital,Research Portal link redirect issue,Hussain Gandhi,1/28/2025 1:19:42 AM,1/28/2025 1:19:42 AM,487,,,1
+847,FAB Securities, Implement filename validation to ensure restricted characters are identified and prevented during uploads,Mohammad Jabir,1/27/2025 9:41:19 AM,1/27/2025 9:41:19 AM,8,7.00,,5
+848,SICO Bank,Invalid captcha showing on the research portal.,Sawsan AbdulLatif,1/27/2025 9:02:09 AM,1/27/2025 9:02:09 AM,1043,451.00,,3
+849,Phillip Capital,Showing login failed error,Ganesh Deorukhkar,1/27/2025 8:21:29 AM,1/27/2025 8:21:29 AM,52,,,1
+850,Arqaam Capital ,Multiple issues in the EquiExcel and EquiWord ,Karim Kekhia,1/27/2025 6:52:49 AM,1/27/2025 6:52:49 AM,714,,,2
+851,ICICI-2021,Server migration.,Monty Fernandes,1/27/2025 3:07:38 AM,1/27/2025 3:07:38 AM,4,3.00,,3
+852,Axis Capital,The word is frozen while using Exhibit in Equiword for the user Pradip Pandey.,Hussain Gandhi,1/24/2025 7:47:26 AM,1/24/2025 7:47:26 AM,488,,,1
+853,Nuvama Institutional Equities,Grievance Redressal/Escalation Matrix on Nuvama research website,Sandeep Kosambi,1/23/2025 1:25:27 AM,1/23/2025 1:25:27 AM,714,208.00,,74
+854,Incred,To suspend the zomato company Initiating coverage report from the workflow.,Mazaharul Hassan Saiyed,1/22/2025 12:18:29 PM,1/22/2025 12:18:29 PM,255,163.00,,3
+855,Axis Capital,To create a console application for distribution emails.,Hussain Gandhi,1/22/2025 8:27:27 AM,1/22/2025 8:27:27 AM,486,,,11
+856,AL Rajhi,To the distributed report link from the CRM.,Habib Khan,1/22/2025 7:16:32 AM,1/22/2025 7:16:32 AM,19,,,1
+857,Nuvama Institutional Equities,Released report( sector update- economy report) is not showing in website,Sandeep Kosambi,1/22/2025 2:03:00 AM,1/22/2025 2:03:00 AM,713,,,7
+858,Nuvama Institutional Equities,Edelweiss name in Research portal,Naimat Choudhary,1/22/2025 1:47:26 AM,1/22/2025 1:47:26 AM,712,,,1
+859,Axis Capital,To increase the batch limit from 500 to 500.,Hussain Gandhi,1/21/2025 12:06:42 PM,1/21/2025 12:06:42 PM,484,,,1
+860,Incred,Disclaimer changes.,Mazaharul Hassan Saiyed,1/21/2025 11:33:01 AM,1/21/2025 11:33:01 AM,254,,,1
+861,Incred,Disclaimer changes.,Mazaharul Hassan Saiyed,1/21/2025 11:33:01 AM,1/21/2025 11:33:01 AM,254,162.00,,11
+862,Centrum broking ,Uploader requirement.,Mehdi Jiwani,1/21/2025 8:26:55 AM,1/21/2025 8:26:55 AM,108,53.00,,33
+863,Arqaam Capital ,"The company's name is United International Holding Co., and the ticker and the code are UIHC AB change the uploader type from Non-banking to banking.",Abdullah Abbas,1/21/2025 1:25:05 AM,1/21/2025 1:25:05 AM,713,,,1
+864,Nuvama Institutional Equities,Unable to Upload Report - Authentication Failed Error,Sandeep Kosambi,1/20/2025 12:26:58 PM,1/20/2025 12:26:58 PM,711,,,1
+865,B&K Securities,To reduce the NBFC sector report balance sheet table rows from 21 to 11 and in key ratios from 43 to 37 in the backpage financial table.,Pankaj Gawade,1/20/2025 12:09:44 PM,1/20/2025 12:09:44 PM,56,,,1
+866,SICO Bank,"Unable to generate the oil market report, it comes with a few missing charts (exhibits 4,7,8)",Sawsan AbdulLatif,1/20/2025 10:14:38 AM,1/20/2025 10:14:38 AM,1042,,,2
+867,Axis Capital,The Flash note report got stuck in the distribution queue.,Hussain Gandhi,1/20/2025 9:13:12 AM,1/20/2025 9:13:12 AM,485,,,1
+868,B&K Securities,The NBFC line items are not coming properly.,Ruchika Virwani,1/20/2025 4:33:27 AM,1/20/2025 4:33:27 AM,57,38.00,,13
+869,Axis Capital,The Axis banner and Insert images in the tinymce tool is not appearing.,Hussain Gandhi,1/17/2025 12:28:12 PM,1/17/2025 12:28:12 PM,483,,,1
+870,Axis Capital,To increase the batch limit from 500 to 5000.,Hussain Gandhi,1/17/2025 12:06:42 PM,1/17/2025 12:06:42 PM,484,231.00,,4
+871,B&K Securities,Company is restricted error coming on the CEAT and Reliance report.,Pankaj Gawade,1/17/2025 3:50:22 AM,1/17/2025 3:50:22 AM,55,,,6
+872,Kotak Securities,To reinstate the Siddhesh Pawar client contact.,Mini Pillai,1/16/2025 10:00:36 AM,1/16/2025 10:00:36 AM,493,,,2
+873,Axis Capital,Economy report got stuck while distributing.,Hussain Gandhi,1/16/2025 7:37:23 AM,1/16/2025 7:37:23 AM,482,,,2
+874,ICICI-2021,I-opener changes.,Shreekant Joshi,1/16/2025 6:14:55 AM,1/16/2025 6:14:55 AM,3,2.00,,32
+875,Incred,To show one decimal in all the number of valuation table sector report.,Mazaharul Hassan Saiyed,1/16/2025 3:36:59 AM,1/16/2025 3:36:59 AM,253,161.00,,11
+876,Kotak Securities,Storing model data for 5 years.,Anish Mathew,1/15/2025 11:45:28 AM,1/15/2025 11:45:28 AM,494,,,9
+877,Kotak Securities,Storing model data for 5 years.,Anish Mathew,1/15/2025 11:45:28 AM,1/15/2025 11:45:28 AM,494,,,2
+878,SICO Bank,Issue with Links in report,Sumaya Ali,1/15/2025 4:25:14 AM,1/15/2025 4:25:14 AM,1041,,,5
+879,Spark Avendus,To optimize the query builder.,Santosh Kumar,1/14/2025 9:42:31 AM,1/21/2025 9:42:31 AM,97,43.00,,25
+880,SICO Bank,The GCC Market is not sending mails to ali.alali@ahliunited.com,Sawsan AbdulLatif,1/14/2025 5:45:47 AM,1/14/2025 5:45:47 AM,1040,,,1
+881,Kotak Securities,To reinstate the Mr. Andrew Sergeant client contact.,Mini Pillai,1/13/2025 8:53:43 AM,1/13/2025 8:53:43 AM,492,,,1
+882,AMInvestment Bank Berhad - O365,Unable to upload the oriental company model.,Calvin Kwa Hock Keat,1/13/2025 6:57:15 AM,1/14/2025 6:57:15 AM,37,,,1
+883,SICO Bank,Beyon company ratios not getting picked up,Nishit Lakhotia,1/13/2025 6:14:08 AM,1/13/2025 6:14:08 AM,1039,450.00,,14
+884,B&K Securities,Sources text is coming on side by side chart.,Mahendra sawardekar,1/13/2025 3:34:22 AM,1/13/2025 3:34:22 AM,54,37.00,,11
+885,SICO Bank,The year changed on Research Portal at the bottom from 2018 to 2025.,Equitec Support Data team,1/10/2025 12:17:35 PM,1/10/2025 12:17:35 PM,1037,448.00,,2
+886,Incred,The show report title is to be renamed with Indiasneakpeak.,Mazaharul Hassan Saiyed,1/10/2025 11:38:49 AM,1/10/2025 11:38:49 AM,252,160.00,,15
+887,Nuvama Institutional Equities,Unable to upload model in Equitec,Naimat Choudhary,1/10/2025 10:28:35 AM,1/10/2025 10:28:35 AM,710,,,1
+888,Nuvama Institutional Equities,PCBL- company analyst validation failed,Sandeep Kosambi,1/10/2025 8:54:58 AM,1/10/2025 8:54:58 AM,709,,,1
+889,JM Financial,The EPACK model is failed to upload.,Dinesh  kodere,1/9/2025 11:36:14 AM,1/9/2025 11:36:14 AM,479,,,1
+890,Kotak Securities,To reinstate the Mr. Pierre Horvilleur client contact.,Mini Pillai,1/9/2025 9:58:58 AM,1/9/2025 9:58:58 AM,491,,,1
+891,Spark Avendus,The Equibase application was not functioning.,Gopinath S,1/9/2025 8:29:13 AM,1/9/2025 8:29:13 AM,96,,,1
+892,Axis Capital,Delay - Equitec delivery for Tata Motors (FN). It takes more than 35 mins to reach to inbox & till pending for more than 1700 clients,Hussain Gandhi,1/9/2025 5:39:25 AM,1/9/2025 5:39:25 AM,481,,,2
+893,Axis Capital,Sub folders in Research portal,Hussain Gandhi,1/8/2025 12:15:58 PM,1/8/2025 12:15:58 PM,480,,,1
+894,SICO Bank,Issue with the YoY and QoQ numbers in our quarterly preview.,Reem AlBarri,1/8/2025 12:07:39 PM,1/8/2025 12:07:39 PM,1038,449.00,,17
+895,Incred,Disclaimer changes.,Mazaharul Hassan Saiyed,1/8/2025 10:29:50 AM,1/8/2025 10:29:50 AM,251,159.00,,1
+896,AMInvestment Bank Berhad - O365,Prolintas model is unable to upload.,Aimi Nasuha,1/8/2025 9:13:40 AM,1/8/2025 9:13:40 AM,36,,,1
+897,B&K Securities,Sources text to renamed with Source.,Mahendra sawardekar,1/8/2025 8:18:33 AM,1/8/2025 8:18:33 AM,53,36.00,,3
+898,Nuvama Institutional Equities,#Name issue in Equiexcel while running the querybuilder,Sandeep Kosambi,1/8/2025 2:19:36 AM,1/8/2025 2:19:36 AM,708,,,1
+899,Axis Capital,VAPT points to be managed from the web.config.,Ashish Rajput,1/7/2025 12:47:09 PM,1/7/2025 12:47:09 PM,479,,,4
+900,Spark Avendus,Issues in the Equitec application,Sriram Sampath,1/7/2025 12:36:21 PM,1/9/2025 12:36:21 PM,94,,Meeting is scheduled with the client on Thursday,2
+901,KAF,Disclaimer changes,Indra Syahrizad Mohd Nazar,1/7/2025 11:55:45 AM,1/7/2025 11:55:45 AM,78,21.00,,2
+902,Motilal  Oswal,"A new chart option, 'Doughnut Chart,' will be given & a white patch in the background for all chart types",Rahul Hitesh Shah,1/7/2025 9:21:45 AM,1/7/2025 9:21:45 AM,160,92.00,,31
+903,ICICI-2021,Disclaimer changes.,Monty Fernandes,1/7/2025 8:58:50 AM,1/7/2025 8:58:50 AM,1,1.00,,2
+904,Spark Avendus,Disclaimer changes.,Gopinath S,1/7/2025 8:38:45 AM,1/7/2025 8:38:45 AM,95,42.00,,1
+905,FAB Securities,Issues in CRM - 3 points,Mohammad Jabir,1/7/2025 4:35:23 AM,1/7/2025 4:35:23 AM,7,6.00,,4
+906,Motilal  Oswal,New Requirement for Charting Tool,Rahul Hitesh Shah,1/7/2025 4:17:43 AM,1/7/2025 4:17:43 AM,159,91.00,,18
+907,Incred,To change the CIMB link.,Mazaharul Hassan Saiyed,1/7/2025 3:17:39 AM,1/7/2025 3:17:39 AM,250,158.00,,2
+908,ICICI-2021,The make public button is not working.,Shreekant Joshi,1/7/2025 2:16:51 AM,1/7/2025 2:16:51 AM,2,,,1
+909,Axis Capital,Link chart/table shows source links,Hussain Gandhi,1/6/2025 7:22:58 AM,1/6/2025 7:22:58 AM,478,,,1
+910,JM Financial,The Equitec application is not working.,Dinesh  kodere,1/6/2025 7:06:33 AM,1/6/2025 7:06:33 AM,478,,,1
+911,Equirus,The Equiexcel addins are not working.,Paresh Panchal,1/3/2025 11:46:41 AM,1/3/2025 11:46:41 AM,121,,,1
+912,Nuvama Institutional Equities,Showing Invalid user when generating report,Sandeep Kosambi,1/3/2025 4:19:21 AM,1/3/2025 4:19:21 AM,707,,,1
+913,B&K Securities,To provide a button in Equiword application.,Pankaj Gawade,1/3/2025 2:14:53 AM,1/7/2025 2:14:53 AM,52,35.00,,6
+914,Phillip Capital,Facing error after inserting disclaimer in pc,Ganesh Deorukhkar,1/2/2025 12:12:43 PM,1/2/2025 12:12:43 PM,51,,,1
+915,Axis Capital,Verifying file types for upload to the website,Percy Bharucha,1/2/2025 3:32:17 AM,1/8/2025 3:32:17 AM,477,229.00,,13
+916,Kotak Securities,The FP Headlines and FP Intro are repeating twice while selecting the analyst Sanjeev Prasad.  ,Mohan Sahu,1/1/2025 12:25:06 PM,1/1/2025 12:25:06 PM,490,292.00,,3

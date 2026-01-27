@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ticket-analysis-api.vercel.app';
 
 export type FilterParams = {
     start_date?: string;

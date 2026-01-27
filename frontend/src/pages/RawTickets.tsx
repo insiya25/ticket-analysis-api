@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Search, Download, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Download, ChevronLeft, ChevronRight, RefreshCcw } from 'lucide-react';
 import { api } from '../services/api';
-import type { TicketData } from '../services/api';
+import type { TicketData, FilterParams } from '../services/api';
 import { exportToCSV, exportToExcel } from '../utils/exportData';
+import { FilterBar } from '../components/FilterBar';
 
 const ITEMS_PER_PAGE = 20;
 
@@ -12,50 +13,76 @@ export const RawTickets = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
+    const [filters, setFilters] = useState<FilterParams>({});
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                // Fetch all tickets by getting all categories
-                const categoryResult = await api.getCategoryAnalysis();
-                const allTickets: TicketData[] = [];
+    const fetchData = async (currentFilters: FilterParams = {}) => {
+        setLoading(true);
+        try {
+            // Fetch all tickets by getting available categories based on filters
+            // This is a 2-step process: 
+            // 1. Get categories that have tickets matching the filters
+            // 2. Get tickets for those categories (also applying the filters)
+            const categoryResult = await api.getCategoryAnalysis(currentFilters);
+            const allTickets: TicketData[] = [];
 
-                // Fetch tickets for each category
-                for (const category of categoryResult.data) {
-                    try {
-                        const ticketsResult = await api.getTicketsByCategory(category['Issue Category']);
-                        allTickets.push(...ticketsResult.data);
-                    } catch (error) {
-                        console.warn(`Skipping category "${category['Issue Category']}" due to error:`, error);
-                        // Continue with other categories
-                    }
-                }
-
-                setAllData(allTickets);
-                setFilteredData(allTickets);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
-
-    useEffect(() => {
-        const filtered = allData.filter(ticket => {
-            const searchLower = searchTerm.toLowerCase();
-            return (
-                ticket.Client?.toLowerCase().includes(searchLower) ||
-                ticket.Subject?.toLowerCase().includes(searchLower) ||
-                ticket['Raised By']?.toLowerCase().includes(searchLower) ||
-                ticket.Status?.toLowerCase().includes(searchLower) ||
-                ticket.Category?.toLowerCase().includes(searchLower)
+            // Fetch tickets for each category
+            // We use Promise.all to fetch them in parallel for better performance
+            const ticketPromises = categoryResult.data.map(category =>
+                api.getTicketsByCategory(category['Issue Category'], currentFilters)
+                    .then(res => res.data)
+                    .catch(err => {
+                        console.warn(`Skipping category "${category['Issue Category']}" due to error:`, err);
+                        return [];
+                    })
             );
-        });
+
+            const results = await Promise.all(ticketPromises);
+            results.forEach(tickets => allTickets.push(...tickets));
+
+            // Sort by ticket number or date if needed, for now just keeping order
+            setAllData(allTickets);
+
+            // Apply text search immediately
+            applySearch(allTickets, searchTerm);
+
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const applySearch = (data: TicketData[], term: string) => {
+        if (!term.trim()) {
+            setFilteredData(data);
+            return;
+        }
+
+        const searchLower = term.toLowerCase();
+        const filtered = data.filter(ticket =>
+            ticket.Client?.toLowerCase().includes(searchLower) ||
+            ticket.Subject?.toLowerCase().includes(searchLower) ||
+            ticket['Raised By']?.toLowerCase().includes(searchLower) ||
+            ticket.Status?.toLowerCase().includes(searchLower) ||
+            ticket.Category?.toLowerCase().includes(searchLower)
+        );
         setFilteredData(filtered);
+    };
+
+    useEffect(() => {
+        fetchData(filters);
+    }, [filters]);
+
+    useEffect(() => {
+        applySearch(allData, searchTerm);
         setCurrentPage(1);
     }, [searchTerm, allData]);
+
+    const handleFilterChange = (newFilters: any) => {
+        const { search, ...apiFilters } = newFilters;
+        setSearchTerm(search || '');
+        setFilters(apiFilters);
+    };
 
     const handleExportCSV = () => {
         exportToCSV(filteredData, 'raw-tickets');
@@ -70,7 +97,7 @@ export const RawTickets = () => {
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const currentData = filteredData.slice(startIndex, endIndex);
 
-    if (loading) {
+    if (loading && allData.length === 0) {
         return (
             <div className="flex items-center justify-center h-full">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
@@ -79,7 +106,7 @@ export const RawTickets = () => {
     }
 
     return (
-        <div className="space-y-6 animate-fade-in">
+        <div className="space-y-6 animate-fade-in pb-10">
             {/* Header */}
             <div>
                 <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -90,19 +117,18 @@ export const RawTickets = () => {
                 </p>
             </div>
 
-            {/* Search and Export */}
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-                <div className="relative flex-1 max-w-md">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                    <input
-                        type="text"
-                        placeholder="Search tickets..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                </div>
-                <div className="flex gap-2">
+            {/* Filter Bar */}
+            <div className="flex flex-col gap-4">
+                <FilterBar onFilterChange={handleFilterChange} showSearch={true} initialFilters={{ search: searchTerm }} />
+
+                {/* Export Buttons - Positioned below filters on mobile, or alongside if space permits */}
+                <div className="flex justify-end gap-2">
+                    {loading && (
+                        <div className="flex items-center gap-2 text-blue-500 mr-auto">
+                            <RefreshCcw className="w-5 h-5 animate-spin" />
+                            <span className="text-sm font-medium">Updating...</span>
+                        </div>
+                    )}
                     <button
                         onClick={handleExportCSV}
                         className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200"
@@ -137,39 +163,47 @@ export const RawTickets = () => {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                            {currentData.map((ticket, index) => (
-                                <tr
-                                    key={index}
-                                    className="hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-150"
-                                >
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
-                                        {ticket.No}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white">
-                                        {ticket.Client}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white max-w-md">
-                                        {ticket.Subject}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm">
-                                        <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs font-medium">
-                                            {ticket.Category}
-                                        </span>
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
-                                        {ticket['Raised By']}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
-                                        {ticket['Raised Date']}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white">
-                                        {ticket.Status || '-'}
-                                    </td>
-                                    <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
-                                        {ticket.Days}
+                            {currentData.length > 0 ? (
+                                currentData.map((ticket, index) => (
+                                    <tr
+                                        key={index}
+                                        className="hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-150"
+                                    >
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
+                                            {ticket.No}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                                            {ticket.Client}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white max-w-md">
+                                            {ticket.Subject}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm">
+                                            <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs font-medium">
+                                                {ticket.Category}
+                                            </span>
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
+                                            {ticket['Raised By']}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
+                                            {ticket['Raised Date']}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                                            {ticket.Status || '-'}
+                                        </td>
+                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white whitespace-nowrap">
+                                            {ticket.Days}
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan={8} className="px-6 py-10 text-center text-gray-500">
+                                        No tickets found matching the criteria
                                     </td>
                                 </tr>
-                            ))}
+                            )}
                         </tbody>
                     </table>
                 </div>
@@ -189,11 +223,11 @@ export const RawTickets = () => {
                         <ChevronLeft className="w-5 h-5" />
                     </button>
                     <span className="text-sm text-gray-700 dark:text-gray-300">
-                        Page {currentPage} of {totalPages}
+                        Page {currentPage} of {Math.max(1, totalPages)}
                     </span>
                     <button
                         onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                        disabled={currentPage === totalPages}
+                        disabled={currentPage === totalPages || totalPages === 0}
                         className="p-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
                     >
                         <ChevronRight className="w-5 h-5" />

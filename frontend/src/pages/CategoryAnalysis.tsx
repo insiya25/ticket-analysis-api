@@ -1,41 +1,39 @@
 import { useEffect, useState } from 'react';
-import { Search, Download } from 'lucide-react';
+import { Download, RefreshCcw } from 'lucide-react';
 import { api } from '../services/api';
-import type { CategoryData } from '../services/api';
+import type { CategoryData, FilterParams } from '../services/api';
 import { exportToCSV, exportToExcel } from '../utils/exportData';
+import { FilterBar } from '../components/FilterBar';
 
 export const CategoryAnalysis = () => {
     const [data, setData] = useState<CategoryData[]>([]);
-    const [filteredData, setFilteredData] = useState<CategoryData[]>([]);
-    const [searchTerm, setSearchTerm] = useState('');
     const [loading, setLoading] = useState(true);
     const [totalTickets, setTotalTickets] = useState(0);
+    const [filters, setFilters] = useState<FilterParams>({});
+
+    const fetchData = async (currentFilters: FilterParams = {}) => {
+        setLoading(true);
+        try {
+            const result = await api.getCategoryAnalysis(currentFilters);
+            setData(result.data);
+            setTotalTickets(result.total_tickets);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const result = await api.getCategoryAnalysis();
-                setData(result.data);
-                setFilteredData(result.data);
-                setTotalTickets(result.total_tickets);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
+        fetchData(filters);
+    }, [filters]);
 
-    useEffect(() => {
-        const filtered = data.filter(item =>
-            item['Issue Category'].toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredData(filtered);
-    }, [searchTerm, data]);
+    const handleFilterChange = (newFilters: any) => {
+        setFilters(newFilters);
+    };
 
     const handleExportCSV = () => {
-        const exportData = filteredData.map((item, index) => ({
+        const exportData = data.map((item, index) => ({
             Rank: index + 1,
             'Issue Category': item['Issue Category'],
             Count: item.Count,
@@ -45,7 +43,7 @@ export const CategoryAnalysis = () => {
     };
 
     const handleExportExcel = () => {
-        const exportData = filteredData.map((item, index) => ({
+        const exportData = data.map((item, index) => ({
             Rank: index + 1,
             'Issue Category': item['Issue Category'],
             Count: item.Count,
@@ -54,7 +52,7 @@ export const CategoryAnalysis = () => {
         exportToExcel(exportData, 'category-analysis');
     };
 
-    if (loading) {
+    if (loading && data.length === 0) {
         return (
             <div className="flex items-center justify-center h-full">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
@@ -63,30 +61,24 @@ export const CategoryAnalysis = () => {
     }
 
     return (
-        <div className="space-y-6 animate-fade-in">
+        <div className="space-y-6 animate-fade-in pb-10">
             {/* Header */}
-            <div>
-                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                    Issue Category Deep-Dive
-                </h1>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
-                    Granular breakdown of support categories and operational bottlenecks
-                </p>
-            </div>
-
-            {/* Search and Export */}
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-                <div className="relative flex-1 max-w-md">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                    <input
-                        type="text"
-                        placeholder="Search categories..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+                        Issue Category Deep-Dive
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2">
+                        Granular breakdown of support categories and operational bottlenecks
+                    </p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex items-center gap-3">
+                    {loading && (
+                        <div className="flex items-center gap-2 text-blue-500 mr-2">
+                            <RefreshCcw className="w-5 h-5 animate-spin" />
+                            <span className="text-sm">Updating...</span>
+                        </div>
+                    )}
                     <button
                         onClick={handleExportCSV}
                         className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200"
@@ -103,6 +95,9 @@ export const CategoryAnalysis = () => {
                     </button>
                 </div>
             </div>
+
+            {/* Filters */}
+            <FilterBar onFilterChange={handleFilterChange} />
 
             {/* Table */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -125,8 +120,8 @@ export const CategoryAnalysis = () => {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                            {filteredData.map((item, index) => {
-                                const percentage = (item.Count / totalTickets) * 100;
+                            {data.map((item, index) => {
+                                const percentage = totalTickets > 0 ? (item.Count / totalTickets) * 100 : 0;
                                 return (
                                     <tr
                                         key={index}
@@ -157,6 +152,13 @@ export const CategoryAnalysis = () => {
                                     </tr>
                                 );
                             })}
+                            {data.length === 0 && (
+                                <tr>
+                                    <td colSpan={4} className="px-6 py-10 text-center text-gray-500">
+                                        No categories found matching the criteria
+                                    </td>
+                                </tr>
+                            )}
                         </tbody>
                     </table>
                 </div>
@@ -164,7 +166,7 @@ export const CategoryAnalysis = () => {
 
             {/* Results Count */}
             <p className="text-sm text-gray-600 dark:text-gray-400">
-                Showing {filteredData.length} of {data.length} categories
+                Total {data.length} categories identified
             </p>
         </div>
     );

@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { TrendingUp, Users, Clock, Ticket } from 'lucide-react';
+import { TrendingUp, Users, Clock, Ticket, RefreshCcw } from 'lucide-react';
 import { api } from '../services/api';
-import type { FullAnalysisResponse } from '../services/api';
+import type { FullAnalysisResponse, FilterParams } from '../services/api';
+import { FilterBar } from '../components/FilterBar';
 
 const COLORS = [
     '#3b82f6', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981',
@@ -12,22 +13,29 @@ const COLORS = [
 export const Overview = () => {
     const [data, setData] = useState<FullAnalysisResponse | null>(null);
     const [loading, setLoading] = useState(true);
+    const [filters, setFilters] = useState<FilterParams>({});
+
+    const fetchData = async (currentFilters: FilterParams = {}) => {
+        setLoading(true);
+        try {
+            const result = await api.getFullAnalysis(currentFilters);
+            setData(result);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const result = await api.getFullAnalysis();
-                setData(result);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
+        fetchData(filters);
+    }, [filters]);
 
-    if (loading) {
+    const handleFilterChange = (newFilters: any) => {
+        setFilters(newFilters);
+    };
+
+    if (loading && !data) {
         return (
             <div className="flex items-center justify-center h-full">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
@@ -36,7 +44,7 @@ export const Overview = () => {
     }
 
     if (!data) {
-        return <div className="text-center text-red-500">Failed to load data</div>;
+        return <div className="text-center text-red-500 mt-10">Failed to load data</div>;
     }
 
     const topCategories = data.category_analysis.data.slice(0, 10);
@@ -78,16 +86,27 @@ export const Overview = () => {
     ];
 
     return (
-        <div className="space-y-6 animate-fade-in">
+        <div className="space-y-6 animate-fade-in pb-10">
             {/* Header */}
-            <div>
-                <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                    Ticket Analysis Dashboard
-                </h1>
-                <p className="text-gray-600 dark:text-gray-400 mt-2">
-                    Comprehensive overview of support ticket metrics and trends
-                </p>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+                        Ticket Analysis Dashboard
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400 mt-2">
+                        Comprehensive overview of support ticket metrics and trends
+                    </p>
+                </div>
+                {loading && (
+                    <div className="flex items-center gap-2 text-blue-500">
+                        <RefreshCcw className="w-5 h-5 animate-spin" />
+                        <span className="text-sm font-medium">Updating...</span>
+                    </div>
+                )}
             </div>
+
+            {/* Filters */}
+            <FilterBar onFilterChange={handleFilterChange} showSearch={false} />
 
             {/* Metric Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -125,32 +144,34 @@ export const Overview = () => {
                     <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
                         Top 10 Issue Categories
                     </h2>
-                    <ResponsiveContainer width="100%" height={400}>
-                        <BarChart data={topCategories} layout="vertical" margin={{ left: 150 }}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.1} />
-                            <XAxis type="number" stroke="#9ca3af" />
-                            <YAxis
-                                dataKey="Issue Category"
-                                type="category"
-                                stroke="#9ca3af"
-                                width={140}
-                                tick={{ fontSize: 12 }}
-                            />
-                            <Tooltip
-                                contentStyle={{
-                                    backgroundColor: '#1f2937',
-                                    border: 'none',
-                                    borderRadius: '8px',
-                                    color: '#fff',
-                                }}
-                            />
-                            <Bar dataKey="Count" radius={[0, 8, 8, 0]}>
-                                {topCategories.map((_, index) => (
-                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                ))}
-                            </Bar>
-                        </BarChart>
-                    </ResponsiveContainer>
+                    <div className="h-[400px]">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={topCategories} layout="vertical" margin={{ left: 150 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.1} />
+                                <XAxis type="number" stroke="#9ca3af" />
+                                <YAxis
+                                    dataKey="Issue Category"
+                                    type="category"
+                                    stroke="#9ca3af"
+                                    width={140}
+                                    tick={{ fontSize: 12 }}
+                                />
+                                <Tooltip
+                                    contentStyle={{
+                                        backgroundColor: '#1f2937',
+                                        border: 'none',
+                                        borderRadius: '8px',
+                                        color: '#fff',
+                                    }}
+                                />
+                                <Bar dataKey="Count" radius={[0, 8, 8, 0]}>
+                                    {topCategories.map((_, index) => (
+                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                    ))}
+                                </Bar>
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
                 </div>
 
                 {/* Top 10 High-Activity Clients - Vertical Bar Chart */}
@@ -158,33 +179,35 @@ export const Overview = () => {
                     <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
                         Top 10 High-Activity Clients
                     </h2>
-                    <ResponsiveContainer width="100%" height={400}>
-                        <BarChart data={topClients} margin={{ bottom: 80 }}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.1} />
-                            <XAxis
-                                dataKey="Client"
-                                stroke="#9ca3af"
-                                angle={-45}
-                                textAnchor="end"
-                                height={100}
-                                tick={{ fontSize: 11 }}
-                            />
-                            <YAxis stroke="#9ca3af" />
-                            <Tooltip
-                                contentStyle={{
-                                    backgroundColor: '#1f2937',
-                                    border: 'none',
-                                    borderRadius: '8px',
-                                    color: '#fff',
-                                }}
-                            />
-                            <Bar dataKey="Tickets Raised" radius={[8, 8, 0, 0]}>
-                                {topClients.map((_, index) => (
-                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                ))}
-                            </Bar>
-                        </BarChart>
-                    </ResponsiveContainer>
+                    <div className="h-[400px]">
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={topClients} margin={{ bottom: 80 }}>
+                                <CartesianGrid strokeDasharray="3 3" stroke="#374151" opacity={0.1} />
+                                <XAxis
+                                    dataKey="Client"
+                                    stroke="#9ca3af"
+                                    angle={-45}
+                                    textAnchor="end"
+                                    height={100}
+                                    tick={{ fontSize: 11 }}
+                                />
+                                <YAxis stroke="#9ca3af" />
+                                <Tooltip
+                                    contentStyle={{
+                                        backgroundColor: '#1f2937',
+                                        border: 'none',
+                                        borderRadius: '8px',
+                                        color: '#fff',
+                                    }}
+                                />
+                                <Bar dataKey="Tickets Raised" radius={[8, 8, 0, 0]}>
+                                    {topClients.map((_, index) => (
+                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                    ))}
+                                </Bar>
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
                 </div>
             </div>
         </div>

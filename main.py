@@ -2,7 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import pandas as pd
-from typing import List, Dict
+from datetime import datetime
+from typing import Optional, List, Dict
 import os
 
 app = FastAPI(title="Ticket Analysis API", version="1.0.0")
@@ -141,6 +142,58 @@ def categorize_ticket(subject: str) -> str:
     return "Manual Review / Unclassified"
 
 
+    # Catch-all for manual review
+    return "Manual Review / Unclassified"
+
+
+def filter_dataframe(
+    df: pd.DataFrame,
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    client_name: Optional[str] = None
+) -> pd.DataFrame:
+    """
+    Filter the dataframe based on provided criteria using a boolean mask
+    to preserve original data types for serialization.
+    """
+    # Create distinct copies for type conversion to allow filtering
+    # but apply the mask to the original dataframe
+    temp_df = df.copy()
+    
+    # Initialize mask as all True
+    mask = pd.Series(True, index=df.index)
+
+    # Convert date columns to datetime objects in temp_df
+    raised_date_col = 'Raised Date' if 'Raised Date' in temp_df.columns else 'Raised date'
+    resolved_date_col = 'Resolved date' if 'Resolved date' in temp_df.columns else 'Resolved Date'
+
+    if raised_date_col in temp_df.columns:
+        temp_df[raised_date_col] = pd.to_datetime(temp_df[raised_date_col], errors='coerce')
+    
+    # Filter by Client Name
+    if client_name and 'Client' in temp_df.columns:
+        mask &= temp_df['Client'].str.contains(client_name, case=False, na=False)
+
+    # Filter by Date Range (using Raised Date)
+    if start_date and raised_date_col in temp_df.columns:
+        try:
+            start_dt = pd.to_datetime(start_date)
+            mask &= (temp_df[raised_date_col] >= start_dt)
+        except:
+            pass
+
+    if end_date and raised_date_col in temp_df.columns:
+        try:
+            end_dt = pd.to_datetime(end_date)
+            # Add time to end_dt to include the whole day (23:59:59)
+            end_dt = end_dt + pd.Timedelta(hours=23, minutes=59, seconds=59)
+            mask &= (temp_df[raised_date_col] <= end_dt)
+        except:
+            pass
+
+    return df[mask]
+
+
 @app.get("/")
 def read_root():
     """Root endpoint"""
@@ -155,24 +208,26 @@ def read_root():
 
 
 @app.get("/api/category-analysis")
-def get_category_analysis():
+def get_category_analysis(
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    client_name: Optional[str] = None
+):
     """
-    Get ticket count by category
-    Returns: List of categories with their ticket counts
+    Get ticket count by category with optional filtering
     """
     try:
-        # Check if file exists
         if not os.path.exists(CSV_FILE_PATH):
             raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
         
-        # Read CSV file
         df = pd.read_csv(CSV_FILE_PATH)
         
-        # Check if Subject column exists
+        # Apply filters
+        df = filter_dataframe(df, start_date, end_date, client_name)
+        
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
         
-        # Apply categorization
         df['Category'] = df['Subject'].apply(categorize_ticket)
         
         # Count tickets by category
@@ -196,20 +251,23 @@ def get_category_analysis():
 
 
 @app.get("/api/client-analysis")
-def get_client_analysis():
+def get_client_analysis(
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    client_name: Optional[str] = None
+):
     """
-    Get ticket count by client
-    Returns: List of clients with their ticket counts
+    Get ticket count by client with optional filtering
     """
     try:
-        # Check if file exists
         if not os.path.exists(CSV_FILE_PATH):
             raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
         
-        # Read CSV file
         df = pd.read_csv(CSV_FILE_PATH)
         
-        # Check if Client column exists
+        # Apply filters
+        df = filter_dataframe(df, start_date, end_date, client_name)
+        
         if 'Client' not in df.columns:
             raise HTTPException(status_code=400, detail="'Client' column not found in CSV")
         
@@ -235,20 +293,23 @@ def get_client_analysis():
 
 
 @app.get("/api/full-analysis")
-def get_full_analysis():
+def get_full_analysis(
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    client_name: Optional[str] = None
+):
     """
-    Get both category and client analysis in one call
-    Returns: Combined analysis with categories and clients
+    Get both category and client analysis in one call with optional filtering
     """
     try:
-        # Check if file exists
         if not os.path.exists(CSV_FILE_PATH):
             raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
         
-        # Read CSV file
         df = pd.read_csv(CSV_FILE_PATH)
         
-        # Check required columns
+        # Apply filters
+        df = filter_dataframe(df, start_date, end_date, client_name)
+        
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
         if 'Client' not in df.columns:
@@ -284,21 +345,25 @@ def get_full_analysis():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/api/tickets-by-category/{category}")
-def get_tickets_by_category(category: str):
+@app.get("/api/tickets-by-category/{category:path}")
+def get_tickets_by_category(
+    category: str,
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+    client_name: Optional[str] = None
+):
     """
-    Get all tickets for a specific category
-    Returns: List of all tickets in the specified category with full details
+    Get all tickets for a specific category with filtering
     """
     try:
-        # Check if file exists
         if not os.path.exists(CSV_FILE_PATH):
             raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
         
-        # Read CSV file
         df = pd.read_csv(CSV_FILE_PATH)
         
-        # Check if Subject column exists
+        # Apply filters
+        df = filter_dataframe(df, start_date, end_date, client_name)
+        
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
         
@@ -335,20 +400,23 @@ def get_tickets_by_category(category: str):
 
 
 @app.get("/api/tickets-by-client/{client}")
-def get_tickets_by_client(client: str):
+def get_tickets_by_client(
+    client: str,
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None
+):
     """
-    Get all tickets for a specific client
-    Returns: List of all tickets for the specified client with full details
+    Get all tickets for a specific client with filtering
     """
     try:
-        # Check if file exists
         if not os.path.exists(CSV_FILE_PATH):
             raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
         
-        # Read CSV file
         df = pd.read_csv(CSV_FILE_PATH)
         
-        # Check if Client column exists
+        # Apply filters
+        df = filter_dataframe(df, start_date, end_date)
+        
         if 'Client' not in df.columns:
             raise HTTPException(status_code=400, detail="'Client' column not found in CSV")
         
@@ -378,6 +446,31 @@ def get_tickets_by_client(client: str):
             "client": filtered_df['Client'].iloc[0],  # Get actual client name
             "total_tickets": len(filtered_df),
             "data": result
+        })
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/clients")
+def get_clients():
+    """
+    Get list of unique unique clients
+    """
+    try:
+        if not os.path.exists(CSV_FILE_PATH):
+            raise HTTPException(status_code=404, detail=f"CSV file not found: {CSV_FILE_PATH}")
+        
+        df = pd.read_csv(CSV_FILE_PATH)
+        
+        if 'Client' not in df.columns:
+            raise HTTPException(status_code=400, detail="'Client' column not found in CSV")
+        
+        clients = sorted(df['Client'].dropna().unique().tolist())
+        
+        return JSONResponse(content={
+            "success": True,
+            "data": clients
         })
     
     except Exception as e:

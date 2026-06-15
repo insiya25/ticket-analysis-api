@@ -1,205 +1,185 @@
 import { useEffect, useState } from 'react';
+import { Users, TrendingUp, Download, RefreshCw, Award, ArrowUpDown } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import { Users, TrendingUp, Download, RefreshCcw } from 'lucide-react';
-import { api } from '../services/api';
-import type { ClientData, FilterParams } from '../services/api';
-import { exportToCSV, exportToExcel } from '../utils/exportData';
-import { FilterBar } from '../components/FilterBar';
+import EquiFilterBar from '../components/EquiFilterBar';
 
-const COLORS = ['#3b82f6', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981', '#06b6d4', '#6366f1', '#f97316', '#14b8a6', '#a855f7'];
+const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8001';
+const COLORS = ['#3b82f6','#8b5cf6','#ec4899','#f59e0b','#10b981','#06b6d4','#6366f1','#f97316','#14b8a6','#a855f7','#fb923c','#4ade80'];
 
-export const ClientDistribution = () => {
-    const [data, setData] = useState<ClientData[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [totalTickets, setTotalTickets] = useState(0);
-    const [filters, setFilters] = useState<FilterParams>({});
+interface Props { theme: string }
 
-    const fetchData = async (currentFilters: FilterParams = {}) => {
-        setLoading(true);
-        try {
-            const result = await api.getClientAnalysis(currentFilters);
-            setData(result.data);
-            setTotalTickets(result.total_tickets);
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        } finally {
-            setLoading(false);
-        }
-    };
+export default function ClientDistributionPage({ theme: _theme }: Props) {
+  const [data, setData]               = useState<any[]>([]);
+  const [loading, setLoading]         = useState(true);
+  const [totalTickets, setTotalTickets] = useState(0);
+  const [error, setError]             = useState('');
+  const [search, setSearch]           = useState('');
+  const [sortAsc, setSortAsc]         = useState(false);
 
-    useEffect(() => {
-        fetchData(filters);
-    }, [filters]);
+  // Filter states
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate]     = useState('');
+  const [clientName, setClientName] = useState('All');
 
-    const handleFilterChange = (newFilters: any) => {
-        setFilters(newFilters);
-    };
+  const buildParams = (start: string, end: string, client: string) => {
+    const p = new URLSearchParams();
+    if (start) p.set('start_date', start);
+    if (end) p.set('end_date', end);
+    if (client && client !== 'All') p.set('client_name', client);
+    return p.toString() ? `?${p}` : '';
+  };
 
-    const handleExportCSV = () => {
-        exportToCSV(data, 'client-distribution');
-    };
+  const fetchData = (start = startDate, end = endDate, client = clientName) => {
+    setLoading(true);
+    fetch(`${API}/api/client-analysis${buildParams(start, end, client)}`)
+      .then(r => { if (!r.ok) throw new Error('Failed to fetch'); return r.json(); })
+      .then(d => { setData(d.data || []); setTotalTickets(d.total_tickets || 0); setLoading(false); })
+      .catch(e => { setError(e.message); setLoading(false); });
+  };
 
-    const handleExportExcel = () => {
-        exportToExcel(data, 'client-distribution');
-    };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-    if (loading && data.length === 0) {
-        return (
-            <div className="flex items-center justify-center h-full">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
-            </div>
-        );
-    }
+  const handleApplyFilters = (start: string, end: string, client: string) => {
+    setStartDate(start);
+    setEndDate(end);
+    setClientName(client);
+    fetchData(start, end, client);
+  };
 
-    const topClients = data.slice(0, 10);
-    const pieData = topClients.map(item => ({
-        name: item.Client,
-        value: item['Tickets Raised'],
-    }));
+  const handleClearFilters = () => {
+    setStartDate('');
+    setEndDate('');
+    setClientName('All');
+    fetchData('', '', 'All');
+  };
 
-    const mostActiveClient = data.length > 0 ? data[0] : null;
+  const handleExportCSV = () => {
+    const rows = filteredData.map((item, i) => [i+1, item.Client, item['Tickets Raised'], ((item['Tickets Raised']/totalTickets)*100).toFixed(2)+'%'].join(','));
+    const csv = 'data:text/csv;charset=utf-8,' + encodeURI(['Rank,Client,Tickets Raised,Share %', ...rows].join('\n'));
+    const a = document.createElement('a'); a.href = csv; a.download = 'client_distribution.csv';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  };
 
-    return (
-        <div className="space-y-6 animate-fade-in pb-10">
-            {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                        Client Relationship Analysis
-                    </h1>
-                    <p className="text-gray-600 dark:text-gray-400 mt-2">
-                        Activity distribution across your client portfolio
-                    </p>
-                </div>
-                {loading && (
-                    <div className="flex items-center gap-2 text-blue-500">
-                        <RefreshCcw className="w-5 h-5 animate-spin" />
-                        <span className="text-sm font-medium">Updating...</span>
-                    </div>
-                )}
-            </div>
+  const filteredData = data
+    .filter(item => item.Client.toLowerCase().includes(search.toLowerCase()))
+    .sort((a, b) => sortAsc ? a['Tickets Raised'] - b['Tickets Raised'] : b['Tickets Raised'] - a['Tickets Raised']);
 
-            {/* Filters */}
-            <FilterBar onFilterChange={handleFilterChange} showSearch={false} />
+  const mostActive = data.length > 0 ? data[0] : null;
+  const pieData    = data.slice(0,10).map(item => ({ name: item.Client, value: item['Tickets Raised'] }));
 
-            {/* Metric Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg p-6 text-white">
-                    <div className="flex items-center gap-3 mb-2">
-                        <Users className="w-6 h-6" />
-                        <h3 className="text-sm font-medium opacity-90">Total Clients</h3>
-                    </div>
-                    <p className="text-4xl font-bold">{data.length}</p>
-                </div>
+  if (loading && data.length === 0) return (
+    <div className="page-content mobile-top-pad">
+      <div className="skeleton" style={{ width:340, height:40, borderRadius:8, marginBottom:8 }}/>
+      <div className="grid-kpi">{[0,1,2].map(i => <div key={i} className="skeleton" style={{ height:130, borderRadius:16 }}/>)}</div>
+      <div className="grid-2col">{[0,1].map(i => <div key={i} className="skeleton" style={{ height:340, borderRadius:14 }}/>)}</div>
+    </div>
+  );
 
-                <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl shadow-lg p-6 text-white">
-                    <div className="flex items-center gap-3 mb-2">
-                        <TrendingUp className="w-6 h-6" />
-                        <h3 className="text-sm font-medium opacity-90">Most Active Client</h3>
-                    </div>
-                    <p className="text-2xl font-bold truncate">{mostActiveClient?.Client || '-'}</p>
-                    <p className="text-sm opacity-90 mt-1">{mostActiveClient?.['Tickets Raised'] || 0} tickets</p>
-                </div>
+  if (error) return (
+    <div className="page-content mobile-top-pad">
+      <div style={{ display:'flex', gap:10, padding:'14px 18px', borderRadius:10, background:'rgba(220,38,38,0.08)', border:'1px solid rgba(220,38,38,0.2)', color:'#f87171', fontSize:14 }}>
+        Backend error: {error}
+      </div>
+    </div>
+  );
 
-                <div className="bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl shadow-lg p-6 text-white">
-                    <div className="flex items-center gap-3 mb-2">
-                        <TrendingUp className="w-6 h-6" />
-                        <h3 className="text-sm font-medium opacity-90">Total Tickets</h3>
-                    </div>
-                    <p className="text-4xl font-bold">{totalTickets.toLocaleString()}</p>
-                </div>
-            </div>
-
-            {/* Charts and Table */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-                {/* Pie Chart */}
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
-                        Top 10 Client Share
-                    </h2>
-                    <div className="h-[400px]">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <PieChart>
-                                <Pie
-                                    data={pieData}
-                                    cx="50%"
-                                    cy="50%"
-                                    labelLine={false}
-                                    label={({ name, percent }) => `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`}
-                                    outerRadius={120}
-                                    fill="#8884d8"
-                                    dataKey="value"
-                                >
-                                    {pieData.map((_, index) => (
-                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                    ))}
-                                </Pie>
-                                <Tooltip />
-                            </PieChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div>
-
-                {/* Client Ranking Table */}
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
-                    <div className="flex items-center justify-between mb-6">
-                        <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-                            Client Ranking
-                        </h2>
-                        <div className="flex gap-2">
-                            <button
-                                onClick={handleExportCSV}
-                                className="flex items-center gap-2 px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition-colors duration-200"
-                            >
-                                <Download className="w-4 h-4" />
-                                CSV
-                            </button>
-                            <button
-                                onClick={handleExportExcel}
-                                className="flex items-center gap-2 px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-lg transition-colors duration-200"
-                            >
-                                <Download className="w-4 h-4" />
-                                Excel
-                            </button>
-                        </div>
-                    </div>
-                    <div className="overflow-y-auto max-h-[400px]">
-                        <table className="w-full">
-                            <thead className="bg-gray-50 dark:bg-gray-900 sticky top-0">
-                                <tr>
-                                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase">
-                                        Rank
-                                    </th>
-                                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase">
-                                        Client
-                                    </th>
-                                    <th className="px-4 py-3 text-right text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase">
-                                        Tickets
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                                {data.map((item, index) => (
-                                    <tr
-                                        key={index}
-                                        className="hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-150"
-                                    >
-                                        <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-white">
-                                            #{index + 1}
-                                        </td>
-                                        <td className="px-4 py-3 text-sm text-gray-900 dark:text-white">
-                                            {item.Client}
-                                        </td>
-                                        <td className="px-4 py-3 text-sm font-semibold text-right text-gray-900 dark:text-white">
-                                            {item['Tickets Raised']}
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="page-content mobile-top-pad eq-fade">
+      {/* Header */}
+      <div className="page-header">
+        <div>
+          <h1 style={{ fontSize:32, fontWeight:800, color:'var(--text-primary)', letterSpacing:'-0.5px', lineHeight:1.1 }}>
+            Client{' '}
+            <span style={{ background:'linear-gradient(135deg,#e8931e,#f5b042)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text' }}>Distribution</span>
+          </h1>
+          <p style={{ fontSize:15, color:'var(--text-secondary)', marginTop:6 }}>Activity distribution across your client portfolio</p>
         </div>
-    );
-};
+        <div style={{ display:'flex', alignItems:'center', gap:12, flexWrap:'wrap' }}>
+          <EquiFilterBar
+            startDate={startDate}
+            endDate={endDate}
+            clientName={clientName}
+            onApply={handleApplyFilters}
+            onClear={handleClearFilters}
+            loading={loading}
+          />
+          <button onClick={() => fetchData()} style={{ display:'flex', alignItems:'center', gap:7, padding:'9px 16px', borderRadius:9, border:'1px solid var(--border)', background:'rgba(255,255,255,0.04)', color:'var(--text-secondary)', cursor:'pointer', fontSize:13, fontWeight:600 }}>
+            <RefreshCw size={14} style={{ animation: loading ? 'spin 1s linear infinite' : 'none' }}/> Refresh
+          </button>
+          <button onClick={handleExportCSV} style={{ display:'flex', alignItems:'center', gap:7, padding:'9px 16px', borderRadius:9, border:'1px solid rgba(232,147,30,0.3)', background:'linear-gradient(135deg,#e8931e,#f5b042)', color:'#000', cursor:'pointer', fontSize:13, fontWeight:700 }}>
+            <Download size={14}/> Export CSV
+          </button>
+        </div>
+      </div>
+
+      {/* KPI Cards */}
+      <div className="grid-kpi">
+        <div className="eq-kpi" style={{ background:'linear-gradient(135deg,#1e3a8a,#3b82f6)', boxShadow:'0 8px 32px rgba(59,130,246,0.25)' }}>
+          <div className="eq-kpi-icon"><Users size={18} color="#fff"/></div>
+          <div className="eq-kpi-value">{data.length}</div>
+          <div className="eq-kpi-label">Total Clients</div>
+        </div>
+        <div className="eq-kpi" style={{ background:'linear-gradient(135deg,#581c87,#8b5cf6)', boxShadow:'0 8px 32px rgba(139,92,246,0.25)' }}>
+          <div className="eq-kpi-icon"><Award size={18} color="#fff"/></div>
+          <div className="eq-kpi-value" style={{ fontSize:20 }} title={mostActive?.Client}>{mostActive?.Client?.split(' ').slice(0,2).join(' ') || '—'}</div>
+          <div className="eq-kpi-label">Most Active — {mostActive?.['Tickets Raised']||0} tickets</div>
+        </div>
+        <div className="eq-kpi" style={{ background:'linear-gradient(135deg,#831843,#ec4899)', boxShadow:'0 8px 32px rgba(236,72,153,0.25)' }}>
+          <div className="eq-kpi-icon"><TrendingUp size={18} color="#fff"/></div>
+          <div className="eq-kpi-value">{totalTickets.toLocaleString()}</div>
+          <div className="eq-kpi-label">Total Tickets Raised</div>
+        </div>
+      </div>
+
+      {/* Charts */}
+      <div className="grid-2col">
+        {/* Donut */}
+        <div className="eq-card">
+          <div className="eq-card-title">Top 10 Client Ticket Share</div>
+          <div className="eq-card-sub">Volume contribution by percentage</div>
+          <ResponsiveContainer width="100%" height={300}>
+            <PieChart>
+              <Pie data={pieData} cx="50%" cy="50%" innerRadius={65} outerRadius={110} paddingAngle={4} dataKey="value"
+                label={({ name, percent }) => `${(name||'').slice(0,10)}: ${((percent||0)*100).toFixed(0)}%`} labelLine={false}>
+                {pieData.map((_, i) => <Cell key={i} fill={COLORS[i%COLORS.length]}/>)}
+              </Pie>
+              <Tooltip contentStyle={{ background:'#0d1323', border:'1px solid rgba(255,255,255,0.1)', borderRadius:10, fontSize:13 }}/>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+
+        {/* Rankings */}
+        <div className="eq-card" style={{ display:'flex', flexDirection:'column' }}>
+          <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12 }}>
+            <div>
+              <div className="eq-card-title">Client Rankings</div>
+              <div className="eq-card-sub" style={{ marginBottom:0 }}>Sorted by ticket volume</div>
+            </div>
+            <button onClick={() => setSortAsc(!sortAsc)} style={{ display:'flex', alignItems:'center', gap:6, padding:'6px 12px', borderRadius:8, border:'1px solid var(--border)', background:'rgba(255,255,255,0.04)', color:'var(--text-muted)', cursor:'pointer', fontSize:12, fontWeight:600 }}>
+              <ArrowUpDown size={12}/> Sort
+            </button>
+          </div>
+          <input type="text" placeholder="Filter clients…" value={search} onChange={e => setSearch(e.target.value)}
+            style={{ background:'rgba(255,255,255,0.04)', border:'1px solid var(--border)', borderRadius:9, padding:'9px 13px', fontSize:13.5, color:'var(--text-primary)', outline:'none', marginBottom:12 }}/>
+          <div className="eq-table-wrap" style={{ flex:1, maxHeight:260, overflowY:'auto' }}>
+            <table>
+              <thead><tr><th style={{ width:55 }}>Rank</th><th>Client</th><th style={{ textAlign:'right' }}>Tickets</th><th style={{ textAlign:'right' }}>Share</th></tr></thead>
+              <tbody>
+                {filteredData.map((item, index) => (
+                  <tr key={item.Client}>
+                    <td style={{ fontWeight:700, color:'var(--text-muted)' }}>#{index+1}</td>
+                    <td style={{ fontWeight:600, color:'var(--text-primary)' }}>{item.Client}</td>
+                    <td style={{ textAlign:'right', fontWeight:800, color:'#f5b042' }}>{item['Tickets Raised']}</td>
+                    <td style={{ textAlign:'right', color:'var(--text-muted)' }}>{((item['Tickets Raised']/totalTickets)*100).toFixed(1)}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

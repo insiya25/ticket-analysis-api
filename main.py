@@ -150,7 +150,9 @@ def filter_dataframe(
     df: pd.DataFrame,
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    client_name: Optional[str] = None
+    client_name: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ) -> pd.DataFrame:
     """
     Filter the dataframe based on provided criteria using a boolean mask
@@ -191,6 +193,20 @@ def filter_dataframe(
         except:
             pass
 
+    # Filter by Year
+    if year and year != 'All' and raised_date_col in temp_df.columns:
+        try:
+            mask &= (temp_df[raised_date_col].dt.year.astype(str) == str(year))
+        except:
+            pass
+
+    # Filter by Month
+    if month and month != 'All' and raised_date_col in temp_df.columns:
+        try:
+            mask &= (temp_df[raised_date_col].dt.strftime('%b') == month)
+        except:
+            pass
+
     return df[mask]
 
 
@@ -211,7 +227,9 @@ def read_root():
 def get_category_analysis(
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    client_name: Optional[str] = None
+    client_name: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ):
     """
     Get ticket count by category with optional filtering
@@ -223,7 +241,7 @@ def get_category_analysis(
         df = pd.read_csv(CSV_FILE_PATH)
         
         # Apply filters
-        df = filter_dataframe(df, start_date, end_date, client_name)
+        df = filter_dataframe(df, start_date, end_date, client_name, year, month)
         
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
@@ -254,7 +272,9 @@ def get_category_analysis(
 def get_client_analysis(
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    client_name: Optional[str] = None
+    client_name: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ):
     """
     Get ticket count by client with optional filtering
@@ -266,7 +286,7 @@ def get_client_analysis(
         df = pd.read_csv(CSV_FILE_PATH)
         
         # Apply filters
-        df = filter_dataframe(df, start_date, end_date, client_name)
+        df = filter_dataframe(df, start_date, end_date, client_name, year, month)
         
         if 'Client' not in df.columns:
             raise HTTPException(status_code=400, detail="'Client' column not found in CSV")
@@ -296,7 +316,9 @@ def get_client_analysis(
 def get_full_analysis(
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    client_name: Optional[str] = None
+    client_name: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ):
     """
     Get both category and client analysis in one call with optional filtering
@@ -308,7 +330,7 @@ def get_full_analysis(
         df = pd.read_csv(CSV_FILE_PATH)
         
         # Apply filters
-        df = filter_dataframe(df, start_date, end_date, client_name)
+        df = filter_dataframe(df, start_date, end_date, client_name, year, month)
         
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
@@ -328,9 +350,42 @@ def get_full_analysis(
         client_counts.columns = ['Client', 'Tickets Raised']
         client_counts = client_counts.sort_values('Tickets Raised', ascending=False)
         
+        # Avg resolution days
+        days_col = None
+        for c in ['Days', 'days', 'Resolution Days', 'resolution_days']:
+            if c in df.columns:
+                days_col = c
+                break
+        avg_days = None
+        if days_col:
+            numeric_days = pd.to_numeric(df[days_col], errors='coerce').dropna()
+            avg_days = round(float(numeric_days.mean()), 1) if len(numeric_days) > 0 else None
+
+        # Status counts
+        open_count   = 0
+        closed_count = 0
+        if 'Status' in df.columns:
+            statuses = df['Status'].str.lower().fillna('')
+            open_count   = int(statuses.str.contains('open').sum())
+            closed_count = int(statuses.str.contains('clos').sum())
+
+        # Available years and months for filter dropdowns
+        raised_col = 'Raised Date' if 'Raised Date' in df.columns else 'Raised date'
+        years, months = [], []
+        if raised_col in df.columns:
+            dates = pd.to_datetime(df[raised_col], errors='coerce').dropna()
+            years  = sorted(dates.dt.year.unique().astype(str).tolist(), reverse=True)
+            months = sorted(dates.dt.strftime('%b').unique().tolist(),
+                            key=lambda m: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].index(m))
+
         return JSONResponse(content={
             "success": True,
             "total_tickets": len(df),
+            "open_tickets": open_count,
+            "closed_tickets": closed_count,
+            "avg_resolution_days": avg_days,
+            "available_years": years,
+            "available_months": months,
             "category_analysis": {
                 "total_categories": len(category_counts),
                 "data": category_counts.to_dict('records')
@@ -350,7 +405,9 @@ def get_tickets_by_category(
     category: str,
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    client_name: Optional[str] = None
+    client_name: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ):
     """
     Get all tickets for a specific category with filtering
@@ -362,7 +419,7 @@ def get_tickets_by_category(
         df = pd.read_csv(CSV_FILE_PATH)
         
         # Apply filters
-        df = filter_dataframe(df, start_date, end_date, client_name)
+        df = filter_dataframe(df, start_date, end_date, client_name, year, month)
         
         if 'Subject' not in df.columns:
             raise HTTPException(status_code=400, detail="'Subject' column not found in CSV")
@@ -403,7 +460,9 @@ def get_tickets_by_category(
 def get_tickets_by_client(
     client: str,
     start_date: Optional[str] = None,
-    end_date: Optional[str] = None
+    end_date: Optional[str] = None,
+    year: Optional[str] = None,
+    month: Optional[str] = None
 ):
     """
     Get all tickets for a specific client with filtering
@@ -415,7 +474,7 @@ def get_tickets_by_client(
         df = pd.read_csv(CSV_FILE_PATH)
         
         # Apply filters
-        df = filter_dataframe(df, start_date, end_date)
+        df = filter_dataframe(df, start_date, end_date, year=year, month=month)
         
         if 'Client' not in df.columns:
             raise HTTPException(status_code=400, detail="'Client' column not found in CSV")
@@ -479,4 +538,4 @@ def get_clients():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, LayoutDashboard, Tag, Users, Table2, Sun, Moon, X, ChevronRight, Activity, ExternalLink } from 'lucide-react';
+import { Menu, LayoutDashboard, Tag, Users, Table2, Sun, Moon, X, ChevronRight, Activity } from 'lucide-react';
 import OverviewPage from './pages/Overview';
 import CategoryPage from './pages/CategoryAnalysis';
 import ClientPage from './pages/ClientDistribution';

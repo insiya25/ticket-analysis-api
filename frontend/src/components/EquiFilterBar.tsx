@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Calendar, User, X } from 'lucide-react';
 
-const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8001';
+const API = import.meta.env.VITE_API_URL || 'https://ticket-analysis-api.vercel.app';
 
 interface Props {
   startDate: string;

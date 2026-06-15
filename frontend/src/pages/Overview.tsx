@@ -3,7 +3,7 @@ import { Ticket, Tag, Users, TrendingUp } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import EquiFilterBar from '../components/EquiFilterBar';
 
-const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8001';
+const API = import.meta.env.VITE_API_URL || 'https://ticket-analysis-api.vercel.app';
 const COLORS = ['#e8931e','#3b82f6','#10b981','#8b5cf6','#f43f5e','#06b6d4','#f59e0b','#84cc16','#ec4899','#14b8a6','#6366f1','#fb923c'];
 
 interface Props { theme: string }

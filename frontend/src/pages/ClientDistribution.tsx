@@ -3,7 +3,7 @@ import { Users, TrendingUp, Download, RefreshCw, Award, ArrowUpDown } from 'luci
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import EquiFilterBar from '../components/EquiFilterBar';
 
-const API = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8001';
+const API = import.meta.env.VITE_API_URL || 'https://ticket-analysis-api.vercel.app';
 const COLORS = ['#3b82f6','#8b5cf6','#ec4899','#f59e0b','#10b981','#06b6d4','#6366f1','#f97316','#14b8a6','#a855f7','#fb923c','#4ade80'];
 
 interface Props { theme: string }
